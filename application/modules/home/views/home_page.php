@@ -452,7 +452,7 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																Electronic Proposals				</span>
+																Connected Crew				</span>
 															</div>
 														</div>
 													</div>
@@ -472,7 +472,7 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																Scheduling					</span>
+																Centralized management					</span>
 															</div>
 														</div>
 													</div>
@@ -493,7 +493,7 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																Communication				</span>
+																Visualize worksites 				</span>
 															</div>
 														</div>
 													</div>
@@ -513,7 +513,7 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																Mobile Time Tracking</span>
+																Insights & Reports</span>
 															</div>
 														</div>
 													</div>
