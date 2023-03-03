@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="https://gmpg.org/xfn/11">
-		<title>Homepage – hydropokit</title>
+		<title>Urban Eye AI - Experience a Smarter Way to Manage Your Landscape</title>
 		<meta name="robots" content="max-image-preview:large">
 		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 		<link rel="alternate" type="application/rss+xml" title="hydropokit » Feed" href="https://kitnew.moxcreative.com/hydropokit/feed/">
@@ -304,8 +304,8 @@
 																</ul>
 															</li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="#" class="elementor-item" tabindex="-1">Contact us</a></li>
-															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18">
-																<a href="#" class="elementor-item elementor-item-anchor has-submenu" tabindex="-1" id="sm-16778124470973984-5" aria-haspopup="true" aria-controls="sm-16778124470973984-6" aria-expanded="false">Pages<span class="sub-arrow"><i class="fas fa-angle-down"></i></span></a>
+															<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18">
+																<a href="#" class="elementor-item elementor-item-anchor has-submenu" tabindex="-1" id="sm-16778124470973984-5" aria-haspopup="true" aria-controls="sm-16778124470973984-6" aria-expanded="false">Pages<span class="sub-arrow"><i class="fas fa-angle-down"></i></span></a> -->
 																<!-- <ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470973984-6" role="group" aria-hidden="true" aria-labelledby="sm-16778124470973984-5" aria-expanded="false">
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="#" class="elementor-sub-item" tabindex="-1">Team</a></li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="#" class="elementor-sub-item" tabindex="-1">FAQ</a></li>
@@ -313,7 +313,7 @@
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/how-to-maximize-produce-profits-at-farmers-markets-and-retail/" class="elementor-sub-item" tabindex="-1">Single post</a></li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="https://kitnew.moxcreative.com/hydropokit/?elementor_library=hyrdopokit-error-404" class="elementor-sub-item" tabindex="-1">Error 404</a></li>
 																</ul> -->
-															</li>
+															<!-- </li> -->
 														</ul>
 													</nav>
 												</div>
@@ -347,37 +347,37 @@
 				<div class="elementor-background-slideshow swiper-container swiper-container-fade swiper-container-initialized swiper-container-horizontal swiper-container-rtl" dir="rtl">
 					<div class="swiper-wrapper" style="transition-duration: 0ms;">
 						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(0px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/hydroponic-of-lettuce-farm-growing-in-greenhouse-.jpg&quot;);"></div>
+							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://urbaneye.enke.in/assets/images/banner_moving_bg.jpg&quot;);"></div>
 						</div>
 						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(1704px, 0px, 0px);">
 							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/asian-farmer-girl-wearing-hat-working-in-hydroponics-green-house-.jpg&quot;);"></div>
 						</div>
 						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(3408px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/hydroponics-young-asian-farmers-examined-the-quality-of-organic-vegetables-grown-using-hydroponics.jpg&quot;);"></div>
+							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://urbaneye.enke.in/assets/images/lawn_tractor.jpg&quot;);"></div>
 						</div>
 						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="3" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(5112px, 0px, 0px);">
 							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/greenhouse-pickers-gathering-lettuce-standing-in-a-row-in-hydroponic-enviroment-inspecting-leaves.jpg&quot;);"></div>
 						</div>
 						<div class="elementor-background-slideshow__slide swiper-slide" data-swiper-slide-index="0" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(6816px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/hydroponic-of-lettuce-farm-growing-in-greenhouse-.jpg&quot;);"></div>
+							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://urbaneye.enke.in/assets/images/banner_moving_bg.jpg&quot;);"></div>
 						</div>
 						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(8520px, 0px, 0px);">
 							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/asian-farmer-girl-wearing-hat-working-in-hydroponics-green-house-.jpg&quot;);"></div>
 						</div>
 						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 1704px; transition-duration: 0ms; opacity: 1; transform: translate3d(10224px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded elementor-ken-burns--active" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/hydroponics-young-asian-farmers-examined-the-quality-of-organic-vegetables-grown-using-hydroponics.jpg&quot;);"></div>
+							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded elementor-ken-burns--active" style="background-image: url(&quot;https://urbaneye.enke.in/assets/images/lawn_tractor.jpg&quot;);"></div>
 						</div>
 						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-next" data-swiper-slide-index="3" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(11928px, 0px, 0px);">
 							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/greenhouse-pickers-gathering-lettuce-standing-in-a-row-in-hydroponic-enviroment-inspecting-leaves.jpg&quot;);"></div>
 						</div>
 						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(13632px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/hydroponic-of-lettuce-farm-growing-in-greenhouse-.jpg&quot;);"></div>
+							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://urbaneye.enke.in/assets/images/banner_moving_bg.jpg&quot;);"></div>
 						</div>
 						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(15336px, 0px, 0px);">
 							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/asian-farmer-girl-wearing-hat-working-in-hydroponics-green-house-.jpg&quot;);"></div>
 						</div>
 						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(17040px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy" data-background="https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/hydroponics-young-asian-farmers-examined-the-quality-of-organic-vegetables-grown-using-hydroponics.jpg">
+							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy" data-background="https://urbaneye.enke.in/assets/images/lawn_tractor.jpg">
 								<div class="swiper-lazy-preloader"></div>
 							</div>
 						</div>
@@ -398,7 +398,7 @@
 									<style>/*! elementor - v3.10.0 - 09-01-2023 */
 										.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}
 									</style>
-									<h1 class="elementor-heading-title elementor-size-default">Urban Eye &amp; AI</h1>
+									<h1 class="elementor-heading-title elementor-size-default">urban Eye AI</h1>
 								</div>
 							</div>
 							<div class="elementor-element elementor-element-36d9044 elementor-widget elementor-widget-heading animated fadeInDown" data-id="36d9044" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
