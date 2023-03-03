@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-require  __DIR__.'/../../vendor/autoload.php';
+// require  __DIR__.'/../../vendor/autoload.php';
 use Kreait\Firebase\Factory;
 use Kreait\Firebase\ServiceAccount;
 
@@ -14,13 +14,13 @@ class Firebase {
         // Assign the CodeIgniter super-object
         $this->CI =& get_instance();
 
-        $this->serviceAccount = ServiceAccount::fromJsonFile($this->CI->config->item('firebase_app_key'));
+        // $this->serviceAccount = ServiceAccount::fromJsonFile($this->CI->config->item('firebase_app_key'));
     }
 
     
     public function init()
     {
-        return $firebase = (new Factory)->withServiceAccount($this->serviceAccount)->create();
+        // return $firebase = (new Factory)->withServiceAccount($this->serviceAccount)->create();
     }
 
 }

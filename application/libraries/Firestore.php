@@ -9,7 +9,7 @@
  */
 
 defined('BASEPATH') OR exit('No direct script access allowed');
-require  __DIR__.'/../../vendor/autoload.php';
+// require  __DIR__.'/../../vendor/autoload.php';
 use Google\Cloud\Firestore\FirestoreClient;
 
 class Firestore {
