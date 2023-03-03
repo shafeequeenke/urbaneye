@@ -184,12 +184,12 @@
 										<li class="elementor-icon-list-item elementor-inline-item">
 											<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="mdi mdi-email-check"></i>						</span>
-											<span class="elementor-icon-list-text">support@enke.in</span>
+											<span class="elementor-icon-list-text">info@spaceagelabs.com.sg</span>
 										</li>
 										<li class="elementor-icon-list-item elementor-inline-item">
 											<span class="elementor-icon-list-icon">
 											<i aria-hidden="true" class="mdi mdi-deskphone"></i>						</span>
-											<span class="elementor-icon-list-text">+91 9633220199</span>
+											<span class="elementor-icon-list-text">+65 85034824</span>
 										</li>
 									</ul>
 								</div>
@@ -205,24 +205,24 @@
 									</style>
 									<div class="elementor-social-icons-wrapper elementor-grid">
 										<span class="elementor-grid-item">
-										<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-pop elementor-repeater-item-41b2287" target="_blank">
+										<a href="https://www.facebook.com/spaceagelabs/" class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-pop elementor-repeater-item-41b2287" target="_blank">
 										<span class="elementor-screen-only">Facebook-f</span>
-										<i class="fab fa-facebook-f"></i>					</a>
+										<i class="mdi mdi-facebook"></i>					</a>
 										</span>
 										<span class="elementor-grid-item">
-										<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-pop elementor-repeater-item-46ce0bc" target="_blank">
-										<span class="elementor-screen-only">Instagram</span>
-										<i class="fab fa-instagram"></i>					</a>
+										<a href="https://www.linkedin.com/company/spaceage-labs" class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-pop elementor-repeater-item-46ce0bc" target="_blank">
+										<span class="elementor-screen-only">Linked In</span>
+										<i class="mdi mdi-instagram"></i>					</a>
 										</span>
 										<span class="elementor-grid-item">
-										<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-pop elementor-repeater-item-cf215fa" target="_blank">
+										<a href="https://twitter.com/spaceage_labs" class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-pop elementor-repeater-item-cf215fa" target="_blank">
 										<span class="elementor-screen-only">Twitter</span>
-										<i class="fab fa-twitter"></i>					</a>
+										<i class="mdi mdi-twitter"></i>					</a>
 										</span>
 										<span class="elementor-grid-item">
 										<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-pop elementor-repeater-item-b36dd07" target="_blank">
 										<span class="elementor-screen-only">Youtube</span>
-										<i class="fab fa-youtube"></i>					</a>
+										<i class="mdi mdi-youtube"></i>					</a>
 										</span>
 									</div>
 								</div>
