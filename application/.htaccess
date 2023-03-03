@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+# Option 2: To rewrite "domain.com -> www.domain.com" uncomment the following lines.
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} !^www\..+$ [NC]
+RewriteCond %{HTTP_HOST} (.+)$ [NC]
+RewriteRule ^(.*)$ https://www.%1/$1 [R=301,L]
