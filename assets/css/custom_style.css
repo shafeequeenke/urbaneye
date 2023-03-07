@@ -1,0 +1,35 @@
+
+    .element-box-shadow {
+        box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.1);
+        transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        padding: 10px 10px;
+        margin: 7px;
+        border-radius: 15px;
+    }
+
+    .element-box-shadow p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .element-icon-wrap {
+        padding: 16px !important;
+    }
+
+    .element-icon-wrap i {
+        font-size: 40px;
+    }
+
+    .element-icon-wrapper {
+
+    }
+
+    .element-icon-wrapper a i {
+        font-size: 25px;
+    }
+
+    .element-readmore-container {
+        bottom: -13px;
+        width: auto;
+    }
+    
