@@ -8,6 +8,9 @@
 		<title>Urban Eye AI - Experience a Smarter Way to Manage Your Landscape</title>
 		<meta name="robots" content="max-image-preview:large">
 		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+		<link rel="stylesheet" id="google-fonts-1-css" href="assets/css/css.css" media="all">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>		
 		<link rel="alternate" type="application/rss+xml" title="hydropokit » Feed" href="https://kitnew.moxcreative.com/hydropokit/feed/">
 		<link rel="alternate" type="application/rss+xml" title="hydropokit » Comments Feed" href="https://kitnew.moxcreative.com/hydropokit/comments/feed/">
 		<script type="text/javascript" id="www-widgetapi-script" src="assets/js/www-widgetapi.js" async=""></script><script src="assets/iframe_api"></script><script>
@@ -15,6 +18,7 @@
 			/*! This file is auto-generated */
 			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script><script src="assets/js/wp-emoji-release.min.js" type="text/javascript" defer="defer"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 		<style>
 			img.wp-smiley,
 			img.emoji {
@@ -253,7 +257,7 @@
 									</div>
 									<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-44f3c07" data-id="44f3c07" data-element_type="column">
 										<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-308e04f elementor-nav-menu__align-right elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="308e04f" data-element_type="widget" data-settings="{&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;fas fa-angle-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+											<div class="elementor-element elementor-element-308e04f elementor-nav-menu__align-right elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="308e04f" data-element_type="widget" data-settings="{&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;i class=\&quot;mdi mdi-chevron-down\&quot;&gt;&lt;\/i&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
 												<div class="elementor-widget-container">
 													<link rel="stylesheet" href="assets/css/widget-nav-menu.min.css">
 													<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
@@ -293,20 +297,20 @@
 															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-7"><a href="#" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="#" class="elementor-item" tabindex="-1">About us</a></li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10">
-																<a href="" class="elementor-item has-submenu" tabindex="-1" id="sm-16778124470973984-1" aria-haspopup="true" aria-controls="sm-16778124470973984-2" aria-expanded="false">Services<span class="sub-arrow"><i class="fas fa-angle-down"></i></span></a>
+																<a href="" class="elementor-item has-submenu" tabindex="-1" id="sm-16778124470973984-1" aria-haspopup="true" aria-controls="sm-16778124470973984-2" aria-expanded="false">Services<span class="sub-arrow"><i class="mdi mdi-chevron-down"></i></span></a>
 																<ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470973984-2" role="group" aria-hidden="true" aria-labelledby="sm-16778124470973984-1" aria-expanded="false">
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="#" class="elementor-sub-item" tabindex="-1">Pricing plan</a></li>
 																</ul>
 															</li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
-																<a href="" class="elementor-item has-submenu" tabindex="-1" id="sm-16778124470973984-3" aria-haspopup="true" aria-controls="sm-16778124470973984-4" aria-expanded="false">Project<span class="sub-arrow"><i class="fas fa-angle-down"></i></span></a>
+																<a href="" class="elementor-item has-submenu" tabindex="-1" id="sm-16778124470973984-3" aria-haspopup="true" aria-controls="sm-16778124470973984-4" aria-expanded="false">Project<span class="sub-arrow"><i class="mdi mdi-chevron-down"></i></span></a>
 																<ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470973984-4" role="group" aria-hidden="true" aria-labelledby="sm-16778124470973984-3" aria-expanded="false">
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="#" class="elementor-sub-item" tabindex="-1">Single Project</a></li>
 																</ul>
 															</li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="#" class="elementor-item" tabindex="-1">Contact us</a></li>
 															<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18">
-																<a href="#" class="elementor-item elementor-item-anchor has-submenu" tabindex="-1" id="sm-16778124470973984-5" aria-haspopup="true" aria-controls="sm-16778124470973984-6" aria-expanded="false">Pages<span class="sub-arrow"><i class="fas fa-angle-down"></i></span></a> -->
+																<a href="#" class="elementor-item elementor-item-anchor has-submenu" tabindex="-1" id="sm-16778124470973984-5" aria-haspopup="true" aria-controls="sm-16778124470973984-6" aria-expanded="false">Pages<span class="sub-arrow"><i class="mdi mdi-chevron-down"></i></span></a> -->
 																<!-- <ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470973984-6" role="group" aria-hidden="true" aria-labelledby="sm-16778124470973984-5" aria-expanded="false">
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="#" class="elementor-sub-item" tabindex="-1">Team</a></li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="#" class="elementor-sub-item" tabindex="-1">FAQ</a></li>
@@ -413,7 +417,7 @@
 									<div class="elementor-button-wrapper">
 										<a href="#" class="elementor-button-link elementor-button elementor-size-lg" role="button">
 										<span class="elementor-button-content-wrapper">
-										<span class="elementor-button-text">Get Connected</span>
+										<span class="elementor-button-text">Get Started</span>
 										</span>
 										</a>
 									</div>
@@ -633,7 +637,7 @@
 												<div class="elementor-widget-container">
 													<div class="element-icon-wrapper">
 														<a class="elementor-icon" href="#">
-														<i aria-hidden="true" class="fas fa-arrow-right"></i>			</a>
+														<i aria-hidden="true" class="mdi mdi-arrow-right"></i>			</a>
 													</div>
 												</div>
 											</div>
@@ -668,7 +672,7 @@
 												<div class="elementor-widget-container">
 													<div class="element-icon-wrapper">
 														<a class="elementor-icon" href="#">
-														<i aria-hidden="true" class="fas fa-arrow-right"></i>			</a>
+														<i aria-hidden="true" class="mdi mdi-arrow-right"></i>			</a>
 													</div>
 												</div>
 											</div>
@@ -703,7 +707,7 @@
 												<div class="elementor-widget-container">
 													<div class="element-icon-wrapper">
 														<a class="elementor-icon" href="#">
-														<i aria-hidden="true" class="fas fa-arrow-right"></i>			</a>
+														<i aria-hidden="true" class="mdi mdi-arrow-right"></i>			</a>
 													</div>
 												</div>
 											</div>
@@ -740,7 +744,7 @@
 												<div class="elementor-widget-container">
 													<div class="element-icon-wrapper">
 														<a class="elementor-icon" href="#">
-														<i aria-hidden="true" class="fas fa-arrow-right"></i>			</a>
+														<i aria-hidden="true" class="mdi mdi-arrow-right"></i>			</a>
 													</div>
 												</div>
 											</div>
@@ -797,20 +801,16 @@
 											<div class="elementor-element elementor-element-a500743 elementor-widget elementor-widget-heading" data-id="a500743" data-element_type="widget" data-widget_type="heading.default">
 												<div class="elementor-widget-container">
 													<h2 class="elementor-heading-title elementor-size-default">
-													Stake Holders Benefits</h2>
+													urbanEYE AI &amp; the easy set-up</h2>
 												</div>
 											</div>
 											<div class="elementor-element elementor-element-43e53aa elementor-widget elementor-widget-text-editor" data-id="43e53aa" data-element_type="widget" data-widget_type="text-editor.default">
 												<div class="elementor-widget-container">
 													<p>
-													urbanEye AI understands your world of functioning better and provides customized
-												solutions and take aways for all process owners involved with improved productivity
-												level at each level
-												Be it a supervisor on the ground who manages the crew and site functions, the
-												account manager who handles many such supervisors and manages inventory &amp; man
-												power, operations manager who manages the complete show and responsible for the
-												profitability, payment process to billing and the sales person who pitches for new
-												accounts to bring more business.
+													The urbanEYE AI is a Duo of hardware and software that’s highly customizable and increases
+										productivity manyfold that’s real time and never achieved by your traditional practices. The fool
+										proof device and software is easy to set up in 3 simple steps. The device is built for heavy duty
+										performance &amp; the software is a highly secured network powered by AI.
 													</p>
 												</div>
 											</div>
@@ -832,7 +832,7 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																For Crew Members</span>
+																Real-Time Production Benchmarking</span>
 															</div>
 														</div>
 													</div>
@@ -869,7 +869,7 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																For Account Managers</span>
+																Geospatial Work Pattern Analysis</span>
 															</div>
 														</div>
 													</div>
@@ -907,7 +907,7 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																Operations Managers</span>
+																Crew Productive Pulse Monitoring</span>
 															</div>
 														</div>
 													</div>
@@ -945,7 +945,7 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																For Sales</span>
+																Work completion Report</span>
 															</div>
 														</div>
 													</div>
@@ -1077,12 +1077,12 @@
 					</div>
 				</div>
 			</section> -->
-			<section class="elementor-section elementor-top-section elementor-element elementor-element-af4810d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="af4810d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/www.youtube.com\/watch?v=WThJciyM6tk&quot;}">
+			<section class="elementor-section elementor-top-section elementor-element elementor-element-af4810d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="af4810d" data-element_type="section" data-settings="">
 				<div class="elementor-background-video-container elementor-hidden-phone">
-					<iframe class="elementor-background-video-embed" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="footage sayuran hidroponik free bebas copyright bebas hak cipta" src="assets/images/WThJciyM6tk.htm" id="widget2" style="width: 1704px; height: 958.5px;" width="640" height="360" frameborder="0"></iframe>
+					<!-- <iframe class="elementor-background-video-embed" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="footage sayuran hidroponik free bebas copyright bebas hak cipta" src="assets/images/WThJciyM6tk.htm" id="widget2" style="width: 1704px; height: 958.5px;" width="640" height="360" frameborder="0"></iframe> -->
 				</div>
 				<div class="elementor-background-overlay"></div>
-				<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column-gap-default element-why-we-stand">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ffb39c6 animated fadeInUp" data-id="ffb39c6" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
 						<div class="elementor-widget-wrap elementor-element-populated">
 							<div class="elementor-element elementor-element-de7a431 elementor-widget elementor-widget-heading" data-id="de7a431" data-element_type="widget" data-widget_type="heading.default">
@@ -1126,7 +1126,7 @@
 						<div class="elementor-widget-wrap elementor-element-populated">
 							<div class="elementor-element elementor-element-47dc50b elementor-widget elementor-widget-image" data-id="47dc50b" data-element_type="widget" data-widget_type="image.default">
 								<div class="elementor-widget-container">
-									<img decoding="async" src="assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydroponic-.jpg" class="attachment-full size-full wp-image-91" alt="close up view hands of farmer picking lettuce in hydroponic greenhouse." loading="lazy" srcset="assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydroponic-.jpg 1280w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_003.jpg 300w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_005.jpg 1024w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_004.jpg 768w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_002.jpg 1536w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_006.jpg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="853">															
+									<img decoding="async" src="assets/images/stake_holder_benefit.jpeg" class="attachment-full size-full wp-image-91" alt="close up view hands of farmer picking lettuce in hydroponic greenhouse." loading="lazy" srcset="assets/images/stake_holder_benefit.jpeg 1280w, assets/images/stake_holder_benefit.jpeg 300w, assets/images/stake_holder_benefit.jpeg 1024w, assets/images/stake_holder_benefit.jpeg 768w, assets/images/stake_holder_benefit.jpeg 1536w, assets/images/stake_holder_benefit.jpeg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="853">															
 								</div>
 							</div>
 						</div>
@@ -1140,7 +1140,7 @@
 							</div>
 							<div class="elementor-element elementor-element-e732d0e elementor-widget elementor-widget-heading" data-id="e732d0e" data-element_type="widget" data-widget_type="heading.default">
 								<div class="elementor-widget-container">
-									<h2 class="elementor-heading-title elementor-size-default">Unique Features That Stands Us Unique.</h2>
+									<h2 class="elementor-heading-title elementor-size-default">Stake Holders Benefits</h2>
 								</div>
 							</div>
 							<div class="elementor-element elementor-element-e498cf3 elementor-widget elementor-widget-text-editor" data-id="e498cf3" data-element_type="widget" data-widget_type="text-editor.default">
@@ -1157,15 +1157,17 @@
 													<div class="elementor-icon-box-wrapper">
 														<div class="elementor-icon-box-icon">
 															<span class="elementor-icon elementor-animation-">
-															<i aria-hidden="true" class="mdi mdi-safe"></i>				</span>
+															<i aria-hidden="true" class="mdi mdi-account-search"></i>				</span>
 														</div>
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																Unified worksite/polygon management 					</span>
+																For Crew Members:					</span>
 															</div>
 															<p class="elementor-icon-box-description">
-															Manage multiple worksites and monitor crew activities from a single platform at the same time. Capture essential details such as size, location, and rates quoted, provides managers with real-time progress tracking.
+															UrbanEye AI provides crew members the freedom from complex reporting of day-to-day
+															activities &amp; age-old process, which is achieved from granular detail derived from worksites
+															with ease of access that you never experienced from your traditional software.
 															</p>
 														</div>
 													</div>
@@ -1180,16 +1182,19 @@
 													<div class="elementor-icon-box-wrapper">
 														<div class="elementor-icon-box-icon">
 															<span class="elementor-icon elementor-animation-">
-															<i aria-hidden="true" class="mdi mdi-account-group"></i>				</span>
+															<i aria-hidden="true" class="mdi mdi-account-key"></i>				</span>
 														</div>
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																IoT enabled tracker to digitise real-time crew production
+																For Account Managers:
 																</span>
 															</div>
 															<p class="elementor-icon-box-description">
-															IoT enabled, real-time geospatial tracker captures on-site activities data instantly, for mangers to take decisions anywhere, thus boosts productivity by providing up-to-date information.
+															Account managers who manage multiple crews need to take a well-informed decision and
+													not be mis-guided, you need a fool proof system to calculate productivity levels, keep the
+													cost under control, and here comes urbanEye AI the highly intuitive device and platform
+													handy
 															</p>
 														</div>
 													</div>
@@ -1208,15 +1213,19 @@
 													<div class="elementor-icon-box-wrapper">
 														<div class="elementor-icon-box-icon">
 															<span class="elementor-icon elementor-animation-">
-															<i aria-hidden="true" class="mdi mdi-barn"></i>				</span>
+															<i aria-hidden="true" class="mdi mdi-checkbox-marked-outline"></i>				</span>
 														</div>
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																Smart dashboard with Birds eye view and Realtime visualization					</span>
+																For Operations Managers:
+																</span>
 															</div>
 															<p class="elementor-icon-box-description">
-																The smart dashboard offers for lawn management companies a customizable, comprehensive view of all completed work, with easy access to crew or individual progress, both historical and live.
+															Witness the true meaning of productivity in real time with urbanEye AI &amp; steer ahead the
+													organization to profitability of upto 40%. As a lawn management professional, you have to
+													multitask and manage manpower, inventory, billing &amp; payments with urbanEye AI you are a
+													clear winner.
 															</p>
 														</div>
 													</div>
@@ -1231,16 +1240,17 @@
 													<div class="elementor-icon-box-wrapper">
 														<div class="elementor-icon-box-icon">
 															<span class="elementor-icon elementor-animation-">
-															<i aria-hidden="true" class="mdi mdi-headphones-settings"></i>				</span>
+															<i aria-hidden="true" class="mdi mdi-salesforce"></i>				</span>
 														</div>
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 															<span>
-																Automated work completion reporting per work site	
+															For Sales:	
 															</span>
 															</div>
 															<p class="elementor-icon-box-description">
-															Streamline work by generating automated work completion reports for each worksite as soon as crew members leave the job site, need not wait for crews report.
+															As a sales manager your core objective is to win as many as contracts with increases profit
+														margins, with urbanEye AI be rest assured to be clear winner
 															</p>
 														</div>
 													</div>
@@ -1334,7 +1344,7 @@
 										</article>
 										<article class="elementor-post elementor-grid-item post-84 post type-post status-publish format-standard has-post-thumbnail hentry category-insight">
 											<a class="elementor-post__thumbnail__link" href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/understanding-hydroponic-leachate/">
-												<div class="elementor-post__thumbnail"><img decoding="async" src="assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydroponic-.jpg" class="attachment-full size-full wp-image-91" alt="close up view hands of farmer picking lettuce in hydroponic greenhouse." loading="lazy" srcset="assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydroponic-.jpg 1280w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_003.jpg 300w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_005.jpg 1024w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_004.jpg 768w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_002.jpg 1536w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_006.jpg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="853"></div>
+												<div class="elementor-post__thumbnail"><img decoding="async" src="assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydroponic-.jpg" class="attachment-full size-full wp-image-91" alt="close up view hands of farmer picking lettuce in hydroponic greenhouse." loading="lazy" srcset="assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydroponic-.jpg 1280w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_003.jpg 300w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_005.jpg 1024w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_004.jpg 768w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_002.jpg 1536w, assets/images/stake_holder_benefit.jpeg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="853"></div>
 											</a>
 											<div class="elementor-post__text">
 												<div class="elementor-post__title">
@@ -1385,197 +1395,57 @@
 					</div>
 				</div>
 			</section> -->
-			<!--<section class="elementor-section elementor-top-section elementor-element elementor-element-b809511 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b809511" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-background-overlay"></div>
-				<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-82e7acc" data-id="82e7acc" data-element_type="column">
-						<div class="elementor-widget-wrap elementor-element-populated e-swiper-container">
-							<section class="elementor-section elementor-inner-section elementor-element elementor-element-b2b9cb1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b2b9cb1" data-element_type="section">
-								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-d39383c elementor-invisible" data-id="d39383c" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
-										<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-7f58c23 elementor-widget elementor-widget-heading" data-id="7f58c23" data-element_type="widget" data-widget_type="heading.default">
-												<div class="elementor-widget-container">
-													<h6 class="elementor-heading-title elementor-size-default">Testimonial</h6>
-												</div>
-											</div>
-											<div class="elementor-element elementor-element-44f1e9d elementor-widget elementor-widget-heading" data-id="44f1e9d" data-element_type="widget" data-widget_type="heading.default">
-												<div class="elementor-widget-container">
-													<h2 class="elementor-heading-title elementor-size-default">What they say about us</h2>
-												</div>
-											</div>
-										</div>
-									</div>
+			<!-- testimonial section start -->
+			<section class="testimonial text-center">
+				<div class="container">
+
+					<div class="heading white-heading">
+						Testimonial
+					</div>
+					<div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+					
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+								<div class="testimonial4_slide">
+									<!-- <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /> -->
+									<p>&quot;urbanEye AI helps us improve crew efficiencies and work completion reporting. Scalable for
+outdoor works like mowing and lawn care and has been a game changer for our company&#39;s bottom
+line.&quot;</p>
+									<h4>Feedback from Greenscape</h4>
 								</div>
-							</section>
-							<div class="elementor-element elementor-element-9966054 elementor-testimonial--skin-default elementor-testimonial--layout-image_inline elementor-testimonial--align-center elementor-pagination-type-bullets elementor-invisible elementor-widget elementor-widget-testimonial-carousel e-widget-swiper" data-id="9966054" data-element_type="widget" data-settings="{&quot;slides_per_view&quot;:&quot;3&quot;,&quot;slides_per_view_tablet&quot;:&quot;2&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;slides_to_scroll_tablet&quot;:&quot;1&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:28,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:21,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:200,&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;}" data-widget_type="testimonial-carousel.default">
-								<div class="elementor-widget-container">
-									<link rel="stylesheet" href="assets/css/widget-carousel.min.css">
-									<div class="elementor-swiper">
-										<div class="elementor-main-swiper swiper-container swiper-container-initialized swiper-container-horizontal" style="cursor: grab;">
-											<div class="swiper-wrapper" style="transform: translate3d(-2616px, 0px, 0px); transition-duration: 0ms;">
-												<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 408px; margin-right: 28px;">
-													<div class="elementor-testimonial">
-														<div class="elementor-testimonial__content">
-															<div class="elementor-testimonial__text">
-															urbanEye AI helps us improve crew efficiencies and work completion reporting. Scalable for outdoor works like mowing and lawn care and has been a game changer for our company's bottom line.				
-															</div>
-														</div>
-														<div class="elementor-testimonial__footer">
-															<div class="elementor-testimonial__image">
-																<img decoding="async" src="assets/images/img__0007_Layer-1.jpg" alt="Frankie Mills">
-															</div>
-															<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Frankie Mills</span><span class="elementor-testimonial__title">Farmer</span></cite>			
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" style="width: 408px; margin-right: 28px;">
-													<div class="elementor-testimonial">
-														<div class="elementor-testimonial__content">
-															<div class="elementor-testimonial__text">
-																Eleifend magna mus quam suscipit dictumst luctus mauris blandit 
-																enim placerat. Per vel sit himenaeos magna interdum vestibulum 
-																fringilla.					
-															</div>
-														</div>
-														<div class="elementor-testimonial__footer">
-															<div class="elementor-testimonial__image">
-																<img decoding="async" src="assets/images/img__0005_Layer-3.jpg" alt="Lydia Morris">
-															</div>
-															<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Lydia Morris</span><span class="elementor-testimonial__title">Farmer</span></cite>			
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 408px; margin-right: 28px;">
-													<div class="elementor-testimonial">
-														<div class="elementor-testimonial__content">
-															<div class="elementor-testimonial__text">
-																Eleifend magna mus quam suscipit dictumst luctus mauris blandit 
-																enim placerat. Per vel sit himenaeos magna interdum vestibulum 
-																fringilla.					
-															</div>
-														</div>
-														<div class="elementor-testimonial__footer">
-															<div class="elementor-testimonial__image">
-																<img decoding="async" src="assets/images/img__0001_Layer-7.jpg" alt="Scarlett Jackson">
-															</div>
-															<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Scarlett Jackson</span><span class="elementor-testimonial__title">Farmer</span></cite>			
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 408px; margin-right: 28px;">
-													<div class="elementor-testimonial">
-														<div class="elementor-testimonial__content">
-															<div class="elementor-testimonial__text">
-																Eleifend magna mus quam suscipit dictumst luctus mauris blandit 
-																enim placerat. Per vel sit himenaeos magna interdum vestibulum 
-																fringilla.					
-															</div>
-														</div>
-														<div class="elementor-testimonial__footer">
-															<div class="elementor-testimonial__image">
-																<img decoding="async" src="assets/images/img__0007_Layer-1.jpg" alt="Frankie Mills">
-															</div>
-															<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Frankie Mills</span><span class="elementor-testimonial__title">Farmer</span></cite>			
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 408px; margin-right: 28px;">
-													<div class="elementor-testimonial">
-														<div class="elementor-testimonial__content">
-															<div class="elementor-testimonial__text">
-																Eleifend magna mus quam suscipit dictumst luctus mauris blandit 
-																enim placerat. Per vel sit himenaeos magna interdum vestibulum 
-																fringilla.					
-															</div>
-														</div>
-														<div class="elementor-testimonial__footer">
-															<div class="elementor-testimonial__image">
-																<img decoding="async" src="assets/images/img__0005_Layer-3.jpg" alt="Lydia Morris">
-															</div>
-															<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Lydia Morris</span><span class="elementor-testimonial__title">Farmer</span></cite>			
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" style="width: 408px; margin-right: 28px;">
-													<div class="elementor-testimonial">
-														<div class="elementor-testimonial__content">
-															<div class="elementor-testimonial__text">
-																Eleifend magna mus quam suscipit dictumst luctus mauris blandit 
-																enim placerat. Per vel sit himenaeos magna interdum vestibulum 
-																fringilla.					
-															</div>
-														</div>
-														<div class="elementor-testimonial__footer">
-															<div class="elementor-testimonial__image">
-																<img decoding="async" src="assets/images/img__0001_Layer-7.jpg" alt="Scarlett Jackson">
-															</div>
-															<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Scarlett Jackson</span><span class="elementor-testimonial__title">Farmer</span></cite>			
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 408px; margin-right: 28px;">
-													<div class="elementor-testimonial">
-														<div class="elementor-testimonial__content">
-															<div class="elementor-testimonial__text">
-																Eleifend magna mus quam suscipit dictumst luctus mauris blandit 
-																enim placerat. Per vel sit himenaeos magna interdum vestibulum 
-																fringilla.					
-															</div>
-														</div>
-														<div class="elementor-testimonial__footer">
-															<div class="elementor-testimonial__image">
-																<img decoding="async" src="assets/images/img__0007_Layer-1.jpg" alt="Frankie Mills">
-															</div>
-															<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Frankie Mills</span><span class="elementor-testimonial__title">Farmer</span></cite>			
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="1" style="width: 408px; margin-right: 28px;">
-													<div class="elementor-testimonial">
-														<div class="elementor-testimonial__content">
-															<div class="elementor-testimonial__text">
-																Eleifend magna mus quam suscipit dictumst luctus mauris blandit 
-																enim placerat. Per vel sit himenaeos magna interdum vestibulum 
-																fringilla.					
-															</div>
-														</div>
-														<div class="elementor-testimonial__footer">
-															<div class="elementor-testimonial__image">
-																<img decoding="async" src="assets/images/img__0005_Layer-3.jpg" alt="Lydia Morris">
-															</div>
-															<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Lydia Morris</span><span class="elementor-testimonial__title">Farmer</span></cite>			
-														</div>
-													</div>
-												</div>
-												<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 408px; margin-right: 28px;">
-													<div class="elementor-testimonial">
-														<div class="elementor-testimonial__content">
-															<div class="elementor-testimonial__text">
-																Eleifend magna mus quam suscipit dictumst luctus mauris blandit 
-																enim placerat. Per vel sit himenaeos magna interdum vestibulum 
-																fringilla.					
-															</div>
-														</div>
-														<div class="elementor-testimonial__footer">
-															<div class="elementor-testimonial__image">
-																<img decoding="async" src="assets/images/img__0001_Layer-7.jpg" alt="Scarlett Jackson">
-															</div>
-															<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Scarlett Jackson</span><span class="elementor-testimonial__title">Farmer</span></cite>			
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
-											<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-										</div>
-									</div>
+							</div>
+							<div class="carousel-item">
+								<div class="testimonial4_slide">
+									<!-- <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /> -->
+									<p>&quot;urbanEye AI&#39;s benchmarking and production leakage identification
+						are invaluable tools for improving efficiency. The roadmap feature, the simulation module, offers
+						even more potential for operational optimization, making urbanEye AI a must-have for landscaping
+						maintenance companies.&quot;</p>
+									<h4>LevelGreen</h4>
 								</div>
-							</div> 
+							</div>
+							<div class="carousel-item">
+								<div class="testimonial4_slide">
+									<!-- <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /> -->
+									<p>
+									&quot;urbanEye AI&#39;s real-time monitoring and birds-eye view features helped us quantify production rates
+and optimize our operations. In addition, the work completion reports provided an overview and
+valuable insights for our operations.&quot;
+									</p>
+									<h4>Yellowstone</h4>
+								</div>
+							</div>
 						</div>
+						<a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#testimonial4" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
 					</div>
 				</div>
-			</section>-->
+			</section>
+			<!-- testimonial setion ends -->
 			<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-24cb6c4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="24cb6c4" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-99cbfd1" data-id="99cbfd1" data-element_type="column">
