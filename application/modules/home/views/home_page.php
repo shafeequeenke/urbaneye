@@ -1087,7 +1087,7 @@
 						<div class="elementor-widget-wrap elementor-element-populated">
 							<div class="elementor-element elementor-element-de7a431 elementor-widget elementor-widget-heading" data-id="de7a431" data-element_type="widget" data-widget_type="heading.default">
 								<div class="elementor-widget-container">
-									<h2 class="elementor-heading-title elementor-size-default">Why We Stands</h2>
+									<h2 class="elementor-heading-title elementor-size-default">Who We Are?</h2>
 								</div>
 							</div>
 							<div class="elementor-element elementor-element-5751fce elementor-widget elementor-widget-text-editor" data-id="5751fce" data-element_type="widget" data-widget_type="text-editor.default">
