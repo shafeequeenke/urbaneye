@@ -215,6 +215,10 @@ class Home extends MY_Controller {
         $this->prepareResult();
     }
 
+    public function testcontact() {
+        $this->load->view("home/testcontact");
+    }
+
     public function privacyPolicy() {
         $this->data_arr['_load_page']               =   array('privacy_policy');
         $this->page_header                          =   'page_header';
