@@ -1522,7 +1522,7 @@ valuable insights for our operations.&quot;
 			</section> -->
 		</div>
 		<div data-elementor-type="footer" data-elementor-id="56" class="elementor elementor-56 elementor-location-footer">
-		<section class="elementor-section elementor-top-section elementor-element elementor-element-a1e6855 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a1e6855" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+		<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-a1e6855 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a1e6855" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
 			<div class="elementor-container elementor-column-gap-default">
 				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-17efa28" data-id="17efa28" data-element_type="column">
 					<div class="elementor-widget-wrap elementor-element-populated">
@@ -1545,4 +1545,4 @@ valuable insights for our operations.&quot;
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->

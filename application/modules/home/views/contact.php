@@ -525,7 +525,7 @@
 										<legend class="label-contact" class="col-form-label col-sm-12 pt-0">How did you hear us?</legend>
 										<div class="col-sm-12">
 											<div class="form-check">
-											<input class="form-check-input" type="radio" name="source_name" id="source_name1" value="LinkedIn" checked>
+											<input class="form-check-input" type="radio" name="source_name" id="source_name1" value="LinkedIn">
 											<label class="form-check-label" for="source_name1">
 												LinkedIn
 											</label>
@@ -568,7 +568,7 @@
 										<legend class="col-form-label col-sm-12 pt-0 label-contact">You manage a team size of?</legend>
 										<div class="col-sm-12">
 											<div class="form-check">
-											<input class="form-check-input" type="radio" name="manage_team_size" id="manage_team_size1" value="1-10" checked>
+											<input class="form-check-input" type="radio" name="manage_team_size" id="manage_team_size1" value="1-10" >
 											<label class="form-check-label" for="manage_team_size1">
 												1-10
 											</label>
@@ -593,7 +593,7 @@
 										<legend class="col-form-label col-sm-12 pt-0 label-contact">What is the total size of the lawn area your company manages?</legend>
 										<div class="col-sm-12">
 											<div class="form-check">
-											<input class="form-check-input" type="radio" name="lawn_area" id="lawn_area1" value="5-10 Acres" checked>
+											<input class="form-check-input" type="radio" name="lawn_area" id="lawn_area1" value="5-10 Acres">
 											<label class="form-check-label" for="lawn_area1">
 												5-10 Acres
 											</label>
@@ -618,7 +618,7 @@
 										<legend class="col-form-label col-sm-12 pt-0 label-contact">How many worksites does your company manages?</legend>
 										<div class="col-sm-12">
 											<div class="form-check">
-											<input class="form-check-input" type="radio" name="company_worksites" id="company_worksites1" value="10-15" checked>
+											<input class="form-check-input" type="radio" name="company_worksites" id="company_worksites1" value="10-15">
 											<label class="form-check-label" for="company_worksites1">
 												10-15
 											</label>
@@ -643,7 +643,7 @@
 										<legend class="col-form-label col-sm-12 pt-0 label-contact">How soon you would like to implement the solutions?</legend>
 										<div class="col-sm-12">
 											<div class="form-check">
-											<input class="form-check-input" type="radio" name="implement_solution" id="implement_solution1" value="immediate" checked>
+											<input class="form-check-input" type="radio" name="implement_solution" id="implement_solution1" value="immediate">
 											<label class="form-check-label" for="implement_solution1">
 												Immediately after random test
 											</label>

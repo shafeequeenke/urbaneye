@@ -158,6 +158,12 @@ class Home extends MY_Controller {
         $this->load->view("home/contact_enquiry",$data);
     }
 
+    public function testcorosel() {
+        // $enquiries  = $this->home_model->getAllEnquiry();
+        // $data['enquiries']  = $enquiries;
+        $this->load->view("home/contact_calendar");
+    }
+
     /**
     **/
     protected function listPublicCourse() {
