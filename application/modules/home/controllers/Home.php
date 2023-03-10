@@ -13,7 +13,7 @@ class Home extends MY_Controller {
         
         //set template params
     	$this->data_arr['_module_name'] 		=	'home';
-		$this->data_arr['_load_page'] 			=	array('header','home_page','footer');
+		$this->data_arr['_load_page'] 			=	array('home_page');
 
 		$this->input_data 		= 	$this->input->post();
         $this->get_data         =   $this->input->get();

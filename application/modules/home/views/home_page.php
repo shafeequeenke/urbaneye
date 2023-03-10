@@ -9,8 +9,8 @@
 		<meta name="robots" content="max-image-preview:large">
 		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 		<link rel="stylesheet" id="google-fonts-1-css" href="assets/css/css.css" media="all">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>		
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script> -->
 		<link rel="alternate" type="application/rss+xml" title="hydropokit » Feed" href="https://kitnew.moxcreative.com/hydropokit/feed/">
 		<link rel="alternate" type="application/rss+xml" title="hydropokit » Comments Feed" href="https://kitnew.moxcreative.com/hydropokit/comments/feed/">
 		<script type="text/javascript" id="www-widgetapi-script" src="assets/js/www-widgetapi.js" async=""></script><script src="assets/iframe_api"></script><script>
@@ -19,6 +19,10 @@
 			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script><script src="assets/js/wp-emoji-release.min.js" type="text/javascript" defer="defer"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css'>
+		
+
 		<style>
 			img.wp-smiley,
 			img.emoji {
@@ -348,96 +352,59 @@
 			</section>
 		</div>
 		<div data-elementor-type="wp-post" data-elementor-id="914" class="elementor elementor-914">
-			<section class="elementor-section elementor-top-section elementor-element elementor-element-416357f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="416357f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:916,&quot;url&quot;:&quot;https:\/\/kitnew.moxcreative.com\/hydropokit\/wp-content\/uploads\/sites\/18\/2022\/11\/hydroponic-of-lettuce-farm-growing-in-greenhouse-.jpg&quot;},{&quot;id&quot;:403,&quot;url&quot;:&quot;https:\/\/kitnew.moxcreative.com\/hydropokit\/wp-content\/uploads\/sites\/18\/2022\/11\/asian-farmer-girl-wearing-hat-working-in-hydroponics-green-house-.jpg&quot;},{&quot;id&quot;:160,&quot;url&quot;:&quot;https:\/\/kitnew.moxcreative.com\/hydropokit\/wp-content\/uploads\/sites\/18\/2022\/11\/hydroponics-young-asian-farmers-examined-the-quality-of-organic-vegetables-grown-using-hydroponics.jpg&quot;},{&quot;id&quot;:407,&quot;url&quot;:&quot;https:\/\/kitnew.moxcreative.com\/hydropokit\/wp-content\/uploads\/sites\/18\/2022\/11\/greenhouse-pickers-gathering-lettuce-standing-in-a-row-in-hydroponic-enviroment-inspecting-leaves.jpg&quot;}],&quot;background_slideshow_lazyload&quot;:&quot;yes&quot;,&quot;background_slideshow_ken_burns&quot;:&quot;yes&quot;,&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500,&quot;background_slideshow_ken_burns_zoom_direction&quot;:&quot;in&quot;}">
-				<div class="elementor-background-slideshow swiper-container swiper-container-fade swiper-container-initialized swiper-container-horizontal swiper-container-rtl" dir="rtl">
-					<div class="swiper-wrapper" style="transition-duration: 0ms;">
-						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(0px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://urbaneye.enke.in/assets/images/banner_moving_bg.jpg&quot;);"></div>
-						</div>
-						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(1704px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/asian-farmer-girl-wearing-hat-working-in-hydroponics-green-house-.jpg&quot;);"></div>
-						</div>
-						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(3408px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://urbaneye.enke.in/assets/images/lawn_tractor.jpg&quot;);"></div>
-						</div>
-						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="3" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(5112px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/greenhouse-pickers-gathering-lettuce-standing-in-a-row-in-hydroponic-enviroment-inspecting-leaves.jpg&quot;);"></div>
-						</div>
-						<div class="elementor-background-slideshow__slide swiper-slide" data-swiper-slide-index="0" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(6816px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://urbaneye.enke.in/assets/images/banner_moving_bg.jpg&quot;);"></div>
-						</div>
-						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(8520px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/asian-farmer-girl-wearing-hat-working-in-hydroponics-green-house-.jpg&quot;);"></div>
-						</div>
-						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 1704px; transition-duration: 0ms; opacity: 1; transform: translate3d(10224px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded elementor-ken-burns--active" style="background-image: url(&quot;https://urbaneye.enke.in/assets/images/lawn_tractor.jpg&quot;);"></div>
-						</div>
-						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-next" data-swiper-slide-index="3" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(11928px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/greenhouse-pickers-gathering-lettuce-standing-in-a-row-in-hydroponic-enviroment-inspecting-leaves.jpg&quot;);"></div>
-						</div>
-						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(13632px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://urbaneye.enke.in/assets/images/banner_moving_bg.jpg&quot;);"></div>
-						</div>
-						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="1" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(15336px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy swiper-lazy-loaded" style="background-image: url(&quot;https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/asian-farmer-girl-wearing-hat-working-in-hydroponics-green-house-.jpg&quot;);"></div>
-						</div>
-						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(17040px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy" data-background="https://urbaneye.enke.in/assets/images/lawn_tractor.jpg">
-								<div class="swiper-lazy-preloader"></div>
-							</div>
-						</div>
-						<div class="elementor-background-slideshow__slide swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="3" style="width: 1704px; transition-duration: 0ms; opacity: 0; transform: translate3d(18744px, 0px, 0px);">
-							<div class="elementor-background-slideshow__slide__image elementor-ken-burns elementor-ken-burns--in swiper-lazy" data-background="https://kitnew.moxcreative.com/hydropokit/wp-content/uploads/sites/18/2022/11/greenhouse-pickers-gathering-lettuce-standing-in-a-row-in-hydroponic-enviroment-inspecting-leaves.jpg">
-								<div class="swiper-lazy-preloader"></div>
-							</div>
+			<!-- corosel content start here -->
+			<header>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="<?=base_url()?>assets/images/lawn_tractor.png" alt="...">
+						<div class="carousel-caption">
+						<h2 class="animated bounceInRight" style="animation-delay: 1s">urbanEye AI</h2>
+						<h3 class="animated bounceInLeft" style="animation-delay: 2s">Experience a Smarter Way to Manage Your Landscape</h3>
 						</div>
 					</div>
-					<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-				</div>
-				<div class="elementor-background-overlay"></div>
-				<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4607c95" data-id="4607c95" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-widget-wrap elementor-element-populated">
-							<div class="elementor-element elementor-element-f1fe467 elementor-widget elementor-widget-heading animated fadeInDown" data-id="f1fe467" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
-								<div class="elementor-widget-container">
-									<style>/*! elementor - v3.10.0 - 09-01-2023 */
-										.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}
-									</style>
-									<h1 class="elementor-heading-title elementor-size-default" style="font-size: 90px;">urbanEye AI</h1>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-36d9044 elementor-widget elementor-widget-heading animated fadeInDown" data-id="36d9044" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="heading.default">
-								<div class="elementor-widget-container">
-									<div class="elementor-heading-title elementor-size-default" style="font-size: 35px;">Experience a Smarter Way to Manage Your Landscape
-									</div>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-7b60445 elementor-align-justify elementor-widget__width-initial elementor-widget elementor-widget-button animated fadeInLeft" data-id="7b60445" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="button.default">
-								<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-										<a href="<?=base_url()?>index.php/home/contact" class="elementor-button-link elementor-button elementor-size-lg" role="button">
-										<span class="elementor-button-content-wrapper">
-										<span class="elementor-button-text">Get Started</span>
-										</span>
-										</a>
-									</div>
-								</div>
-							</div>
-							<!-- <div class="elementor-element elementor-element-e6c3a88 elementor-align-justify elementor-widget__width-initial elementor-widget elementor-widget-button animated fadeInRight" data-id="e6c3a88" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="button.default">
-								<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-										<a href="#" class="elementor-button-link elementor-button elementor-size-lg" role="button">
-										<span class="elementor-button-content-wrapper">
-										<span class="elementor-button-text">Learn More</span>
-										</span>
-										</a>
-									</div>
-								</div>
-							</div> -->
+					<div class="item">
+						<img src="<?=base_url()?>assets/images/green-grass-field-lonely-tree-and-blue-sky-2022-08-14-01-27-04-utc.png" alt="urbaneyeAI-about">
+						<div class="carousel-caption">
+						<h2 class="animated slideInDown" style="animation-delay: 1s">Say goodbye to check-ins, check-outs, photo proof, 
+and administrative burdens
+</h2>
+						<h3 class="animated slideInRight" style="animation-delay: 2s">
+						UrbanEye AI platform provides a unified communication for all stakeholders
+					</h3>
 						</div>
 					</div>
+					<div class="item">
+						<img src="<?=base_url()?>assets/images/stake_holder_benefit.png" alt="urbaneyeAI-banner">
+						<div class="carousel-caption">
+						<h2 class="animated zoomIn" style="animation-delay: 1s">Experience the true meaning of real-time benchmarking!</h2>
+						<h3 class="animated zoomIn" style="animation-delay: 2s">urbanEye AI helps achieve improved productivity, Real-Time Worksite Insights, Workforce Management</h3>
+						</div>
+					</div>
+
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+					</a>
 				</div>
-			</section>
+
+			</header>
+			<!-- corosel content start here -->
 			<section class="elementor-section elementor-top-section elementor-element elementor-element-bc668ea elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bc668ea" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4cd1e17" data-id="4cd1e17" data-element_type="column">
@@ -582,7 +549,7 @@
 							</div>
 							<div class="elementor-element elementor-element-586262f elementor-cta--skin-cover elementor-cta--valign-middle elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-call-to-action" data-id="586262f" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="call-to-action.default">
 								<div class="elementor-widget-container">
-									<link rel="stylesheet" href="assets/images/widget-call-to-action.min.css">
+									<link rel="stylesheet" href="assets/css/widget-call-to-action.min.css">
 									<div class="elementor-cta">
 										<div class="elementor-cta__bg-wrapper">
 											<div class="elementor-cta__bg elementor-bg" style="background-image: url();"></div>
@@ -1546,3 +1513,6 @@ valuable insights for our operations.&quot;
 				</div>
 			</div>
 		</section> -->
+		
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
