@@ -5,11 +5,11 @@
 * {
 	box-sizing: border-box;
 }
-
+/* 
 html,body {
 	margin: 0;
 	background: #222;
-}
+} */
 
 .app-container {
 	border-radius: 4px;
@@ -18,7 +18,7 @@ html,body {
 	height: auto;
 	max-width: 100%;
 	position: absolute;
-	top: 120px;
+	/* top: 120px; */
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -69,11 +69,11 @@ html,body {
 	background: white;
 }
 .datepicker.pm {
-	background: #0DAD83;
+	background: white;
 }
 .datepicker-header {
 	width: 100%;
-    color: white;
+    /* color: white; */
 	overflow: hidden;
 }
 .datepicker-title {
@@ -622,3 +622,4 @@ html,body {
 		float: right;
 	}
 }
+

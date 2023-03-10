@@ -265,7 +265,7 @@
 													<link rel="stylesheet" href="<?=base_url()?>assets/css/widget-nav-menu.min.css">
 													<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
 														<ul id="menu-1-308e04f" class="elementor-nav-menu" data-smartmenus-id="16778124470928018">
-															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-7"><a href="#" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
+															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-7"><a href="<?=base_url()?>" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="" class="elementor-item">About us</a></li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10">
 																<a href="#" class="elementor-item has-submenu" id="sm-16778124470928018-1" aria-haspopup="true" aria-controls="sm-16778124470928018-2" aria-expanded="false">Services<span class="sub-arrow"></span></a>
@@ -389,204 +389,276 @@
 				<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element animated contact-form-container">
 						<div class="col-md-12">
-							<form id="contact_form" name="contact_form" action="">
-								<div class="form-group">
-									<label for="full_name">Name</label>
-									<input type="text" class="form-control" id="full_name" placeholder="Full Name">
+							<!-- <span id="contact_calendar_btn">Calendar </span> -->
+							<div class="row" style="min-height:350px;">
+							<!-- CALENDAR STARTS -->
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
+								<div class="app-container" ng-app="dateTimeApp" ng-controller="dateTimeCtrl as ctrl" ng-cloak>										
+									<div date-picker
+										datepicker-title="Select Date"
+										picktime="true"
+										pickdate="true"
+										pickpast="false"
+										mondayfirst="false"
+										custom-message="You have selected"
+										selecteddate="ctrl.selected_date"
+										updatefn="ctrl.updateDate(newdate)">
+									
+										<div class="datepicker"
+											ng-class="{
+												'am': timeframe == 'am',
+												'pm': timeframe == 'pm',
+												'compact': compact
+											}">
+											<div class="datepicker-header">
+												<div class="datepicker-title" ng-if="datepicker_title">{{ datepickerTitle }}</div>
+												<div class="datepicker-subheader">{{ customMessage }} {{ selectedDay }} {{ monthNames[localdate.getMonth()] }} {{ localdate.getDate() }}, {{ localdate.getFullYear() }}</div>
+											</div>
+											<div class="datepicker-calendar">
+												<div class="calendar-header">
+													<div class="goback" ng-click="moveBack()" ng-if="pickdate">
+														<svg width="30" height="30">
+															<path fill="none" stroke="#0DAD83" stroke-width="3" d="M19,6 l-9,9 l9,9"/>
+														</svg>
+													</div>
+													<div class="current-month-container">{{ currentViewDate.getFullYear() }} {{ currentMonthName() }}</div>
+													<div class="goforward" ng-click="moveForward()" ng-if="pickdate">
+														<svg width="30" height="30">
+															<path fill="none" stroke="#0DAD83" stroke-width="3" d="M11,6 l9,9 l-9,9" />
+														</svg>
+													</div>
+												</div>
+												<div class="calendar-day-header">
+													<span ng-repeat="day in days" class="day-label">{{ day.short }}</span>
+												</div>
+												<div class="calendar-grid" ng-class="{false: 'no-hover'}[pickdate]">
+													<div
+														ng-class="{'no-hover': !day.showday}"
+														ng-repeat="day in month"
+														class="datecontainer"
+														ng-style="{'margin-left': calcOffset(day, $index)}"
+														track by $index>
+														<div class="datenumber" ng-class="{'day-selected': day.selected }" ng-click="selectDate(day)">
+															{{ day.daydate }}
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="timepicker" ng-if="picktime == 'true'">
+												<div ng-class="{'am': timeframe == 'am', 'pm': timeframe == 'pm' }">
+													<div class="timepicker-container-outer" selectedtime="time" timetravel>
+														<div class="timepicker-container-inner">
+															<div class="timeline-container" ng-mousedown="timeSelectStart($event)" sm-touchstart="timeSelectStart($event)">
+																<div class="current-time">
+																	<div class="actual-time">{{ time }}</div>
+																</div>
+																<div class="timeline">
+																</div>
+																<div class="hours-container">
+																	<div class="hour-mark" ng-repeat="hour in getHours() track by $index"></div>
+																</div>
+															</div>
+															<div class="display-time">
+																<div class="decrement-time" ng-click="adjustTime('decrease')">
+																	<svg width="24" height="24">
+																		<path stroke="white" stroke-width="2" d="M8,12 h8"/>
+																	</svg>
+																</div>
+																<div class="time" ng-class="{'time-active': edittime.active}">
+																	<input type="text" class="time-input" ng-model="edittime.input" ng-keydown="changeInputTime($event)" ng-focus="edittime.active = true; edittime.digits = [];" ng-blur="edittime.active = false"/>
+																	<div class="formatted-time">{{ edittime.formatted }}</div>
+																</div>
+																<div class="increment-time" ng-click="adjustTime('increase')">
+																	<svg width="24" height="24">
+																		<path stroke="white" stroke-width="2" d="M12,7 v10 M7,12 h10"/>
+																	</svg>
+																</div>
+															</div>
+															<div class="am-pm-container">
+																<div class="am-pm-button" ng-click="changetime('am');">am</div>
+																<div class="am-pm-button" ng-click="changetime('pm');">pm</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<!-- <div class="buttons-container">
+												<div class="cancel-button">CANCEL</div>
+												<div class="save-button">SAVE</div>
+											</div> -->
+											
+										</div>
+									</div>
 								</div>
-								<div class="form-group">
-									<label for="designation">Designation</label>
-									<input type="text" class="form-control" id="designation" placeholder="Postion / Designation / Profession">
+							<!-- CALENDAR ENDS -->
+							</div>
+							<input type="hidden" id="base_url" value="<?=base_url()?>">
+							<form id="contact_form" name="contact_form" method="post" action="<?=base_url()?>index.php/home/contact">
+								<div class="row">
+									<div class="form-group col-md-6">
+										<label class="label-contact" for="full_name">Name</label>
+										<input type="text" class="form-control" name="full_name" id="full_name" placeholder="Full Name">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="label-contact" for="designation">Designation</label>
+										<input type="text" class="form-control" name="designation" id="designation" placeholder="Postion / Designation / Profession">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="label-contact" for="company_name">Company Name</label>
+										<input type="text" class="form-control" name="company_name" id="company_name" placeholder="Example LLC">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="label-contact" for="phone">Phone</label>
+										<input type="text" class="form-control" name="phone" id="phone" placeholder="+919447******">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="label-contact" for="email">Email</label>
+										<input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+									</div>
+									<div class="form-group col-md-12">
+										<label class="label-contact" for="concerns">what are the top 3 concerns for which you are looking for a solution?</label>
+										<textarea class="form-control" id="concerns" name="concerns" rows="3"></textarea>
+									</div>
+									<fieldset class="form-group  col-md-12">
+										<div class="row">
+										<legend class="label-contact" class="col-form-label col-sm-12 pt-0">How did you hear us?</legend>
+										<div class="col-sm-12">
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="source_name" id="source_name1" value="LinkedIn" checked>
+											<label class="form-check-label" for="source_name1">
+												LinkedIn
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="source_name" id="source_name2" value="newsletter">
+											<label class="form-check-label" for="source_name2">
+												NALP newsletter
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="source_name" id="source_name3" value="mailers">
+											<label class="form-check-label" for="source_name3">
+												Emailers
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="source_name" id="source_name4" value="google">
+											<label class="form-check-label" for="source_name4">
+												Google search
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="source_name" id="source_name5" value="magazine">
+											<label class="form-check-label" for="source_name5">
+												Lawn & Landscape magazine
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="source_name" id="source_name6" value="others">
+											<label class="form-check-label" for="source_name6">
+												Others
+											</label>
+											</div>
+										</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-12">
+										<div class="row">
+										<legend class="col-form-label col-sm-12 pt-0 label-contact">You manage a team size of?</legend>
+										<div class="col-sm-12">
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="manage_team_size" id="manage_team_size1" value="1-10" checked>
+											<label class="form-check-label" for="manage_team_size1">
+												1-10
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="manage_team_size" id="manage_team_size2" value="11-20">
+											<label class="form-check-label" for="manage_team_size2">
+												11-20
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="manage_team_size" id="manage_team_size3" value="20+">
+											<label class="form-check-label" for="manage_team_size3">
+												20+
+											</label>
+											</div>
+										</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-12">
+										<div class="row">
+										<legend class="col-form-label col-sm-12 pt-0 label-contact">What is the total size of the lawn area your company manages?</legend>
+										<div class="col-sm-12">
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="lawn_area" id="lawn_area1" value="5-10 Acres" checked>
+											<label class="form-check-label" for="lawn_area1">
+												5-10 Acres
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="lawn_area" id="lawn_area2" value="11-20 Acres">
+											<label class="form-check-label" for="lawn_area2">
+												11-20 Acres
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="lawn_area" id="lawn_area3" value="10 Hectares more">
+											<label class="form-check-label" for="lawn_area3">							
+												10 Hectares & more
+											</label>
+											</div>
+										</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-12">
+										<div class="row">
+										<legend class="col-form-label col-sm-12 pt-0 label-contact">How many worksites does your company manages?</legend>
+										<div class="col-sm-12">
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="company_worksites" id="company_worksites1" value="10-15" checked>
+											<label class="form-check-label" for="company_worksites1">
+												10-15
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="company_worksites" id="company_worksites2" value="16-25">
+											<label class="form-check-label" for="company_worksites2">
+												16-25
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="company_worksites" id="company_worksites3" value="26+">
+											<label class="form-check-label" for="company_worksites3">
+												26+
+											</label>
+											</div>
+										</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-12">
+										<div class="row">
+										<legend class="col-form-label col-sm-12 pt-0 label-contact">How soon you would like to implement the solutions?</legend>
+										<div class="col-sm-12">
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="implement_solution" id="implement_solution1" value="immediate" checked>
+											<label class="form-check-label" for="implement_solution1">
+												Immediately after random test
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="implement_solution" id="implement_solution2" value="2 month">
+											<label class="form-check-label" for="implement_solution2">
+												2-month time
+											</label>
+											</div>
+										</div>
+										</div>
+									</fieldset>
+									<button type="submit" class="btn btn-primary" id="form_submit">Submit</button>
 								</div>
-								<div class="form-group">
-									<label for="company_name">Company Name</label>
-									<input type="text" class="form-control" id="company_name" placeholder="Example LLC">
-								</div>
-								<div class="form-group">
-									<label for="phone">Phone</label>
-									<input type="text" class="form-control" id="phone" placeholder="+919447******">
-								</div>
-								<div class="form-group">
-									<label for="email">Email</label>
-									<input type="email" class="form-control" id="email" placeholder="name@example.com">
-								</div>
-									<fieldset class="form-group">
-									<div class="row">
-									<legend class="col-form-label col-sm-12 pt-0">what are the top 3 concerns for which you are looking for a solution?</legend>
-									<div class="col-sm-12">
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-										<label class="form-check-label" for="gridRadios1">
-											First radio
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-										<label class="form-check-label" for="gridRadios2">
-											Second radio
-										</label>
-										</div>
-										<div class="form-check disabled">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-										<label class="form-check-label" for="gridRadios3">
-											Third disabled radio
-										</label>
-										</div>
-									</div>
-									</div>
-								</fieldset>
-								<fieldset class="form-group">
-									<div class="row">
-									<legend class="col-form-label col-sm-12 pt-0">How did you hear us?</legend>
-									<div class="col-sm-12">
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-										<label class="form-check-label" for="gridRadios1">
-											LinkedIn
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-										<label class="form-check-label" for="gridRadios2">
-											NALP newsletter
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-										<label class="form-check-label" for="gridRadios3">
-											Emailers
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-										<label class="form-check-label" for="gridRadios3">
-											Google search
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-										<label class="form-check-label" for="gridRadios3">
-											Lawn & Landscape magazine
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-										<label class="form-check-label" for="gridRadios3">
-											Others
-										</label>
-										</div>
-									</div>
-									</div>
-								</fieldset>
-								<fieldset class="form-group">
-									<div class="row">
-									<legend class="col-form-label col-sm-12 pt-0">You manage a team size of?</legend>
-									<div class="col-sm-12">
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-										<label class="form-check-label" for="gridRadios1">
-											1-10
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-										<label class="form-check-label" for="gridRadios2">
-											11-20
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-										<label class="form-check-label" for="gridRadios3">
-											20+
-										</label>
-										</div>
-									</div>
-									</div>
-								</fieldset>
-								<fieldset class="form-group">
-									<div class="row">
-									<legend class="col-form-label col-sm-12 pt-0">What is the total size of the lawn area your company manages?</legend>
-									<div class="col-sm-12">
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-										<label class="form-check-label" for="gridRadios1">
-										5-10acres
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-										<label class="form-check-label" for="gridRadios2">
-											11-20acres
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-										<label class="form-check-label" for="gridRadios3">							
-											10 Hectares & more
-										</label>
-										</div>
-									</div>
-									</div>
-								</fieldset>
-								<fieldset class="form-group">
-									<div class="row">
-									<legend class="col-form-label col-sm-12 pt-0">How many worksites does your company manages?</legend>
-									<div class="col-sm-12">
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-										<label class="form-check-label" for="gridRadios1">
-										10-15
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-										<label class="form-check-label" for="gridRadios2">
-											16-25
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-										<label class="form-check-label" for="gridRadios3">
-											26+
-										</label>
-										</div>
-									</div>
-									</div>
-								</fieldset>
-								<fieldset class="form-group">
-									<div class="row">
-									<legend class="col-form-label col-sm-12 pt-0">How soon you would like to implement the solutions?</legend>
-									<div class="col-sm-12">
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-										<label class="form-check-label" for="gridRadios1">
-											Immediately after random test
-										</label>
-										</div>
-										<div class="form-check">
-										<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-										<label class="form-check-label" for="gridRadios2">
-											2-month time
-										</label>
-										</div>
-									</div>
-									</div>
-								</fieldset>
-								<div class="form-group">
-									<label for="exampleFormControlSelect2">Example multiple select</label>
-									<select multiple class="form-control" id="exampleFormControlSelect2">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<label for="exampleFormControlTextarea1">Example textarea</label>
-									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-								</div>
-								<button type="submit" class="btn btn-primary">Sign in</button>
 							</form>
 						</div>
 					</div>
@@ -738,137 +810,6 @@
 					</div>
 				</div>
 			</section>
-			<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-d6a806a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d6a806a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e4c0bff" data-id="e4c0bff" data-element_type="column">
-						<div class="elementor-widget-wrap elementor-element-populated">
-							<section class="elementor-section elementor-inner-section elementor-element elementor-element-ef00ba0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ef00ba0" data-element_type="section">
-								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-c46f618" data-id="c46f618" data-element_type="column">
-										<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-cd68d4c elementor-widget elementor-widget-heading" data-id="cd68d4c" data-element_type="widget" data-widget_type="heading.default">
-												<div class="elementor-widget-container">
-													<h2 class="elementor-heading-title elementor-size-default">Latest News &amp; Article</h2>
-												</div>
-											</div>
-											<div class="elementor-element elementor-element-3b097aa elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="3b097aa" data-element_type="widget" data-widget_type="divider.default">
-												<div class="elementor-widget-container">
-													<style>/*! elementor - v3.10.0 - 09-01-2023 */
-														.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#2c2c2c;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width);--flex-grow:var(--container-widget-flex-grow)}
-													</style>
-													<div class="elementor-divider">
-														<span class="elementor-divider-separator">
-														</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<div class="elementor-element elementor-element-b78363d elementor-grid-4 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-widget elementor-widget-posts" data-id="b78363d" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;4&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:14,&quot;sizes&quot;:[]},&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:21,&quot;sizes&quot;:[]},&quot;classic_columns_tablet&quot;:&quot;2&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
-								<div class="elementor-widget-container">
-									<link rel="stylesheet" href="<?=base_url()?>assets/css/widget-posts.min.css">
-									<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid elementor-has-item-ratio">
-										<article class="elementor-post elementor-grid-item post-80 post type-post status-publish format-standard has-post-thumbnail hentry category-technical-horticulturist">
-											<a class="elementor-post__thumbnail__link" href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/handheld-backpack-and-air-assisted-sprayers/">
-												<div class="elementor-post__thumbnail"><img decoding="async" src="<?=base_url()?>assets/css/two-young-asian-couple-farmers-working-in-vegetables-hydropo.jpg" class="attachment-full size-full wp-image-95" alt="Two young Asian couple farmers working in vegetables hydroponic farm with happiness." loading="lazy" srcset="<?=base_url()?>assets/images/two-young-asian-couple-farmers-working-in-vegetables-hydropo.jpg 1280w, <?=base_url()?>assets/images/two-young-asian-couple-farmers-working-in-vegetables-hyd_005.jpg 300w, <?=base_url()?>assets/images/two-young-asian-couple-farmers-working-in-vegetables-hyd_006.jpg 1024w, <?=base_url()?>assets/images/two-young-asian-couple-farmers-working-in-vegetables-hyd_004.jpg 768w, <?=base_url()?>assets/images/two-young-asian-couple-farmers-working-in-vegetables-hyd_003.jpg 1536w, <?=base_url()?>assets/images/two-young-asian-couple-farmers-working-in-vegetables-hyd_002.jpg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="853"></div>
-											</a>
-											<div class="elementor-post__text">
-												<div class="elementor-post__title">
-													<a href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/handheld-backpack-and-air-assisted-sprayers/">
-													Handheld, Backpack and Air-assisted Sprayers			</a>
-												</div>
-												<div class="elementor-post__meta-data">
-													<span class="elementor-post-date">
-													November 20, 2022		</span>
-													<span class="elementor-post-avatar">
-													No Comments		</span>
-												</div>
-												<div class="elementor-post__excerpt">
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
-														commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-														magnis dis parturient montes, nascetur
-													</p>
-												</div>
-											</div>
-										</article>
-										<article class="elementor-post elementor-grid-item post-85 post type-post status-publish format-standard has-post-thumbnail hentry category-technical-horticulturist">
-											<a class="elementor-post__thumbnail__link" href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/recirculating-vs-drain-to-waste-hydroponic-systems/">
-												<div class="elementor-post__thumbnail"><img decoding="async" src="<?=base_url()?>assets/images/modern-hydroponic-greenhouse.jpg" class="attachment-full size-full wp-image-93" alt="Modern hydroponic greenhouse" loading="lazy" srcset="<?=base_url()?>assets/images/modern-hydroponic-greenhouse.jpg 1280w, <?=base_url()?>assets/images/modern-hydroponic-greenhouse-300x200.jpg 300w, <?=base_url()?>assets/images/modern-hydroponic-greenhouse-1024x682.jpg 1024w, <?=base_url()?>assets/images/modern-hydroponic-greenhouse-768x512.jpg 768w, <?=base_url()?>assets/images/modern-hydroponic-greenhouse-1536x1024.jpg 1536w, <?=base_url()?>assets/images/modern-hydroponic-greenhouse-800x533.jpg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="853"></div>
-											</a>
-											<div class="elementor-post__text">
-												<div class="elementor-post__title">
-													<a href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/recirculating-vs-drain-to-waste-hydroponic-systems/">
-													Recirculating vs. Drain-to-Waste Hydroponic Systems			</a>
-												</div>
-												<div class="elementor-post__meta-data">
-													<span class="elementor-post-date">
-													November 20, 2022		</span>
-													<span class="elementor-post-avatar">
-													No Comments		</span>
-												</div>
-												<div class="elementor-post__excerpt">
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
-														commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-														magnis dis parturient montes, nascetur
-													</p>
-												</div>
-											</div>
-										</article>
-										<article class="elementor-post elementor-grid-item post-84 post type-post status-publish format-standard has-post-thumbnail hentry category-insight">
-											<a class="elementor-post__thumbnail__link" href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/understanding-hydroponic-leachate/">
-												<div class="elementor-post__thumbnail"><img decoding="async" src="<?=base_url()?>assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydroponic-.jpg" class="attachment-full size-full wp-image-91" alt="close up view hands of farmer picking lettuce in hydroponic greenhouse." loading="lazy" srcset="<?=base_url()?>assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydroponic-.jpg 1280w, <?=base_url()?>assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_003.jpg 300w, <?=base_url()?>assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_005.jpg 1024w, <?=base_url()?>assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_004.jpg 768w, <?=base_url()?>assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_002.jpg 1536w, <?=base_url()?>assets/images/stake_holder_benefit.jpeg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="853"></div>
-											</a>
-											<div class="elementor-post__text">
-												<div class="elementor-post__title">
-													<a href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/understanding-hydroponic-leachate/">
-													Understanding Hydroponic Leachate			</a>
-												</div>
-												<div class="elementor-post__meta-data">
-													<span class="elementor-post-date">
-													November 20, 2022		</span>
-													<span class="elementor-post-avatar">
-													No Comments		</span>
-												</div>
-												<div class="elementor-post__excerpt">
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
-														commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-														magnis dis parturient montes, nascetur
-													</p>
-												</div>
-											</div>
-										</article>
-										<article class="elementor-post elementor-grid-item post-83 post type-post status-publish format-standard has-post-thumbnail hentry category-agronomic">
-											<a class="elementor-post__thumbnail__link" href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/how-to-maximize-produce-profits-at-farmers-markets-and-retail/">
-												<div class="elementor-post__thumbnail"><img decoding="async" src="<?=base_url()?>assets/images/fresh-vegetable-sell-in-wet-market.jpg" class="attachment-full size-full wp-image-89" alt="Fresh vegetable sell in wet market" loading="lazy" srcset="<?=base_url()?>assets/images/fresh-vegetable-sell-in-wet-market.jpg 1280w, <?=base_url()?>assets/images/fresh-vegetable-sell-in-wet-market-300x158.jpg 300w, <?=base_url()?>assets/images/fresh-vegetable-sell-in-wet-market-1024x540.jpg 1024w, <?=base_url()?>assets/images/fresh-vegetable-sell-in-wet-market-768x405.jpg 768w, <?=base_url()?>assets/images/fresh-vegetable-sell-in-wet-market-1536x810.jpg 1536w, <?=base_url()?>assets/images/fresh-vegetable-sell-in-wet-market-800x422.jpg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="675"></div>
-											</a>
-											<div class="elementor-post__text">
-												<div class="elementor-post__title">
-													<a href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/how-to-maximize-produce-profits-at-farmers-markets-and-retail/">
-													How To Maximize Produce Profits at Farmer’s Markets and Retail			</a>
-												</div>
-												<div class="elementor-post__meta-data">
-													<span class="elementor-post-date">
-													November 20, 2022		</span>
-													<span class="elementor-post-avatar">
-													No Comments		</span>
-												</div>
-												<div class="elementor-post__excerpt">
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
-														commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-														magnis dis parturient montes, nascetur
-													</p>
-												</div>
-											</div>
-										</article>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> -->
 			<!-- testimonial section start -->
 			<section class="testimonial text-center">
 				<div class="container">
@@ -919,81 +860,6 @@ valuable insights for our operations.&quot;
 					</div>
 				</div>
 			</section>
-			<!-- testimonial setion ends -->
-			<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-24cb6c4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="24cb6c4" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-99cbfd1" data-id="99cbfd1" data-element_type="column">
-						<div class="elementor-widget-wrap elementor-element-populated e-swiper-container">
-							<div class="elementor-element elementor-element-111c495 elementor-widget elementor-widget-image-carousel e-widget-swiper" data-id="111c495" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;6&quot;,&quot;slides_to_show_tablet&quot;:&quot;4&quot;,&quot;slides_to_show_mobile&quot;:&quot;2&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
-								<div class="elementor-widget-container">
-									<style>/*! elementor - v3.10.0 - 09-01-2023 */
-										.elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))}
-									</style>
-									<div class="elementor-image-carousel-wrapper swiper-container swiper-container-initialized swiper-container-horizontal" dir="ltr">
-										<div class="elementor-image-carousel swiper-wrapper" style="transform: translate3d(-2520px, 0px, 0px); transition-duration: 0ms;">
-											<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-1-150x100.png" alt="logo-1"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-2-150x100.png" alt="logo-2"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-3-150x100.png" alt="logo-3"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-4-150x100.png" alt="logo-4"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-5-150x100.png" alt="logo-5"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="5" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-11-150x100.png" alt="logo-11"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/logo-1-150x100.png" alt="logo-1"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-2-150x100.png" alt="logo-2"></figure>
-											</div>
-											<div class="swiper-slide" data-swiper-slide-index="2" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-3-150x100.png" alt="logo-3"></figure>
-											</div>
-											<div class="swiper-slide" data-swiper-slide-index="3" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-4-150x100.png" alt="logo-4"></figure>
-											</div>
-											<div class="swiper-slide" data-swiper-slide-index="4" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-5-150x100.png" alt="logo-5"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="5" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-11-150x100.png" alt="logo-11"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-1-150x100.png" alt="logo-1"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="1" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-2-150x100.png" alt="logo-2"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-3-150x100.png" alt="logo-3"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-4-150x100.png" alt="logo-4"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-5-150x100.png" alt="logo-5"></figure>
-											</div>
-											<div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="5" style="width: 210px;">
-												<figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="<?=base_url()?>assets/images/logo-11-150x100.png" alt="logo-11"></figure>
-											</div>
-										</div>
-										<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> -->
 		</div>
 		<div data-elementor-type="footer" data-elementor-id="56" class="elementor elementor-56 elementor-location-footer">
 		<section class="elementor-section elementor-top-section elementor-element elementor-element-a1e6855 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a1e6855" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
@@ -1021,7 +887,27 @@ valuable insights for our operations.&quot;
 			</div>
 		</section>
 <script type="text/javascript">
-	var app = angular.module('dateTimeApp', []);
+	$(document).ready(function() {
+		var base_url 			= $("#base_url").val();			
+		$(document).on("submit","#contact_form", function(event) { 
+			var time 	= $(".formatted-time").text();
+			var date 	= $(".day-selected").text();
+			var month 	= $(".current-month-container").text();
+			$("<input />").attr("type", "hidden")
+			.attr("name", "meeting_time")
+			.attr("value", time)
+			.appendTo("#contact_form");
+			$("<input />").attr("type", "hidden")
+			.attr("name", "meeting_date")
+			.attr("value", month+"-"+$.trim(date,' '))
+			.appendTo("#contact_form");
+			return true;
+		});
+	});
+</script>
+
+<script type="text/javascript">
+var app = angular.module('dateTimeApp', []);
 
 app.controller('dateTimeCtrl', function ($scope) {
 	var ctrl = this;

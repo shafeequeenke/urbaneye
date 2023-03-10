@@ -294,7 +294,7 @@
 													</div>
 													<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true" style="width: 1704px; left: 0px; top: 35px;">
 														<ul id="menu-2-308e04f" class="elementor-nav-menu" data-smartmenus-id="16778124470973984">
-															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-7"><a href="#" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
+															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-7"><a href="<?=base_url()?>" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="#" class="elementor-item" tabindex="-1">About us</a></li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10">
 																<a href="" class="elementor-item has-submenu" tabindex="-1" id="sm-16778124470973984-1" aria-haspopup="true" aria-controls="sm-16778124470973984-2" aria-expanded="false">Services<span class="sub-arrow"><i class="mdi mdi-chevron-down"></i></span></a>
@@ -334,7 +334,7 @@
 							<div class="elementor-element elementor-element-1157b6c elementor-align-right elementor-widget elementor-widget-button" data-id="1157b6c" data-element_type="widget" data-widget_type="button.default">
 								<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-										<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+										<a href="<?=base_url()?>index.php/home/contact" class="elementor-button-link elementor-button elementor-size-sm" role="button">
 										<span class="elementor-button-content-wrapper">
 										<span class="elementor-button-text">Get Started</span>
 										</span>
@@ -415,7 +415,7 @@
 							<div class="elementor-element elementor-element-7b60445 elementor-align-justify elementor-widget__width-initial elementor-widget elementor-widget-button animated fadeInLeft" data-id="7b60445" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="button.default">
 								<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-										<a href="#" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+										<a href="<?=base_url()?>index.php/home/contact" class="elementor-button-link elementor-button elementor-size-lg" role="button">
 										<span class="elementor-button-content-wrapper">
 										<span class="elementor-button-text">Get Started</span>
 										</span>
@@ -1534,7 +1534,7 @@ valuable insights for our operations.&quot;
 						<div class="elementor-element elementor-element-7ddcdd6 elementor-align-center elementor-widget elementor-widget-button" data-id="7ddcdd6" data-element_type="widget" data-widget_type="button.default">
 							<div class="elementor-widget-container">
 								<div class="elementor-button-wrapper">
-									<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+									<a href="<?=base_url()?>index.php/home/contact" class="elementor-button-link elementor-button elementor-size-sm" role="button">
 									<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">Get Started</span>
 									</span>

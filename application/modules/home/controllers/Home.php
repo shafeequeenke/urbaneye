@@ -47,139 +47,6 @@ class Home extends MY_Controller {
         die("here");
     }
 
-    public function createDoc() {
-        p("test over","cp");
-        // $this->home_model->createNew();
-    }
-
-    /**
-    **/
-    public function createComplexQuestion() {
-        $this->data_arr['_load_page']           =   array('header','mathjax','footer');
-        $this->page_header                      =   'page_header';
-        $this->data_arr['page_name']            =   'About';
-        $this->prepareResult();
-    }
-
-    protected function algoliaSearch($searchText = '') {
-        $this->load->model('question/Question_model','question_model');
-        $this->load->model('answer/Answer_model','answer_model');
-        $searchText     =   ($searchText != ''?$searchText:$this->input_data['SEARCH_KEY']);
-        include APPPATH . 'third_party/algolia/algoliaSearch.php';
-        $algolia        =   new algoliaSearch();
-        $indexName      =   $this->config->item('indexName');
-
-        $searchResult   =   $algolia->searchFullText($indexName,$searchText);
-        $searchResult   =   $searchResult['hits'];
-
-        $questionIds    =   [];
-
-        if($searchResult && count($searchResult)>0) {
-            foreach ($searchResult as $key => $value) {
-                array_push($questionIds, $value['objectID']);
-            }
-        }
-
-        $questionIds    =   json_encode($questionIds);
-        $questionArr    =   $this->question_model->getQuestionByIds($questionIds);
-        foreach ($questionArr as $key => $question) {
-            $answerArr      =   $this->answer_model->getQuestionAnswers($question['questionId']);
-            $userDetails    =   isset($question['userId'])?$this->user_model->getUser($question['userId']):array();
-            
-            $course_question[$key]['answer']    =   $answerArr;
-            $course_question[$key]['userDetails']   =   $userDetails;
-        }
-
-        $this->data_arr['course_question']      =   $course_question;
-        
-        // $searchResultHtm            =   $this->load->view('question/header',$this->data_arr);
-        $searchResultHtm            =   $this->load->view('question/course_question',$this->data_arr);
-        // $searchResultHtm            .=   $this->load->view('question/footer',$this->data_arr);
-
-        
-        // p($searchResultHtm,"cppc");
-        $this->status               =   200;
-        $this->response['data']     =   $searchResultHtm;
-    }
-
-    protected function importToAlgolia() {
-        $this->load->model('question/Question_model','question_model');
-        include APPPATH . 'third_party/algolia/algoliaSearch.php';
-        $algolia        =   new algoliaSearch();
-
-        $questionArr    =   $this->question_model->getAllQuestion("questions");
-        $importData     =   array();
-        $i              =   0;
-        // p($questionArr,"cp");
-        foreach ($questionArr as $key => $value) {
-
-            if( $i < 1100 ) {
-                $i++;
-                continue;
-            }
-
-            if( $i >= 1200 ) {
-                break;
-            }
-
-            $keys           =   isset($value['keys'])?$value['keys']:'';
-            if(is_array($keys)) {
-                $keys       =   json_encode($keys);
-            }
-            $countInfo      =   isset($value['countInfo'])?$value['countInfo']:'';
-            if(is_array($countInfo)) {
-                $countInfo  =   json_encode($countInfo);
-            }
-
-            $courseId       =   isset($value['courseId'])?$value['courseId']:'';
-            $courseName     =   '';
-            if( $courseId != '' ) {
-                $courseDet      =   $this->course_model->getCourseList($courseId);
-                $courseDet      =   $courseDet[0];
-                // p($courseDet,"cpc");
-                $courseName     =   (isset($courseDet['department'])?($courseDet['department']):''." ".(isset($courseDet['title'])?($courseDet['title']):''));
-            }
-
-            $importData[$i]['objectID']         =   $value['questionId'];
-            $importData[$i]['courseName']       =   $courseName;
-            $importData[$i]['courseId']         =   $courseId;
-            $importData[$i]['type']             =   $value['type'];
-            $importData[$i]['text']             =   $value['text'];
-            $importData[$i]['imageUrl']         =   isset($value['imageUrl'])?$value['imageUrl']:'';
-            $importData[$i]['modified']         =   $value['modified'];
-            $importData[$i]['countInfo']        =   $countInfo;
-            $i++;
-        }
-        echo "total IMported".count($importData);
-        // p($importData);
-        // die("cp");
-        $result     =   $algolia->importToAlgolia('doubthelp_prod',json_encode($importData));
-        echo "====================";
-        p($result,"cp");
-    }
-
-    public function user_token() {
-        p($this->data_arr['user_details'],"cp");
-    }
-
-    public function searchDemo() {
-        $this->data_arr['_load_page']           =   array('header','search_demo','footer');
-        $this->page_header                      =   'page_header';
-        $this->data_arr['page_name']            =   'About';
-        $this->prepareResult();
-    }
-
-    public function quickSearch() {
-        $this->data_arr['_load_page']           =   array('search_algolia');
-        $this->page_header                      =   'page_header';
-        $this->data_arr['page_name']            =   'Search Question';
-        $this->data_arr['course_name']          =   isset($this->get_data['course_name'])?$this->get_data['course_name']:'';
-        $this->data_arr['search_text']          =   isset($this->get_data['search_question'])?$this->get_data['search_question']:'';
-        if(!isset($this->get_data['action'])) {
-            $this->prepareResult();
-        }
-    }
-
     public function about() {
         $this->data_arr['_load_page']           =   array('about');
         $this->page_header                      =   'page_header';
@@ -208,15 +75,39 @@ class Home extends MY_Controller {
         $this->prepareResult();
     }
 
+    /**
+     * 
+     */
     public function contact() {
+        $this->input_data 		                = 	$this->input->post();
+        if(!empty($this->input_data)) {
+            // $this->form_validation->set_rules('full_name','Name',"trim|required");
+            // $this->form_validation->set_rules('designation','Designation',"trim|required");
+            // $this->form_validation->set_rules('company_name','Company Name','required');
+            // $this->form_validation->set_rules('phone','Phone','trim|required|email');
+            // $this->form_validation->set_rules('email','Email','trim|required|email');
+
+            // if($this->form_validation->run()===TRUE) {
+                $data                   = $this->input_data;
+                $date                   = strtotime(str_replace(" ","-",$data['meeting_date']));
+                
+                $data['meeting_date']   = date('Y-m-d',$date); 
+
+                 $addEnq         = $this->home_model->add_enquiry($data);
+            // } else {
+                // print_r($this->input_data);die("cp1");
+                // die("cp1");
+            // }
+        }
         $this->data_arr['_load_page']               =   array('contact');
         $this->page_header                          =   'page_header';
         $this->data_arr['page_name']                =   'Contact';
         $this->prepareResult();
+        //https://codepen.io/jaromvogel/pen/aNPRwG
     }
 
-    public function testcontact() {
-        $this->load->view("home/testcontact");
+    public function get_calendar() {
+        $this->load->view("home/contact_calendar");
     }
 
     public function privacyPolicy() {
@@ -261,7 +152,11 @@ class Home extends MY_Controller {
         $this->prepareResult();
     }
 
-
+    public function enquiries() {
+        $enquiries  = $this->home_model->getAllEnquiry();
+        $data['enquiries']  = $enquiries;
+        $this->load->view("home/contact_enquiry",$data);
+    }
 
     /**
     **/
