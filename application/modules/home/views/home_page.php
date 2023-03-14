@@ -43,7 +43,7 @@
 				position: relative;
 			}
 			.carousel-inner {
-				padding-top: 25%;
+				padding-top: 30%;
 				display: block;
 				content: "";
 			}
@@ -451,32 +451,32 @@
 						<div class="carousel-item active" style="background-image: url(https://urbaneye.enke.in/assets/images/stake_holder_benefit.png)">
 							<div class="caption" style="padding-bottom:20px;">
 								<h1 style="color:#116ad20 ;">urbanEye AI</h1>
-								<h2 style="color:#116ad20 ;">Experience a Smarter Way to Manage Your Landscape</h2>
-								<a class="big-button" href="" title="" style="border-radius:15px;background: #193c16;color:#fff;">Get Started</a>
+								<h3 style="color:#116ad20 ;">Experience a Smarter Way to Manage Your Landscape</h3>
+								<a href="<?=base_url()?>index.php/home/contact" class="big-button" href="" title="" style="border-radius:15px;background: #193c16;color:#fff;margin-bottom: 60px;">Get Started</a>
 							</div>
 						</div>
 						<div class="carousel-item" style="background-image: url(https://urbaneye.enke.in/assets/images/stake_holder_benefit.png)">
 							<div class="caption">
-							<h1 style="color:#19631e;">Unlock (up to)20% more profits with urbanEye AI</h1>
-							<h2 style="color:#19631e;">urbanEye AI platform quantifies daily production inefficiencies,</h2>
+							<h3 style="color:#19631e;">Unlock (up to)20% more profits with urbanEye AI</h3>
+							<h5 style="color:#19631e;">urbanEye AI platform quantifies daily production inefficiencies,</h5>
 
-							<a class="big-button" href="" title="" style="background: #193c16;color:#fff; border-radius:15px;">Book A Demo</a>
+							<a class="big-button"  href="<?=base_url()?>index.php/home/contact" title="" style="background: #193c16;color:#fff; border-radius:15px;margin-bottom: 60px;">Book A Demo</a>
 							<div class="clear"></div>
 							</div>
 						</div>
 					
 						<div class="carousel-item" style="background-image: url(https://urbaneye.enke.in/assets/images/panoramic-shot-of-green-grass-near-trees-against-s-2022-12-16-17-18-47-utc.jpg)">
 							<div class="caption" style="padding-bottom: 8%;">
-							<h1 style="color:#0e2945;">Say goodbye to check-ins, check-outs, photo proof, and administrative burdens. 
-							</h1 style="color:#0e2945;">
-							<h2>UrbanEye AI platform provides a unified communication for all stakeholders,</h2>
+							<h3 style="color:#0e2945;">Say goodbye to check-ins, check-outs, photo proof, and administrative burdens. 
+							</h3 style="color:#0e2945;">
+							<h5>UrbanEye AI platform provides a unified communication for all stakeholders,</h5>
 							</div>
 						</div>
 						<div class="carousel-item" style="background-image: url(https://urbaneye.enke.in/assets/images/panoramic-shot-of-green-grass-near-trees-against-s-2022-12-16-17-18-47-utc.jpg)">
 							<div class="caption" style="padding-bottom: 8%;">
-							<h1 style="color:19631e;">Experience the true meaning of real-time benchmarking! 
-							</h1>
-							<h2 style="color:19631e;">urbanEye AI helps achieve improved productivity, Real-Time Worksite Insights, Workforce Management</h2>
+							<h3 style="color:19631e;">Experience the true meaning of real-time benchmarking! 
+							</h3>
+							<h5 style="color:19631e;">urbanEye AI helps achieve improved productivity, Real-Time Worksite Insights, Workforce Management</h5>
 							</div>
 						</div>
 
@@ -1172,7 +1172,7 @@
 															<li>You will have a reduced and efficient crew numbers</li>
 															<li>You experience a streamlined inventory</li>
 															<li>With the new benchmarks are set and insights in your hand the bidding for future
-projects is highly accurate.</li>
+																projects is highly accurate.</li>
 														</div>
 													</div>
 												</div>

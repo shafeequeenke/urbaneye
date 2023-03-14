@@ -569,24 +569,18 @@
                     rel="stylesheet"
                     href="<?=base_url()?>assets/css/widget-icon-list.min.css"
                   />
-                  <ul class="elementor-icon-list-items elementor-inline-items">
-                    <li class="elementor-icon-list-item elementor-inline-item">
-                      <span class="elementor-icon-list-icon">
-                        <i aria-hidden="true" class="mdi mdi-email-check"></i>
-                      </span>
-                      <span class="elementor-icon-list-text"
-                        >support@yourdomain.tld</span
-                      >
-                    </li>
-                    <li class="elementor-icon-list-item elementor-inline-item">
-                      <span class="elementor-icon-list-icon">
-                        <i aria-hidden="true" class="mdi mdi-deskphone"></i>
-                      </span>
-                      <span class="elementor-icon-list-text"
-                        >+6221.2002.2012</span
-                      >
-                    </li>
-                  </ul>
+				  <ul class="elementor-icon-list-items elementor-inline-items">
+					<li class="elementor-icon-list-item elementor-inline-item">
+						<span class="elementor-icon-list-icon">
+						<i aria-hidden="true" class="mdi mdi-email-check"></i>						</span>
+						<span class="elementor-icon-list-text">info@spaceagelabs.com.sg</span>
+					</li>
+					<li class="elementor-icon-list-item elementor-inline-item">
+						<span class="elementor-icon-list-icon">
+						<i aria-hidden="true" class="mdi mdi-deskphone"></i>						</span>
+						<span class="elementor-icon-list-text">+65 85034824</span>
+					</li>
+				</ul>
                 </div>
               </div>
             </div>

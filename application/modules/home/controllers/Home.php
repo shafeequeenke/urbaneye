@@ -41,9 +41,9 @@ class Home extends MY_Controller {
     }
 
     public function abouturbaneye() {
-        $this->data_arr['_load_page']           =   array('abouturbaneye');
+        $this->data_arr['_load_page']           =   array('abouturban');
         $this->page_header                      =   'page_header';
-        $this->data_arr['page_name']            =   'About';
+        $this->data_arr['page_name']            =   'About UrbanEye AI';
         $this->prepareResult();
     }
 

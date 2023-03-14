@@ -278,6 +278,7 @@
         width: 75% !important;
         border: 2px dotted #177827;
         padding: 20px;
+        min-height: 750px !important;
     }
 
     .contact-form-container label {
@@ -289,5 +290,9 @@
         color: #177827 !important;
         font-weight: bold !important;
         font-size: 20px;
+    }
+
+    .contact-form-container iframe {
+        min-height: 800px !important;
     }
     

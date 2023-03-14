@@ -392,20 +392,500 @@
 							<!-- <span id="contact_calendar_btn">Calendar </span> -->
 							<div class="row" style="min-height:350px;">
 							<!-- CALENDAR STARTS -->
-                            <iframe id="" src="https://calendly.com/ysashikumar/30min">
-
-                            </iframe>
+								<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
+								<div class="app-container" ng-app="dateTimeApp" ng-controller="dateTimeCtrl as ctrl" ng-cloak>										
+									<div date-picker
+										datepicker-title="Select Date"
+										picktime="true"
+										pickdate="true"
+										pickpast="false"
+										mondayfirst="false"
+										custom-message="You have selected"
+										selecteddate="ctrl.selected_date"
+										updatefn="ctrl.updateDate(newdate)">
+									
+										<div class="datepicker"
+											ng-class="{
+												'am': timeframe == 'am',
+												'pm': timeframe == 'pm',
+												'compact': compact
+											}">
+											<div class="datepicker-header">
+												<div class="datepicker-title" ng-if="datepicker_title">{{ datepickerTitle }}</div>
+												<div class="datepicker-subheader">{{ customMessage }} {{ selectedDay }} {{ monthNames[localdate.getMonth()] }} {{ localdate.getDate() }}, {{ localdate.getFullYear() }}</div>
+											</div>
+											<div class="datepicker-calendar">
+												<div class="calendar-header">
+													<div class="goback" ng-click="moveBack()" ng-if="pickdate">
+														<svg width="30" height="30">
+															<path fill="none" stroke="#0DAD83" stroke-width="3" d="M19,6 l-9,9 l9,9"/>
+														</svg>
+													</div>
+													<div class="current-month-container">{{ currentViewDate.getFullYear() }} {{ currentMonthName() }}</div>
+													<div class="goforward" ng-click="moveForward()" ng-if="pickdate">
+														<svg width="30" height="30">
+															<path fill="none" stroke="#0DAD83" stroke-width="3" d="M11,6 l9,9 l-9,9" />
+														</svg>
+													</div>
+												</div>
+												<div class="calendar-day-header">
+													<span ng-repeat="day in days" class="day-label">{{ day.short }}</span>
+												</div>
+												<div class="calendar-grid" ng-class="{false: 'no-hover'}[pickdate]">
+													<div
+														ng-class="{'no-hover': !day.showday}"
+														ng-repeat="day in month"
+														class="datecontainer"
+														ng-style="{'margin-left': calcOffset(day, $index)}"
+														track by $index>
+														<div class="datenumber" ng-class="{'day-selected': day.selected }" ng-click="selectDate(day)">
+															{{ day.daydate }}
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="timepicker" ng-if="picktime == 'true'">
+												<div ng-class="{'am': timeframe == 'am', 'pm': timeframe == 'pm' }">
+													<div class="timepicker-container-outer" selectedtime="time" timetravel>
+														<div class="timepicker-container-inner">
+															<div class="timeline-container" ng-mousedown="timeSelectStart($event)" sm-touchstart="timeSelectStart($event)">
+																<div class="current-time">
+																	<div class="actual-time">{{ time }}</div>
+																</div>
+																<div class="timeline">
+																</div>
+																<div class="hours-container">
+																	<div class="hour-mark" ng-repeat="hour in getHours() track by $index"></div>
+																</div>
+															</div>
+															<div class="display-time">
+																<div class="decrement-time" ng-click="adjustTime('decrease')">
+																	<svg width="24" height="24">
+																		<path stroke="white" stroke-width="2" d="M8,12 h8"/>
+																	</svg>
+																</div>
+																<div class="time" ng-class="{'time-active': edittime.active}">
+																	<input type="text" class="time-input" ng-model="edittime.input" ng-keydown="changeInputTime($event)" ng-focus="edittime.active = true; edittime.digits = [];" ng-blur="edittime.active = false"/>
+																	<div class="formatted-time">{{ edittime.formatted }}</div>
+																</div>
+																<div class="increment-time" ng-click="adjustTime('increase')">
+																	<svg width="24" height="24">
+																		<path stroke="white" stroke-width="2" d="M12,7 v10 M7,12 h10"/>
+																	</svg>
+																</div>
+															</div>
+															<div class="am-pm-container">
+																<div class="am-pm-button" ng-click="changetime('am');">am</div>
+																<div class="am-pm-button" ng-click="changetime('pm');">pm</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<!-- <div class="buttons-container">
+												<div class="cancel-button">CANCEL</div>
+												<div class="save-button">SAVE</div>
+											</div> -->
+											
+										</div>
+									</div>
+								</div>
 							<!-- CALENDAR ENDS -->
-							</div>							
+							</div>
+							<input type="hidden" id="base_url" value="<?=base_url()?>">
+							<form id="contact_form" name="contact_form" method="post" action="<?=base_url()?>index.php/home/contact">
+								<div class="row">
+									<div class="form-group col-md-6">
+										<label class="label-contact" for="full_name">Name</label>
+										<input type="text" class="form-control" name="full_name" id="full_name" placeholder="Full Name">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="label-contact" for="designation">Designation</label>
+										<input type="text" class="form-control" name="designation" id="designation" placeholder="Postion / Designation / Profession">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="label-contact" for="company_name">Company Name</label>
+										<input type="text" class="form-control" name="company_name" id="company_name" placeholder="Example LLC">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="label-contact" for="phone">Phone</label>
+										<input type="text" class="form-control" name="phone" id="phone" placeholder="+919447******">
+									</div>
+									<div class="form-group col-md-6">
+										<label class="label-contact" for="email">Email</label>
+										<input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+									</div>
+									<div class="form-group col-md-12">
+										<label class="label-contact" for="concerns">what are the top 3 concerns for which you are looking for a solution?</label>
+										<textarea class="form-control" id="concerns" name="concerns" rows="3"></textarea>
+									</div>
+									<fieldset class="form-group  col-md-12">
+										<div class="row">
+										<legend class="label-contact" class="col-form-label col-sm-12 pt-0">How did you hear us?</legend>
+										<div class="col-sm-12">
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="source_name" id="source_name1" value="LinkedIn">
+											<label class="form-check-label" for="source_name1">
+												LinkedIn
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="source_name" id="source_name2" value="newsletter">
+											<label class="form-check-label" for="source_name2">
+												NALP newsletter
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="source_name" id="source_name3" value="mailers">
+											<label class="form-check-label" for="source_name3">
+												Emailers
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="source_name" id="source_name4" value="google">
+											<label class="form-check-label" for="source_name4">
+												Google search
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="source_name" id="source_name5" value="magazine">
+											<label class="form-check-label" for="source_name5">
+												Lawn & Landscape magazine
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="source_name" id="source_name6" value="others">
+											<label class="form-check-label" for="source_name6">
+												Others
+											</label>
+											</div>
+										</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-12">
+										<div class="row">
+										<legend class="col-form-label col-sm-12 pt-0 label-contact">You manage a team size of?</legend>
+										<div class="col-sm-12">
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="manage_team_size" id="manage_team_size1" value="1-10" >
+											<label class="form-check-label" for="manage_team_size1">
+												1-10
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="manage_team_size" id="manage_team_size2" value="11-20">
+											<label class="form-check-label" for="manage_team_size2">
+												11-20
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="manage_team_size" id="manage_team_size3" value="20+">
+											<label class="form-check-label" for="manage_team_size3">
+												20+
+											</label>
+											</div>
+										</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-12">
+										<div class="row">
+										<legend class="col-form-label col-sm-12 pt-0 label-contact">What is the total size of the lawn area your company manages?</legend>
+										<div class="col-sm-12">
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="lawn_area" id="lawn_area1" value="5-10 Acres">
+											<label class="form-check-label" for="lawn_area1">
+												5-10 Acres
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="lawn_area" id="lawn_area2" value="11-20 Acres">
+											<label class="form-check-label" for="lawn_area2">
+												11-20 Acres
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="lawn_area" id="lawn_area3" value="10 Hectares more">
+											<label class="form-check-label" for="lawn_area3">							
+												10 Hectares & more
+											</label>
+											</div>
+										</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-12">
+										<div class="row">
+										<legend class="col-form-label col-sm-12 pt-0 label-contact">How many worksites does your company manages?</legend>
+										<div class="col-sm-12">
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="company_worksites" id="company_worksites1" value="10-15">
+											<label class="form-check-label" for="company_worksites1">
+												10-15
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="company_worksites" id="company_worksites2" value="16-25">
+											<label class="form-check-label" for="company_worksites2">
+												16-25
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="company_worksites" id="company_worksites3" value="26+">
+											<label class="form-check-label" for="company_worksites3">
+												26+
+											</label>
+											</div>
+										</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-12">
+										<div class="row">
+										<legend class="col-form-label col-sm-12 pt-0 label-contact">How soon you would like to implement the solutions?</legend>
+										<div class="col-sm-12">
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="implement_solution" id="implement_solution1" value="immediate">
+											<label class="form-check-label" for="implement_solution1">
+												Immediately after random test
+											</label>
+											</div>
+											<div class="form-check">
+											<input class="form-check-input" type="radio" name="implement_solution" id="implement_solution2" value="2 month">
+											<label class="form-check-label" for="implement_solution2">
+												2-month time
+											</label>
+											</div>
+										</div>
+										</div>
+									</fieldset>
+									<button type="submit" class="btn btn-primary" id="form_submit">Submit</button>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
 			</section>
 			<br>
-			<br><br>
+			<br><br><br>
+			<section class="elementor-section elementor-top-section elementor-element elementor-element-fb76bcf elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fb76bcf" data-element_type="section">
+				<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e77b7e6 animated fadeInLeft" data-id="e77b7e6" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+						<div class="elementor-widget-wrap elementor-element-populated">
+							<div class="elementor-element elementor-element-47dc50b elementor-widget elementor-widget-image" data-id="47dc50b" data-element_type="widget" data-widget_type="image.default">
+								<div class="elementor-widget-container">
+									<img decoding="async" src="<?=base_url()?>assets/images/stake_holder_benefit.jpeg" class="attachment-full size-full wp-image-91" alt="close up view hands of farmer picking lettuce in hydroponic greenhouse." loading="lazy" srcset="<?=base_url()?>assets/images/stake_holder_benefit.jpeg 1280w, <?=base_url()?>assets/images/stake_holder_benefit.jpeg 300w, <?=base_url()?>assets/images/stake_holder_benefit.jpeg 1024w, <?=base_url()?>assets/images/stake_holder_benefit.jpeg 768w, <?=base_url()?>assets/images/stake_holder_benefit.jpeg 1536w, <?=base_url()?>assets/images/stake_holder_benefit.jpeg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="853">															
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0f96835 animated fadeIn" data-id="0f96835" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:200}">
+						<div class="elementor-widget-wrap elementor-element-populated">
+							<div class="elementor-element elementor-element-98c075a elementor-widget elementor-widget-heading" data-id="98c075a" data-element_type="widget" data-widget_type="heading.default">
+								<div class="elementor-widget-container">
+									<h6 class="elementor-heading-title elementor-size-default">Why Choose us</h6>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-e732d0e elementor-widget elementor-widget-heading" data-id="e732d0e" data-element_type="widget" data-widget_type="heading.default">
+								<div class="elementor-widget-container">
+									<h2 class="elementor-heading-title elementor-size-default">Stake Holders Benefits</h2>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-e498cf3 elementor-widget elementor-widget-text-editor" data-id="e498cf3" data-element_type="widget" data-widget_type="text-editor.default">
+								<div class="elementor-widget-container">
+									<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p> -->
+								</div>
+							</div>
+							<section class="elementor-section elementor-inner-section elementor-element elementor-element-b9da317 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b9da317" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f574df5" data-id="f574df5" data-element_type="column">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-219120d elementor-view-stacked elementor-tablet-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="219120d" data-element_type="widget" data-widget_type="icon-box.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-icon-box-wrapper">
+														<div class="elementor-icon-box-icon">
+															<span class="elementor-icon elementor-animation-">
+															<i aria-hidden="true" class="mdi mdi-account-search"></i>				</span>
+														</div>
+														<div class="elementor-icon-box-content">
+															<div class="elementor-icon-box-title">
+																<span>
+																For Crew Members:					</span>
+															</div>
+															<p class="elementor-icon-box-description">
+															UrbanEye AI provides crew members the freedom from complex reporting of day-to-day
+															activities &amp; age-old process, which is achieved from granular detail derived from worksites
+															with ease of access that you never experienced from your traditional software.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b2756ac" data-id="b2756ac" data-element_type="column">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-372e4b4 elementor-view-stacked elementor-tablet-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="372e4b4" data-element_type="widget" data-widget_type="icon-box.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-icon-box-wrapper">
+														<div class="elementor-icon-box-icon">
+															<span class="elementor-icon elementor-animation-">
+															<i aria-hidden="true" class="mdi mdi-account-key"></i>				</span>
+														</div>
+														<div class="elementor-icon-box-content">
+															<div class="elementor-icon-box-title">
+																<span>
+																For Account Managers:
+																</span>
+															</div>
+															<p class="elementor-icon-box-description">
+															Account managers who manage multiple crews need to take a well-informed decision and
+													not be mis-guided, you need a fool proof system to calculate productivity levels, keep the
+													cost under control, and here comes urbanEye AI the highly intuitive device and platform
+													handy
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="elementor-section elementor-inner-section elementor-element elementor-element-e4ad14c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e4ad14c" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4c63773" data-id="4c63773" data-element_type="column">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-4fde8dc elementor-view-stacked elementor-tablet-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="4fde8dc" data-element_type="widget" data-widget_type="icon-box.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-icon-box-wrapper">
+														<div class="elementor-icon-box-icon">
+															<span class="elementor-icon elementor-animation-">
+															<i aria-hidden="true" class="mdi mdi-checkbox-marked-outline"></i>				</span>
+														</div>
+														<div class="elementor-icon-box-content">
+															<div class="elementor-icon-box-title">
+																<span>
+																For Operations Managers:
+																</span>
+															</div>
+															<p class="elementor-icon-box-description">
+															Witness the true meaning of productivity in real time with urbanEye AI &amp; steer ahead the
+													organization to profitability of upto 40%. As a lawn management professional, you have to
+													multitask and manage manpower, inventory, billing &amp; payments with urbanEye AI you are a
+													clear winner.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-59d01eb" data-id="59d01eb" data-element_type="column">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-57ecde8 elementor-view-stacked elementor-tablet-position-left elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="57ecde8" data-element_type="widget" data-widget_type="icon-box.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-icon-box-wrapper">
+														<div class="elementor-icon-box-icon">
+															<span class="elementor-icon elementor-animation-">
+															<i aria-hidden="true" class="mdi mdi-salesforce"></i>				</span>
+														</div>
+														<div class="elementor-icon-box-content">
+															<div class="elementor-icon-box-title">
+															<span>
+															For Sales:	
+															</span>
+															</div>
+															<p class="elementor-icon-box-description">
+															As a sales manager your core objective is to win as many as contracts with increases profit
+														margins, with urbanEye AI be rest assured to be clear winner
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- testimonial section start -->
+			<section class="testimonial text-center">
+				<div class="container">
+
+					<div class="heading white-heading">
+						Testimonial
+					</div>
+					<div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+					
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active">
+								<div class="testimonial4_slide">
+									<!-- <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /> -->
+									<p>&quot;urbanEye AI helps us improve crew efficiencies and work completion reporting. Scalable for
+outdoor works like mowing and lawn care and has been a game changer for our company&#39;s bottom
+line.&quot;</p>
+									<h4>Feedback from Greenscape</h4>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="testimonial4_slide">
+									<!-- <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /> -->
+									<p>&quot;urbanEye AI&#39;s benchmarking and production leakage identification
+						are invaluable tools for improving efficiency. The roadmap feature, the simulation module, offers
+						even more potential for operational optimization, making urbanEye AI a must-have for landscaping
+						maintenance companies.&quot;</p>
+									<h4>LevelGreen</h4>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="testimonial4_slide">
+									<!-- <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /> -->
+									<p>
+									&quot;urbanEye AI&#39;s real-time monitoring and birds-eye view features helped us quantify production rates
+and optimize our operations. In addition, the work completion reports provided an overview and
+valuable insights for our operations.&quot;
+									</p>
+									<h4>Yellowstone</h4>
+								</div>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#testimonial4" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</div>
+			</section>
 		</div>
 		<div data-elementor-type="footer" data-elementor-id="56" class="elementor elementor-56 elementor-location-footer">
-
+		<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-a1e6855 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a1e6855" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+			<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-17efa28" data-id="17efa28" data-element_type="column">
+					<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-69a29a0 elementor-widget elementor-widget-heading" data-id="69a29a0" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h2 class="elementor-heading-title elementor-size-default">What's Possible with Crew Control.</h2>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-7ddcdd6 elementor-align-center elementor-widget elementor-widget-button" data-id="7ddcdd6" data-element_type="widget" data-widget_type="button.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-button-wrapper">
+									<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+									<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Get Started</span>
+									</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
 <script type="text/javascript">
 	$(document).ready(function() {
 		var base_url 			= $("#base_url").val();			
@@ -427,5 +907,539 @@
 </script>
 
 <script type="text/javascript">
+var app = angular.module('dateTimeApp', []);
 
+app.controller('dateTimeCtrl', function ($scope) {
+	var ctrl = this;
+	
+	ctrl.selected_date = new Date();
+	ctrl.selected_date.setHours(10);
+	ctrl.selected_date.setMinutes(0);
+	
+	ctrl.updateDate = function (newdate) {
+		
+		// Do something with the returned date here.
+		
+		console.log(newdate);
+	};
+});
+
+// Date Picker
+app.directive('datePicker', function ($timeout, $window) {
+    return {
+        restrict: 'AE',
+        scope: {
+            selecteddate: "=",
+            updatefn: "&",
+            open: "=",
+            datepickerTitle: "@",
+            customMessage: "@",
+            picktime: "@",
+            pickdate: "@",
+            pickpast: '=',
+			mondayfirst: '@'
+        },
+		transclude: true,
+        link: function (scope, element, attrs, ctrl, transclude) {
+			transclude(scope, function(clone, scope) {
+				element.append(clone);
+			});
+			
+            if (!scope.selecteddate) {
+                scope.selecteddate = new Date();
+            }
+
+            if (attrs.datepickerTitle) {
+                scope.datepicker_title = attrs.datepickerTitle;
+            }
+
+            scope.days = [
+                { "long":"Sunday","short":"Sun" },
+                { "long":"Monday","short":"Mon" },
+                { "long":"Tuesday","short":"Tue" },
+                { "long":"Wednesday","short":"Wed" },
+                { "long":"Thursday","short":"Thu" },
+                { "long":"Friday","short":"Fri" },
+                { "long":"Saturday","short":"Sat" },
+            ];
+			if (scope.mondayfirst == 'true') {
+				var sunday = scope.days[0];
+				scope.days.shift();
+				scope.days.push(sunday);
+			}
+
+            scope.monthNames = [
+                "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+            ];
+
+            function getSelected() {
+                if (scope.currentViewDate.getMonth() == scope.localdate.getMonth()) {
+                    if (scope.currentViewDate.getFullYear() == scope.localdate.getFullYear()) {
+                        for (var number in scope.month) {
+                            if (scope.month[number].daydate == scope.localdate.getDate()) {
+                                scope.month[number].selected = true;
+								if (scope.mondayfirst == 'true') {
+									if (parseInt(number) === 0) {
+										number = 6;
+									} else {
+										number = number - 1;
+									}
+								}
+								scope.selectedDay = scope.days[scope.month[number].dayname].long;
+							}
+                        }
+                    }
+                }
+            }
+
+            function getDaysInMonth() {
+                var month = scope.currentViewDate.getMonth();
+                var date = new Date(scope.currentViewDate.getFullYear(), month, 1);
+                var days = [];
+                var today = new Date();
+                while (date.getMonth() === month) {
+                    var showday = true;
+                    if (!scope.pickpast && date < today) {
+                        showday = false;
+                    }
+                    if (today.getDate() == date.getDate() &&
+                        today.getYear() == date.getYear() &&
+                        today.getMonth() == date.getMonth()) {
+                        showday = true;
+                    }
+                    var day = new Date(date);
+                    var dayname = day.getDay();
+                    var daydate = day.getDate();
+                    days.push({ 'dayname': dayname, 'daydate': daydate, 'showday': showday });
+                    date.setDate(date.getDate() + 1);
+                }
+                scope.month = days;
+            }
+
+            function initializeDate() {
+                scope.currentViewDate = new Date(scope.localdate);
+                scope.currentMonthName = function () {
+                    return scope.monthNames[scope.currentViewDate.getMonth()];
+                };
+                getDaysInMonth();
+                getSelected();
+            }
+
+            // Takes selected time and date and combines them into a date object
+            function getDateAndTime(localdate) {
+                var time = scope.time.split(':');
+                if (scope.timeframe == 'am' && time[0] == '12') {
+                    time[0] = 0;
+                } else if (scope.timeframe == 'pm' && time[0] !== '12') {
+                    time[0] = parseInt(time[0]) + 12;
+                }
+                return new Date(localdate.getFullYear(), localdate.getMonth(), localdate.getDate(), time[0], time[1]);                
+            }
+
+            // Convert to UTC to account for different time zones
+            function convertToUTC(localdate) {
+                var date_obj = getDateAndTime(localdate);
+                var utcdate = new Date(date_obj.getUTCFullYear(), date_obj.getUTCMonth(), date_obj.getUTCDate(), date_obj.getUTCHours(), date_obj.getUTCMinutes());
+                return utcdate;
+            }
+            // Convert from UTC to account for different time zones
+            function convertFromUTC(utcdate) {
+                localdate = new Date(utcdate);
+                return localdate;
+            }
+
+            // Returns the format of time desired for the scheduler, Also I set the am/pm
+            function formatAMPM(date) {
+                var hours = date.getHours();
+                var minutes = date.getMinutes();
+                hours >= 12 ? scope.changetime('pm') : scope.changetime('am');
+                hours = hours % 12;
+                hours = hours ? hours : 12; // the hour '0' should be '12'
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                var strTime = hours + ':' + minutes;
+                return strTime;
+            }
+			
+            scope.$watch('open', function() {
+                if (scope.selecteddate !== undefined && scope.selecteddate !== null) {
+                    scope.localdate = convertFromUTC(scope.selecteddate);
+                } else {
+                    scope.localdate = new Date();
+                    scope.localdate.setMinutes(Math.round(scope.localdate.getMinutes() / 60) * 30);
+                }
+				scope.time = formatAMPM(scope.localdate);
+				scope.setTimeBar(scope.localdate);
+				initializeDate();
+				scope.updateInputTime();
+            });
+
+            scope.selectDate = function (day) {
+
+                if (scope.pickdate == "true" && day.showday) {
+                    for (var number in scope.month) {
+                        var item = scope.month[number];
+                        if (item.selected === true) {
+                            item.selected = false;
+                        }
+                    }
+                    day.selected = true;
+                    scope.selectedDay = scope.days[day.dayname].long;
+                    scope.localdate = new Date(scope.currentViewDate.getFullYear(), scope.currentViewDate.getMonth(), day.daydate);
+                    initializeDate(scope.localdate);
+                    scope.updateDate();
+                }
+            };
+
+            scope.updateDate = function () {
+                if (scope.localdate) {
+                    var newdate = getDateAndTime(scope.localdate);
+                    scope.updatefn({newdate:newdate});
+                }
+            };
+
+            scope.moveForward = function () {
+                scope.currentViewDate.setMonth(scope.currentViewDate.getMonth() + 1);
+                if (scope.currentViewDate.getMonth() == 12) {
+                    scope.currentViewDate.setDate(scope.currentViewDate.getFullYear() + 1, 0, 1);
+                }
+                getDaysInMonth();
+                getSelected();
+            };
+
+            scope.moveBack = function () {
+                scope.currentViewDate.setMonth(scope.currentViewDate.getMonth() - 1);
+                if (scope.currentViewDate.getMonth() == -1) {
+                    scope.currentViewDate.setDate(scope.currentViewDate.getFullYear() - 1, 0, 1);
+                }
+                getDaysInMonth();
+                getSelected();
+            };
+
+            scope.calcOffset = function (day, index) {
+                if (index === 0) {
+                    var offset = (day.dayname * 14.2857142) + '%';
+					if (scope.mondayfirst == 'true') {
+						offset = ((day.dayname - 1) * 14.2857142) + '%';
+					}
+                    return offset;
+                }
+            };
+            
+			///////////////////////////////////////////////
+			// Check size of parent element, apply class //
+			///////////////////////////////////////////////
+			scope.checkWidth = function (apply) {
+				var parent_width = element.parent().width();
+				if (parent_width < 620) {
+					scope.compact = true;
+				} else {
+					scope.compact = false;
+				}
+				if (apply) {
+					scope.$apply();
+				}
+			};
+			scope.checkWidth(false);
+			
+            //////////////////////
+            // Time Picker Code //
+            //////////////////////
+            if (scope.picktime) {
+                var currenttime;
+                var timeline;
+                var timeline_width;
+                var timeline_container;
+                var sectionlength;
+
+                scope.getHours = function () {
+                    var hours = new Array(11);
+                    return hours;
+                };
+
+                scope.time = "12:00";
+                scope.hour = 12;
+                scope.minutes = 0;
+                scope.currentoffset = 0;
+
+                scope.timeframe = 'am';
+
+                scope.changetime = function(time) {
+                    scope.timeframe = time;
+                    scope.updateDate();
+					scope.updateInputTime();					
+                };
+				
+				scope.edittime = {
+					digits: []
+				};
+				
+				scope.updateInputTime = function () {
+					scope.edittime.input = scope.time + ' ' + scope.timeframe;
+					scope.edittime.formatted = scope.edittime.input;
+				};
+				
+				scope.updateInputTime();
+				
+				function checkValidTime (number) {
+					validity = true;
+					switch (scope.edittime.digits.length) {
+						case 0:
+							if (number === 0) {
+								validity = false;
+							}
+							break;
+						case 1:
+							if (number > 5) {
+								validity = false;
+							} else {
+								validity = true;
+							}
+							break;
+						case 2:
+							validity = true;
+							break;
+						case 3:
+							if (scope.edittime.digits[0] > 1) {
+								validity = false;
+							} else if (scope.edittime.digits[1] > 2) {
+								validity = false;
+							} else if (scope.edittime.digits[2] > 5) {
+								validity = false;
+							}
+							else {
+								validity = true;								
+							}
+							break;
+						case 4:
+							validity = false;
+							break;
+					}
+					return validity;
+				}
+				
+				function formatTime () {
+					var time = "";
+					if (scope.edittime.digits.length == 1) {
+						time = "--:-" + scope.edittime.digits[0];
+					} else if (scope.edittime.digits.length == 2) {
+						time = "--:" + scope.edittime.digits[0] + scope.edittime.digits[1];
+					} else if (scope.edittime.digits.length == 3) {
+						time = "-" + scope.edittime.digits[0] + ':' + scope.edittime.digits[1] + scope.edittime.digits[2];
+					} else if (scope.edittime.digits.length == 4) {
+						time = scope.edittime.digits[0] + scope.edittime.digits[1].toString() + ':' + scope.edittime.digits[2] + scope.edittime.digits[3];
+						console.log(time);
+					}
+					return time + ' ' + scope.timeframe;
+				};
+				
+				scope.changeInputTime = function (event) {
+					var numbers = {48:0,49:1,50:2,51:3,52:4,53:5,54:6,55:7,56:8,57:9};
+					if (numbers[event.which] !== undefined) {
+						if (checkValidTime(numbers[event.which])) {
+							scope.edittime.digits.push(numbers[event.which]);
+							console.log(scope.edittime.digits);
+							scope.time_input = formatTime();
+							scope.time = numbers[event.which] + ':00';
+							scope.updateDate();
+							scope.setTimeBar();
+						}
+					} else if (event.which == 65) {
+						scope.timeframe = 'am';
+						scope.time_input = scope.time + ' ' + scope.timeframe;
+					} else if (event.which == 80) {
+						scope.timeframe = 'pm';
+						scope.time_input = scope.time + ' ' + scope.timeframe;
+					} else if (event.which == 8) {
+						scope.edittime.digits.pop();
+						scope.time_input = formatTime();
+						console.log(scope.edittime.digits);
+					}
+					scope.edittime.formatted = scope.time_input;
+					// scope.edittime.input = formatted;
+				};
+				
+                var pad2 = function (number) {
+                    return (number < 10 ? '0' : '') + number;
+                };
+           
+                scope.moving = false;
+                scope.offsetx = 0;
+                scope.totaloffset = 0;
+                scope.initializeTimepicker = function () {
+                    currenttime = $('.current-time');
+                    timeline = $('.timeline');
+                    if (timeline.length > 0) {
+                        timeline_width = timeline[0].offsetWidth;
+                    }
+                    timeline_container = $('.timeline-container');
+                    sectionlength = timeline_width / 24 / 6;
+                };
+
+                angular.element($window).on('resize', function () {
+                    scope.initializeTimepicker();
+                    if (timeline.length > 0) {
+                        timeline_width = timeline[0].offsetWidth;
+                    }
+                    sectionlength = timeline_width / 24;
+					scope.checkWidth(true);
+                });
+           
+                scope.setTimeBar = function (date) {
+					currenttime = $('.current-time');
+					var timeline_width = $('.timeline')[0].offsetWidth;
+                    var hours = scope.time.split(':')[0];
+					if (hours == 12) {
+						hours = 0;
+					}
+					var minutes = scope.time.split(':')[1];
+					var minutes_offset = (minutes / 60) * (timeline_width / 12);
+					var hours_offset = (hours / 12) * timeline_width;
+					scope.currentoffset = parseInt(hours_offset + minutes_offset - 1);
+                    currenttime.css({
+						transition: 'transform 0.4s ease',
+                        transform: 'translateX(' + scope.currentoffset + 'px)',
+                    });
+                };
+
+                scope.getTime = function () {
+                    // get hours
+                    var percenttime = (scope.currentoffset + 1) / timeline_width;
+                    var hour = Math.floor(percenttime * 12);
+                    var percentminutes = (percenttime * 12) - hour;
+					var minutes = Math.round((percentminutes * 60) / 5) * 5;
+                    if (hour === 0) {
+                        hour = 12;
+                    }
+					if (minutes == 60) {
+						hour += 1;
+						minutes = 0;
+					}
+
+                    scope.time = hour + ":" + pad2(minutes);
+					scope.updateInputTime();
+                    scope.updateDate();
+                };
+           
+                var initialized = false;
+
+                element.on('touchstart', function() {
+                    if (!initialized) {
+                        element.find('.timeline-container').on('touchstart', function (event) {
+                            scope.timeSelectStart(event);
+                        });
+                        initialized = true;
+                    }
+                });
+
+                scope.timeSelectStart = function (event) {
+                    scope.initializeTimepicker();
+                    var timepicker_container = element.find('.timepicker-container-inner');
+					var timepicker_offset = timepicker_container.offset().left;
+                    if (event.type == 'mousedown') {
+                        scope.xinitial = event.clientX;
+                    } else if (event.type == 'touchstart') {
+                        scope.xinitial = event.originalEvent.touches[0].clientX;
+                    }
+                    scope.moving = true;
+                    scope.currentoffset = scope.xinitial - timepicker_container.offset().left;
+                    scope.totaloffset = scope.xinitial - timepicker_container.offset().left;
+					console.log(timepicker_container.width());
+					if (scope.currentoffset < 0) {
+						scope.currentoffset = 0;
+					} else if (scope.currentoffset > timepicker_container.width()) {
+						scope.currentoffset = timepicker_container.width();
+					}
+					currenttime.css({
+                        transform: 'translateX(' + scope.currentoffset + 'px)',
+                        transition: 'none',
+                        cursor: 'ew-resize',
+                    });
+                    scope.getTime();
+                };
+           
+                angular.element($window).on('mousemove touchmove', function (event) {
+                    if (scope.moving === true) {
+                        event.preventDefault();
+                        if (event.type == 'mousemove') {
+                            scope.offsetx = event.clientX - scope.xinitial;
+                        } else if (event.type == 'touchmove') {
+                            scope.offsetx = event.originalEvent.touches[0].clientX - scope.xinitial;
+                        }
+                        var movex = scope.offsetx + scope.totaloffset;
+                        if (movex >= 0 && movex <= timeline_width) {
+                            currenttime.css({
+                                transform: 'translateX(' + movex + 'px)',
+                            });
+                            scope.currentoffset = movex;
+                        } else if (movex < 0) {
+                            currenttime.css({
+                                transform: 'translateX(0)',
+                            });
+                            scope.currentoffset = 0;
+                        } else {
+                            currenttime.css({
+                                transform: 'translateX(' + timeline_width + 'px)',
+                            });
+                            scope.currentoffset = timeline_width;
+                        }
+                        scope.getTime();
+                        scope.$apply();
+                    }
+                });
+           
+                angular.element($window).on('mouseup touchend', function (event) {
+                    if (scope.moving) {
+                        // var roundsection = Math.round(scope.currentoffset / sectionlength);
+                        // var newoffset = roundsection * sectionlength;
+                        // currenttime.css({
+                        //     transition: 'transform 0.25s ease',
+                        //     transform: 'translateX(' + (newoffset - 1) + 'px)',
+                        //     cursor: 'pointer',
+                        // });
+                        // scope.currentoffset = newoffset;
+                        // scope.totaloffset = scope.currentoffset;
+                        // $timeout(function () {
+                        //     scope.getTime();
+                        // }, 250);
+                    }
+                    scope.moving = false;
+                });
+
+                scope.adjustTime = function (direction) {
+                    event.preventDefault();
+                    scope.initializeTimepicker();
+                    var newoffset;
+                    if (direction == 'decrease') {
+                        newoffset = scope.currentoffset - sectionlength;
+                    } else if (direction == 'increase') {
+                        newoffset = scope.currentoffset + sectionlength;
+                    }
+                    if (newoffset < 0 || newoffset > timeline_width) {
+                        if (newoffset < 0) {
+                            newoffset = timeline_width - sectionlength;
+                        } else if (newoffset > timeline_width) {
+                            newoffset = 0 + sectionlength;
+                        }
+                        if (scope.timeframe == 'am') {
+                            scope.timeframe = 'pm';
+                        }
+                        else if (scope.timeframe == 'pm') {
+                            scope.timeframe = 'am';
+                        }
+                    }
+                    currenttime.css({
+                        transition: 'transform 0.4s ease',
+                        transform: 'translateX(' + (newoffset - 1) + 'px)',
+                    });
+                    scope.currentoffset = newoffset;
+                    scope.totaloffset = scope.currentoffset;
+                    scope.getTime();
+                };
+            }
+
+            // End Timepicker Code //
+
+        }
+    };
+});
 </script>
