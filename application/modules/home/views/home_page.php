@@ -19,7 +19,7 @@
 			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
 		</script><script src="assets/js/wp-emoji-release.min.js" type="text/javascript" defer="defer"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css'>
 		
 
@@ -36,9 +36,92 @@
 			background: none !important;
 			padding: 0 !important;
 			}
+
+			.carousel-inner {
+				width: 100%;
+				display: inline-block;
+				position: relative;
+			}
+			.carousel-inner {
+				padding-top: 25%;
+				display: block;
+				content: "";
+			}
+			.carousel-item {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				background: skyblue;
+				background: no-repeat center center scroll;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+
+			.caption {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				width: 60%;
+				z-index: 9;
+				margin-top: 20px;
+				text-align: center;
+			}
+			.caption h1 {
+			color: #fff;
+				font-size: 52px;
+				font-weight: 700;
+				margin-bottom: 23px;
+			}
+			.caption h2 {
+			color: rgba(255,255,255,.75);
+				font-size: 26px;
+				font-weight: 300;
+			}
+			a.big-button {
+				color: #fff;
+				font-size: 19px;
+				font-weight: 700;
+				text-transform: uppercase;
+				background: #eb7a00;
+				background: rgba(255, 0, 0, 0.75);
+				padding: 28px 35px;
+				border-radius: 3px;
+				margin-top: 80px;
+				margin-bottom: 0;
+				display: inline-block;
+			}
+			a.big-button:hover {
+				text-decoration: none;
+				background: rgba(255, 0, 0, 0.9);
+			}
+			a.view-demo {
+				color: #fff;
+				font-size: 21px;
+				font-weight: 700;
+				display: inline-block;
+				margin-top: 35px;
+			}
+			a.view-demo:hover {
+				text-decoration: none;
+				color: #333;
+			}
+
+			.carousel-indicators .active {
+			background: #fff;
+			}
+			.carousel-indicators li {
+			background: rgba(255, 255, 255, 0.4);
+			border-top: 20px solid;
+			z-index: 15;
+			}
 		</style>
-		<link rel="stylesheet" id="wp-block-library-css" href="assets/css/style.min_002.css" media="all">
-		<link rel="stylesheet" href="assets/css/custom_style.css" media="all">
+		<link rel="stylesheet" id="wp-block-library-css" href="<?=base_url()?>assets/css/style.min_002.css" media="all">
+		<link rel="stylesheet" href="<?=base_url()?>assets/css/custom_style.css" media="all">
 		<link rel="stylesheet" id="classic-theme-styles-css" href="assets/css/classic-themes.min.css" media="all">
 		<style id="global-styles-inline-css">
 			body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
@@ -354,53 +437,60 @@
 		<div data-elementor-type="wp-post" data-elementor-id="914" class="elementor elementor-914">
 			<!-- corosel content start here -->
 			<header>
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
+
+				<div id="carousel" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						<li data-target="#carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel" data-slide-to="1"></li>
+						<li data-target="#carousel" data-slide-to="2"></li>
+						<li data-target="#carousel" data-slide-to="3"></li>
 					</ol>
 
-					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img src="<?=base_url()?>assets/images/lawn_tractor.png" alt="...">
-						<div class="carousel-caption">
-						<h2 class="animated bounceInRight" style="animation-delay: 1s">urbanEye AI</h2>
-						<h3 class="animated bounceInLeft" style="animation-delay: 2s">Experience a Smarter Way to Manage Your Landscape</h3>
+
+						<div class="carousel-item active" style="background-image: url(https://urbaneye.enke.in/assets/images/stake_holder_benefit.png)">
+							<div class="caption" style="padding-bottom:20px;">
+								<h1 style="color:#116ad20 ;">urbanEye AI</h1>
+								<h2 style="color:#116ad20 ;">Experience a Smarter Way to Manage Your Landscape</h2>
+								<a class="big-button" href="" title="" style="border-radius:15px;background: #193c16;color:#fff;">Get Started</a>
+							</div>
 						</div>
-					</div>
-					<div class="item">
-						<img src="<?=base_url()?>assets/images/green-grass-field-lonely-tree-and-blue-sky-2022-08-14-01-27-04-utc.png" alt="urbaneyeAI-about">
-						<div class="carousel-caption">
-						<h2 class="animated slideInDown" style="animation-delay: 1s">Say goodbye to check-ins, check-outs, photo proof, 
-and administrative burdens
-</h2>
-						<h3 class="animated slideInRight" style="animation-delay: 2s">
-						UrbanEye AI platform provides a unified communication for all stakeholders
-					</h3>
+						<div class="carousel-item" style="background-image: url(https://urbaneye.enke.in/assets/images/stake_holder_benefit.png)">
+							<div class="caption">
+							<h1 style="color:#19631e;">Unlock (up to)20% more profits with urbanEye AI</h1>
+							<h2 style="color:#19631e;">urbanEye AI platform quantifies daily production inefficiencies,</h2>
+
+							<a class="big-button" href="" title="" style="background: #193c16;color:#fff; border-radius:15px;">Book A Demo</a>
+							<div class="clear"></div>
+							</div>
 						</div>
-					</div>
-					<div class="item">
-						<img src="<?=base_url()?>assets/images/stake_holder_benefit.png" alt="urbaneyeAI-banner">
-						<div class="carousel-caption">
-						<h2 class="animated zoomIn" style="animation-delay: 1s">Experience the true meaning of real-time benchmarking!</h2>
-						<h3 class="animated zoomIn" style="animation-delay: 2s">urbanEye AI helps achieve improved productivity, Real-Time Worksite Insights, Workforce Management</h3>
+					
+						<div class="carousel-item" style="background-image: url(https://urbaneye.enke.in/assets/images/panoramic-shot-of-green-grass-near-trees-against-s-2022-12-16-17-18-47-utc.jpg)">
+							<div class="caption" style="padding-bottom: 8%;">
+							<h1 style="color:#0e2945;">Say goodbye to check-ins, check-outs, photo proof, and administrative burdens. 
+							</h1 style="color:#0e2945;">
+							<h2>UrbanEye AI platform provides a unified communication for all stakeholders,</h2>
+							</div>
 						</div>
-					</div>
+						<div class="carousel-item" style="background-image: url(https://urbaneye.enke.in/assets/images/panoramic-shot-of-green-grass-near-trees-against-s-2022-12-16-17-18-47-utc.jpg)">
+							<div class="caption" style="padding-bottom: 8%;">
+							<h1 style="color:19631e;">Experience the true meaning of real-time benchmarking! 
+							</h1>
+							<h2 style="color:19631e;">urbanEye AI helps achieve improved productivity, Real-Time Worksite Insights, Workforce Management</h2>
+							</div>
+						</div>
 
 					</div>
-
-					<!-- Controls -->
-					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					
+					<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="sr-only">Previous</span>
 					</a>
-					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="sr-only">Next</span>
 					</a>
+
 				</div>
 
 			</header>
@@ -419,7 +509,7 @@ and administrative burdens
 													<div class="elementor-icon-box-wrapper">
 														<div class="elementor-icon-box-icon">
 															<span class="elementor-icon elementor-animation-">
-															<i aria-hidden="true" class="mdi mdi-leak"></i>				</span>
+															<i aria-hidden="true" class="mdi mdi-cast-connected"></i>				</span>
 														</div>
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
@@ -480,7 +570,7 @@ and administrative burdens
 													<div class="elementor-icon-box-wrapper">
 														<div class="elementor-icon-box-icon">
 															<span class="elementor-icon elementor-animation-">
-															<i aria-hidden="true" class="mdi mdi-calendar-export"></i>				</span>
+															<i aria-hidden="true" class="mdi mdi-trending-up"></i>				</span>
 														</div>
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
@@ -512,7 +602,7 @@ and administrative burdens
 							<div class="elementor-element elementor-element-e0a1af0 elementor-widget elementor-widget-heading" data-id="e0a1af0" data-element_type="widget" data-widget_type="heading.default">
 								<div class="elementor-widget-container">
 									<h2 class="elementor-heading-title elementor-size-default">
-									About urbanEYE AI
+									urbanEye AI & setup
 									</h2>
 								</div>
 							</div>
@@ -521,8 +611,10 @@ and administrative burdens
 									<style>/*! elementor - v3.10.0 - 09-01-2023 */
 										.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}
 									</style>
-									<p>"Founded in 2016, SpaceAge Labs is a technology solutions provider, we specializes using IoT and AI to revolutionize the operations and maintenance of remote assets with less to zero manual intervention. Our common goal is to provide the industry with cutting-edge solutions that improve efficiency, 
-										sustainability, and compliance for sustainable urban infrastructure management.
+									<p>The urbanEYE AI is a Duo of hardware and software that’s highly customizable and increases
+									productivity manyfold that’s real time and never achieved by your traditional practices. The fool
+									proof device and software is easy to set up in 3 simple steps. The device is built for heavy duty
+									performance &amp; the software is a highly secured network powered by AI.
 
 									</p>
 								</div>
@@ -575,7 +667,7 @@ and administrative burdens
 						<div class="elementor-widget-wrap element-box-shadow">
 							<section class="elementor-section elementor-inner-section elementor-element elementor-element-fc80c89 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fc80c89" data-element_type="section">
 								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-d1d6d0f animated fadeInUp" data-id="d1d6d0f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:200}"  style="  height: 450px;">
+									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d1d6d0f animated fadeInUp" data-id="d1d6d0f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:200}"  style="  height: 450px;">
 										<div class="elementor-widget-wrap element-box-shadow">
 											<div class="elementor-element elementor-element-fbbe9ba elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="fbbe9ba" data-element_type="widget" data-widget_type="icon-box.default">
 												<div class="elementor-widget-container">
@@ -610,7 +702,7 @@ and administrative burdens
 											</div>
 										</div>
 									</div>
-									<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-e0ad1d8 animated fadeInUp" data-id="e0ad1d8" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}"  style="height: 450px;">
+									<div class="elementor-column  elementor-col-33 elementor-inner-column elementor-element elementor-element-e0ad1d8 animated fadeInUp" data-id="e0ad1d8" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}"  style="height: 450px;">
 										<div class="elementor-widget-wrap element-box-shadow">
 											<div class="elementor-element elementor-element-2e6dda2 elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="2e6dda2" data-element_type="widget" data-widget_type="icon-box.default">
 												<div class="elementor-widget-container">
@@ -645,7 +737,7 @@ and administrative burdens
 											</div>
 										</div>
 									</div>
-									<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-dcbaa1e animated fadeInUp" data-id="dcbaa1e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:300}" style="height: 450px;">
+									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-dcbaa1e animated fadeInUp" data-id="dcbaa1e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:300}" style="height: 450px;">
 										<div class="elementor-widget-wrap element-box-shadow">
 											<div class="elementor-element elementor-element-1977d38 elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="1977d38" data-element_type="widget" data-widget_type="icon-box.default">
 												<div class="elementor-widget-container">
@@ -679,80 +771,9 @@ and administrative burdens
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-e0ad1d8 animated fadeInUp" data-id="e0ad1d8" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}" style="  height: 450px;">
-										<div class="elementor-widget-wrap element-box-shadow">
-											<div class="elementor-element elementor-element-2e6dda2 elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="2e6dda2" data-element_type="widget" data-widget_type="icon-box.default">
-												<div class="elementor-widget-container">
-													<div class="elementor-icon-box-wrapper">
-														<div class="elementor-icon-box-icon">
-															<span class="elementor-icon element-icon-wrap">
-															<i aria-hidden="true" class="mdi mdi-calendar-export"></i>				</span>
-														</div>
-														<div class="elementor-icon-box-content">
-															<div class="elementor-icon-box-title">
-																<span>
-																AI/ ML Insights &amp; Reports			</span>
-															</div>
-															<p class="elementor-icon-box-description">
-															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Captures and analyze geospatial data from crew-connected sensors in real-time &amp; get
-															quantifiable work reports to ensure accuracy &amp; reliability, eliminating the tedious manual
-															entries and reduced discrepancies. With our automated system, payment claiming and
-															clearing are made simple and confusion-free without any manual intervention.
-															Click through Content for AI/ ML Insights &amp; Reports, it should land in the separate page that
-															we create for the features
-				
-															</p>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="elementor-element elementor-element-0538679 elementor-widget__width-auto elementor-absolute e-transform elementor-view-default elementor-widget elementor-widget-icon" data-id="0538679" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-45,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="icon.default">
-												<div class="elementor-widget-container">
-													<div class="element-icon-wrapper">
-														<a class="elementor-icon" href="#">
-														<i aria-hidden="true" class="mdi mdi-arrow-right"></i>			</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+									</div>									
 								</div>
 							</section>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="elementor-section elementor-top-section elementor-element elementor-element-157e74d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="157e74d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-background-overlay"></div>
-				<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-492394f animated fadeInUp" data-id="492394f" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
-						<div class="elementor-widget-wrap elementor-element-populated">
-							<div class="elementor-element elementor-element-c2ed8b3 elementor-widget elementor-widget-heading" data-id="c2ed8b3" data-element_type="widget" data-widget_type="heading.default">
-								<div class="elementor-widget-container">
-									<h2 class="elementor-heading-title elementor-size-default">About urbanEYE AI</h2>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-743d63f elementor-widget elementor-widget-text-editor" data-id="743d63f" data-element_type="widget" data-widget_type="text-editor.default">
-								<div class="elementor-widget-container">
-									<p>The urbanEYE AI is a Duo of hardware and software. 
-										The IoT device/hardware boarded onto the crew members on the ground, 
-										or any equipment used for cutting grass. With no manual interventions involved, 
-										and no cheque in cheque outs from any software the device uses the geospatial data to capture submitter 
-										level high precision tracking capable to capture real time activities on the ground works autonomously.</p>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-ce3a4ef elementor-align-center elementor-widget elementor-widget-button" data-id="ce3a4ef" data-element_type="widget" data-widget_type="button.default">
-								<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-										<a href="#" class="elementor-button-link elementor-button elementor-size-md" role="button">
-										<span class="elementor-button-content-wrapper">
-										<span class="elementor-button-text">Discover more</span>
-										</span>
-										</a>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -768,17 +789,20 @@ and administrative burdens
 											<div class="elementor-element elementor-element-a500743 elementor-widget elementor-widget-heading" data-id="a500743" data-element_type="widget" data-widget_type="heading.default">
 												<div class="elementor-widget-container">
 													<h2 class="elementor-heading-title elementor-size-default">
-													urbanEYE AI &amp; the easy set-up</h2>
+													AI/ ML Insights &amp; Reports</h2>
 												</div>
 											</div>
 											<div class="elementor-element elementor-element-43e53aa elementor-widget elementor-widget-text-editor" data-id="43e53aa" data-element_type="widget" data-widget_type="text-editor.default">
 												<div class="elementor-widget-container">
-													<p>
-													The urbanEYE AI is a Duo of hardware and software that’s highly customizable and increases
-										productivity manyfold that’s real time and never achieved by your traditional practices. The fool
-										proof device and software is easy to set up in 3 simple steps. The device is built for heavy duty
-										performance &amp; the software is a highly secured network powered by AI.
-													</p>
+												<p class="elementor-icon-box-description">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Captures and analyze geospatial data from crew-connected sensors in real-time &amp; get
+                                    quantifiable work reports to ensure accuracy &amp; reliability, eliminating the tedious manual
+                                    entries and reduced discrepancies. With our automated system, payment claiming and
+                                    clearing are made simple and confusion-free without any manual intervention.
+                                    Click through Content for AI/ ML Insights &amp; Reports, it should land in the separate page that
+                                    we create for the features
+
+                                    </p>
 												</div>
 											</div>
 										</div>
@@ -787,7 +811,7 @@ and administrative burdens
 							</section>
 							<section class="elementor-section elementor-inner-section elementor-element elementor-element-afdbc89 elementor-section-boxed elementor-section-height-default elementor-section-height-default animated fadeIn" data-id="afdbc89" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:200}">
 								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7579a73" data-id="7579a73" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7579a73" data-id="7579a73" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 										<div class="elementor-widget-wrap elementor-element-populated">
 											<div class="elementor-element elementor-element-612a1b7 elementor-position-left elementor-tablet-position-top elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="612a1b7" data-element_type="widget" data-widget_type="icon-box.default">
 												<div class="elementor-widget-container">
@@ -824,7 +848,7 @@ and administrative burdens
 											</div>
 										</div>
 									</div>
-									<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7579a73" data-id="7579a73" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7579a73" data-id="7579a73" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 										<div class="elementor-widget-wrap elementor-element-populated">
 											<div class="elementor-element elementor-element-612a1b7 elementor-position-left elementor-tablet-position-top elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="612a1b7" data-element_type="widget" data-widget_type="icon-box.default">
 												<div class="elementor-widget-container">
@@ -862,7 +886,7 @@ and administrative burdens
 											</div>
 										</div>
 									</div>
-									<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7579a73" data-id="7579a73" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7579a73" data-id="7579a73" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 										<div class="elementor-widget-wrap elementor-element-populated">
 											<div class="elementor-element elementor-element-612a1b7 elementor-position-left elementor-tablet-position-top elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="612a1b7" data-element_type="widget" data-widget_type="icon-box.default">
 												<div class="elementor-widget-container">
@@ -900,19 +924,23 @@ and administrative burdens
 											</div>
 										</div>
 									</div>
-									<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7579a73" data-id="7579a73" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+								</div>
+							</section>
+							<section class="elementor-section elementor-inner-section elementor-element elementor-element-afdbc89 elementor-section-boxed elementor-section-height-default elementor-section-height-default animated fadeIn" data-id="afdbc89" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:200}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7579a73" data-id="7579a73" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 										<div class="elementor-widget-wrap elementor-element-populated">
 											<div class="elementor-element elementor-element-612a1b7 elementor-position-left elementor-tablet-position-top elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="612a1b7" data-element_type="widget" data-widget_type="icon-box.default">
 												<div class="elementor-widget-container">
 													<div class="elementor-icon-box-wrapper">
 														<div class="elementor-icon-box-icon">
 															<span class="elementor-icon elementor-animation-">
-															<i aria-hidden="true" class="mdi mdi-salesforce"></i>				</span>
+															<i aria-hidden="true" class="mdi mdi-account-search"></i>				</span>
 														</div>
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																Work completion Report</span>
+																Work Completion Reports</span>
 															</div>
 														</div>
 													</div>
@@ -923,8 +951,85 @@ and administrative burdens
 													<div class="elementor-cta">
 														<div class="elementor-cta__content">
 															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">
-															As a sales manager your core objective is to win as many as contracts with increases profit
-															margins, with urbanEye AI be rest assured to be clear winner
+															UrbanEye AI provides supervisors the freedom from complex monitoring of day-to-day
+												activities &amp; reporting process, which is achieved from granular detail derived from worksites
+												with ease of access that you never experienced from your traditional software.
+															</div>
+															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
+																<a class="elementor-cta__button elementor-button elementor-size-xs" href="#">
+																Learn more					</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7579a73" data-id="7579a73" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-612a1b7 elementor-position-left elementor-tablet-position-top elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="612a1b7" data-element_type="widget" data-widget_type="icon-box.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-icon-box-wrapper">
+														<div class="elementor-icon-box-icon">
+															<span class="elementor-icon elementor-animation-">
+															<i aria-hidden="true" class="mdi mdi-account-key"></i>				</span>
+														</div>
+														<div class="elementor-icon-box-content">
+															<div class="elementor-icon-box-title">
+																<span>
+																Exception Report</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-4c4652b elementor-cta--valign-middle elementor-cta--skin-classic elementor-animated-content elementor-widget elementor-widget-call-to-action" data-id="4c4652b" data-element_type="widget" data-widget_type="call-to-action.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-cta">
+														<div class="elementor-cta__content">
+															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">															
+															Account managers who manage multiple supervisors or multiple crews need to take a well
+															informed decisions and not mis-guided by what others say, you need a fool=proof systems
+															to calculate productivity levels and here comes urbanEye AI the highly intuitive device and
+															platform handy
+															</div>
+															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
+																<a class="elementor-cta__button elementor-button elementor-size-xs" href="#">
+																Learn more					</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7579a73" data-id="7579a73" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-612a1b7 elementor-position-left elementor-tablet-position-top elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="612a1b7" data-element_type="widget" data-widget_type="icon-box.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-icon-box-wrapper">
+														<div class="elementor-icon-box-icon">
+															<span class="elementor-icon elementor-animation-">
+															<i aria-hidden="true" class="mdi mdi-checkbox-marked-outline"></i>				</span>
+														</div>
+														<div class="elementor-icon-box-content">
+															<div class="elementor-icon-box-title">
+																<span>
+																Profit Impact Report</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-4c4652b elementor-cta--valign-middle elementor-cta--skin-classic elementor-animated-content elementor-widget elementor-widget-call-to-action" data-id="4c4652b" data-element_type="widget" data-widget_type="call-to-action.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-cta">
+														<div class="elementor-cta__content">
+															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">
+															Witness the true meaning of productivity in real time with urbanEye AI &amp; steer ahead the
+														organization to profitability of upto 40%. As a lawn management professional, you have to
+														multitask and manage manpower, inventory, billing &amp; payments with urbanEye AI you are a
+														clear winner.
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
 																<a class="elementor-cta__button elementor-button elementor-size-xs" href="#">
@@ -942,151 +1047,7 @@ and administrative burdens
 					</div>
 				</div>
 			</section>
-			<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-2484036 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2484036" data-element_type="section">
-				<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-57eaf21" data-id="57eaf21" data-element_type="column">
-						<div class="elementor-widget-wrap elementor-element-populated">
-							<section class="elementor-section elementor-inner-section elementor-element elementor-element-184d62d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="184d62d" data-element_type="section">
-								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-f118597" data-id="f118597" data-element_type="column">
-										<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-6ae10f0 elementor-widget elementor-widget-heading" data-id="6ae10f0" data-element_type="widget" data-widget_type="heading.default">
-												<div class="elementor-widget-container">
-													<h2 class="elementor-heading-title elementor-size-default">International hydroponic cultivation projects.</h2>
-												</div>
-											</div>
-											<div class="elementor-element elementor-element-0bd5b32 elementor-widget elementor-widget-text-editor" data-id="0bd5b32" data-element_type="widget" data-widget_type="text-editor.default">
-												<div class="elementor-widget-container">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<div class="elementor-element elementor-element-bfc93db elementor-widget elementor-widget-image" data-id="bfc93db" data-element_type="widget" data-widget_type="image.default">
-								<div class="elementor-widget-container">
-									<img decoding="async" src="assets/images/map_img.png" class="attachment-full size-full wp-image-690" alt="" loading="lazy" srcset="assets/images/map_img.png 924w, assets/images/map_img-300x162.png 300w, assets/images/map_img-768x416.png 768w, assets/images/map_img-800x433.png 800w" sizes="(max-width: 924px) 100vw, 924px" width="924" height="500">															
-								</div>
-							</div>
-							<section class="elementor-section elementor-inner-section elementor-element elementor-element-699b05b elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="699b05b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-a2ea1ee" data-id="a2ea1ee" data-element_type="column">
-										<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-667f915 elementor-widget elementor-widget-counter" data-id="667f915" data-element_type="widget" data-widget_type="counter.default">
-												<div class="elementor-widget-container">
-													<style>/*! elementor - v3.10.0 - 09-01-2023 */
-														.elementor-counter .elementor-counter-number-wrapper{display:flex;font-size:69px;font-weight:600;line-height:1}.elementor-counter .elementor-counter-number-prefix,.elementor-counter .elementor-counter-number-suffix{flex-grow:1;white-space:pre-wrap}.elementor-counter .elementor-counter-number-prefix{text-align:right}.elementor-counter .elementor-counter-number-suffix{text-align:left}.elementor-counter .elementor-counter-title{text-align:center;font-size:19px;font-weight:400;line-height:2.5}
-													</style>
-													<div class="elementor-counter">
-														<div class="elementor-counter-number-wrapper">
-															<span class="elementor-counter-number-prefix"></span>
-															<span class="elementor-counter-number" data-duration="2000" data-to-value="27" data-from-value="0" data-delimiter=",">27</span>
-															<span class="elementor-counter-number-suffix">+</span>
-														</div>
-														<div class="elementor-counter-title">Countries</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-03ea058" data-id="03ea058" data-element_type="column">
-										<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-1021e6e elementor-widget elementor-widget-counter" data-id="1021e6e" data-element_type="widget" data-widget_type="counter.default">
-												<div class="elementor-widget-container">
-													<div class="elementor-counter">
-														<div class="elementor-counter-number-wrapper">
-															<span class="elementor-counter-number-prefix"></span>
-															<span class="elementor-counter-number" data-duration="2000" data-to-value="2.9" data-from-value="0" data-delimiter=",">2.9</span>
-															<span class="elementor-counter-number-suffix">M+</span>
-														</div>
-														<div class="elementor-counter-title">Heactares Field</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-ffa95fd" data-id="ffa95fd" data-element_type="column">
-										<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-a689e29 elementor-widget elementor-widget-counter" data-id="a689e29" data-element_type="widget" data-widget_type="counter.default">
-												<div class="elementor-widget-container">
-													<div class="elementor-counter">
-														<div class="elementor-counter-number-wrapper">
-															<span class="elementor-counter-number-prefix"></span>
-															<span class="elementor-counter-number" data-duration="2000" data-to-value="87" data-from-value="0" data-delimiter=",">87</span>
-															<span class="elementor-counter-number-suffix">K+</span>
-														</div>
-														<div class="elementor-counter-title">Happy Farm's</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-dcd477a" data-id="dcd477a" data-element_type="column">
-										<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-aeefc16 elementor-widget elementor-widget-counter" data-id="aeefc16" data-element_type="widget" data-widget_type="counter.default">
-												<div class="elementor-widget-container">
-													<div class="elementor-counter">
-														<div class="elementor-counter-number-wrapper">
-															<span class="elementor-counter-number-prefix"></span>
-															<span class="elementor-counter-number" data-duration="2000" data-to-value="25" data-from-value="0" data-delimiter=",">25</span>
-															<span class="elementor-counter-number-suffix">+</span>
-														</div>
-														<div class="elementor-counter-title">Years Experience</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-						</div>
-					</div>
-				</div>
-			</section> -->
-			<section class="elementor-section elementor-top-section elementor-element elementor-element-af4810d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="af4810d" data-element_type="section" data-settings="">
-				<div class="elementor-background-video-container elementor-hidden-phone">
-					<!-- <iframe class="elementor-background-video-embed" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="footage sayuran hidroponik free bebas copyright bebas hak cipta" src="assets/images/WThJciyM6tk.htm" id="widget2" style="width: 1704px; height: 958.5px;" width="640" height="360" frameborder="0"></iframe> -->
-				</div>
-				<div class="elementor-background-overlay"></div>
-				<div class="elementor-column-gap-default element-why-we-stand">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ffb39c6 animated fadeInUp" data-id="ffb39c6" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
-						<div class="elementor-widget-wrap elementor-element-populated">
-							<div class="elementor-element elementor-element-de7a431 elementor-widget elementor-widget-heading" data-id="de7a431" data-element_type="widget" data-widget_type="heading.default">
-								<div class="elementor-widget-container">
-									<h2 class="elementor-heading-title elementor-size-default">Who We Are?</h2>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-5751fce elementor-widget elementor-widget-text-editor" data-id="5751fce" data-element_type="widget" data-widget_type="text-editor.default">
-								<div class="elementor-widget-container">
-									<p>
-									"Founded in 2016, SpaceAge Labs is a technology solutions provider, we specializes using IoT and AI to revolutionize the operations and maintenance of remote assets with less to zero manual intervention. Our common goal is to provide the industry with cutting-edge solutions that improve efficiency, sustainability, and compliance for sustainable urban infrastructure management.
-
-								Our vision is to be the leading provider of IOT and AI based insights to sustainably manage remote and distributed greenery assets for urban infrastructure management companies, empowering industry to unlock the full potential of their workforce. Our mission is to combine domain expertise and technology to deliver customized, end-to-end solutions that streamline operations, reduce costs, and promote sustainable practices.
-
-								Our solutions are designed for the water and wastewater industry, as well as outdoor city work management. Our products, hydroEye AI and urbanEye AI, provide real-time sensor data and AI-based insights that help manage their assets and prevent damage.
-
-								We take pride in our team of experts who are committed in delivering critical & high-quality solutions that address the specific needs of the industry beyond boundaries to make organizations smarter. Our team has grown to 20 employees, and we have worked with clients across geographies and industries.
-								We’re excited to work with you in water and greenery management, learn with you. If you feel our solutions are game changer & want to learn more about our solutions, please write to us info@urbaneye.ai 
-
-									</p>
-								</div>
-							</div>
-							<div class="elementor-element elementor-element-ad724c4 elementor-align-center elementor-widget elementor-widget-button" data-id="ad724c4" data-element_type="widget" data-widget_type="button.default">
-								<div class="elementor-widget-container">
-									<div class="elementor-button-wrapper">
-										<a href="#" class="elementor-button-link elementor-button elementor-size-md" role="button">
-										<span class="elementor-button-content-wrapper">
-										<span class="elementor-button-text">Discover more</span>
-										</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			
 			<section class="elementor-section elementor-top-section elementor-element elementor-element-fb76bcf elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fb76bcf" data-element_type="section">
 				<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e77b7e6 animated fadeInLeft" data-id="e77b7e6" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
@@ -1100,11 +1061,6 @@ and administrative burdens
 					</div>
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0f96835 animated fadeIn" data-id="0f96835" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:200}">
 						<div class="elementor-widget-wrap elementor-element-populated">
-							<div class="elementor-element elementor-element-98c075a elementor-widget elementor-widget-heading" data-id="98c075a" data-element_type="widget" data-widget_type="heading.default">
-								<div class="elementor-widget-container">
-									<h6 class="elementor-heading-title elementor-size-default">Why Choose us</h6>
-								</div>
-							</div>
 							<div class="elementor-element elementor-element-e732d0e elementor-widget elementor-widget-heading" data-id="e732d0e" data-element_type="widget" data-widget_type="heading.default">
 								<div class="elementor-widget-container">
 									<h2 class="elementor-heading-title elementor-size-default">Stake Holders Benefits</h2>
@@ -1131,11 +1087,10 @@ and administrative burdens
 																<span>
 																For Crew Members:					</span>
 															</div>
-															<p class="elementor-icon-box-description">
-															UrbanEye AI provides crew members the freedom from complex reporting of day-to-day
-															activities &amp; age-old process, which is achieved from granular detail derived from worksites
-															with ease of access that you never experienced from your traditional software.
-															</p>
+															<li>Keep connected with real-time updates on job sites.</li>
+															<li>No more check-in, check-out and photo evidence of work completion.</li>
+															<li>Track productivity of Crew Members with “Productive Pulse Monitoring feature”</li>
+															<li>Receive feedback to improve performance.</li>
 														</div>
 													</div>
 												</div>
@@ -1157,12 +1112,10 @@ and administrative burdens
 																For Account Managers:
 																</span>
 															</div>
-															<p class="elementor-icon-box-description">
-															Account managers who manage multiple crews need to take a well-informed decision and
-													not be mis-guided, you need a fool proof system to calculate productivity levels, keep the
-													cost under control, and here comes urbanEye AI the highly intuitive device and platform
-													handy
-															</p>
+															<li>Centralize worksite management in a single platform,</li>
+															<li>Reduced manual processes and improved efficiency.</li>
+															<li>Real-time data paves improved communication and accountability.</li>
+															<li>Fool proof &amp; systematic billing &amp; payment process</li>
 														</div>
 													</div>
 												</div>
@@ -1188,12 +1141,11 @@ and administrative burdens
 																For Operations Managers:
 																</span>
 															</div>
-															<p class="elementor-icon-box-description">
-															Witness the true meaning of productivity in real time with urbanEye AI &amp; steer ahead the
-													organization to profitability of upto 40%. As a lawn management professional, you have to
-													multitask and manage manpower, inventory, billing &amp; payments with urbanEye AI you are a
-													clear winner.
-															</p>
+															<li>Improved work force management &amp; sustained productivity</li>
+															<li>Highly productive process owners.</li>
+															<li>Improved inventory management</li>
+															<li>Streamlined payment process for the work force</li>
+															<li>Profitable contracts &amp; new benchmarks</li>
 														</div>
 													</div>
 												</div>
@@ -1215,10 +1167,12 @@ and administrative burdens
 															For Sales:	
 															</span>
 															</div>
-															<p class="elementor-icon-box-description">
-															As a sales manager your core objective is to win as many as contracts with increases profit
-														margins, with urbanEye AI be rest assured to be clear winner
-															</p>
+															<li>With new benchmarks achieved in successful implementation of urbanEye AI</li>
+															<li>Your accuracy to calculate the production rates of crew members are higher</li>
+															<li>You will have a reduced and efficient crew numbers</li>
+															<li>You experience a streamlined inventory</li>
+															<li>With the new benchmarks are set and insights in your hand the bidding for future
+projects is highly accurate.</li>
 														</div>
 													</div>
 												</div>
@@ -1514,5 +1468,6 @@ valuable insights for our operations.&quot;
 			</div>
 		</section> -->
 		
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.js'></script>
