@@ -298,7 +298,7 @@
 									<div class="elementor-social-icons-wrapper elementor-grid">
 										<span class="elementor-grid-item">
 										<a href="https://www.facebook.com/spaceagelabs/" class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-pop elementor-repeater-item-41b2287" target="_blank">
-										<span class="elementor-screen-only">Facebook-f</span>
+										<span class="elementor-screen-only">Facebook</span>
 										<i class="mdi mdi-facebook"></i>					</a>
 										</span>
 										<span class="elementor-grid-item">

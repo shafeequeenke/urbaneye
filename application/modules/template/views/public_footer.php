@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-f20af76 elementor-widget elementor-widget-image" data-id="f20af76" data-element_type="widget" data-widget_type="image.default">
 									<div class="elementor-widget-container">
-										<img src="assets/images/urban_logo.png" title="Logo Urban Eye" alt="Logo Urban Eye" loading="lazy">															
+										<img src="<?=base_url()?>assets/images/urban_logo.png" title="Logo Urban Eye" alt="Logo Urban Eye" loading="lazy">															
 									</div>
 								</div>
 								<div class="elementor-element elementor-element-c8916b0 elementor-widget elementor-widget-text-editor" data-id="c8916b0" data-element_type="widget" data-widget_type="text-editor.default">

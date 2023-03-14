@@ -33,21 +33,49 @@ class Home extends MY_Controller {
         $this->prepareResult();
     }
 
-    /**
-    **/
-    public function runOneTime() {
-        $this->load->model('question/Question_model','question_model');
-        $this->question_model->parseMathpix();
-        die("cpdfdf");
-        // $this->importToAlgolia();
-        die();
-        $searchText         =   'chemis';
-        $this->createComplexQuestion();
-        // $this->algoliaSearch($searchText);
-        die("here");
+    public function about() {
+        $this->data_arr['_load_page']           =   array('about');
+        $this->page_header                      =   'page_header';
+        $this->data_arr['page_name']            =   'About';
+        $this->prepareResult();
     }
 
-    public function about() {
+    public function abouturbaneye() {
+        $this->data_arr['_load_page']           =   array('abouturbaneye');
+        $this->page_header                      =   'page_header';
+        $this->data_arr['page_name']            =   'About';
+        $this->prepareResult();
+    }
+
+    public function features() {
+        $this->data_arr['_load_page']           =   array('features');
+        $this->page_header                      =   'page_header';
+        $this->data_arr['page_name']            =   'About';
+        $this->prepareResult();
+    }
+
+    public function careers() {
+        $this->data_arr['_load_page']           =   array('careers');
+        $this->page_header                      =   'page_header';
+        $this->data_arr['page_name']            =   'Careers';
+        $this->prepareResult();
+    }
+
+    public function pricing() {
+        $this->data_arr['_load_page']           =   array('pricing');
+        $this->page_header                      =   'page_header';
+        $this->data_arr['page_name']            =   'Pricing';
+        $this->prepareResult();
+    }
+
+    public function enquiry() {
+        $this->data_arr['_load_page']           =   array('enquiry');
+        $this->page_header                      =   'page_header';
+        $this->data_arr['page_name']            =   'Enquiry';
+        $this->prepareResult();
+    }
+
+    public function termsofservices() {
         $this->data_arr['_load_page']           =   array('about');
         $this->page_header                      =   'page_header';
         $this->data_arr['page_name']            =   'About';
@@ -58,20 +86,6 @@ class Home extends MY_Controller {
         $this->data_arr['_load_page']           =   array('faq');
         $this->page_header                      =   'page_header';
         $this->data_arr['page_name']            =   'FAQ';
-        $this->prepareResult();
-    }
-
-    /**
-    **/
-    public function register() {
-        if(isset($this->input_data['SIGN_UP'])) {
-
-        } else {
-            $this->data_arr['_load_page']           =   array('header','register','footer');
-            $this->data_arr['_page_name']           =   'Register';
-            $this->page_header                      =   'page_header';
-            $this->data_arr['page_name']            =   'Register';
-        }
         $this->prepareResult();
     }
 
@@ -106,6 +120,10 @@ class Home extends MY_Controller {
         //https://codepen.io/jaromvogel/pen/aNPRwG
     }
 
+    public function contactus() {
+        $this->load->view("home/contactus");
+    }
+
     public function get_calendar() {
         $this->load->view("home/contact_calendar");
     }
@@ -115,66 +133,6 @@ class Home extends MY_Controller {
         $this->page_header                          =   'page_header';
         $this->data_arr['page_name']                =   'Privacy Policy';
         $this->prepareResult();
-    }
-
-    public function onlineResource() {
-         $this->data_arr['_load_page']               =   array('online_resource');
-        $this->page_header                          =   'page_header';
-        $this->data_arr['page_name']                =   '';
-        $this->prepareResult();
-    }
-
-    public function askQuestion() {
-         $this->data_arr['_load_page']               =   array('ask_your_question');
-        $this->page_header                          =   'page_header';
-        $this->data_arr['page_name']                =   '';
-        $this->prepareResult();
-    }
-
-    public function onlineClassroom() {
-         $this->data_arr['_load_page']               =   array('online_classroom');
-        $this->page_header                          =   'page_header';
-        $this->data_arr['page_name']                =   '';
-        $this->prepareResult();
-    }
-
-    public function chatRoom() {
-         $this->data_arr['_load_page']               =   array('chatroom');
-        $this->page_header                          =   'page_header';
-        $this->data_arr['page_name']                =   '';
-        $this->prepareResult();
-    }
-
-    public function personalCourse() {
-         $this->data_arr['_load_page']               =   array('personalized_course');
-        $this->page_header                          =   'page_header';
-        $this->data_arr['page_name']                =   '';
-        $this->prepareResult();
-    }
-
-    public function enquiries() {
-        $enquiries  = $this->home_model->getAllEnquiry();
-        $data['enquiries']  = $enquiries;
-        $this->load->view("home/contact_enquiry",$data);
-    }
-
-    public function testcorosel() {
-        // $enquiries  = $this->home_model->getAllEnquiry();
-        // $data['enquiries']  = $enquiries;
-        $this->load->view("home/contact_calendar");
-    }
-
-    /**
-    **/
-    protected function listPublicCourse() {
-        
-        $activeCourseList       =   $this->course_model->getActiveCourse();
-        $courseImage            =   $this->course_model->getActiveCourseImage();
-        $courseSlug             =   $this->course_model->getCourseIdBySlug();
-
-        $this->data_arr['course_slug']       =  $courseSlug;   
-        $this->data_arr['course_image']      =  $courseImage;
-        $this->data_arr['public_course']     =  $activeCourseList;
     }
 
     /**
