@@ -25,35 +25,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-78d19e7 elementor-widget elementor-widget-heading" data-id="78d19e7" data-element_type="widget" data-widget_type="heading.default">
 									<div class="elementor-widget-container">
-										<h5 class="elementor-heading-title elementor-size-default">Services</h5>
+										<h5 class="elementor-heading-title elementor-size-default">Features</h5>
 									</div>
 								</div>
 								<div class="elementor-element elementor-element-f40f678 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="f40f678" data-element_type="widget" data-widget_type="icon-list.default">
 									<div class="elementor-widget-container">
 										<ul class="elementor-icon-list-items">
 											<li class="elementor-icon-list-item">
-												<a href="#">
-													<span class="elementor-icon-list-text">&nbsp;<!--addcontent here--></span>
+												<a href="<?=base_url()?>index.php/home/features">
+													<span class="elementor-icon-list-text">&nbsp;Connected Crews</span>
 												</a>
 											</li>
 											<li class="elementor-icon-list-item">
-												<a href="#">
-													<span class="elementor-icon-list-text">&nbsp;<!--addcontent here--></span>
+												<a href="<?=base_url()?>index.php/home/features">
+													<span class="elementor-icon-list-text">&nbsp;Centralized management</span>
 												</a>
 											</li>
 											<li class="elementor-icon-list-item">
-												<a href="#">
-													<span class="elementor-icon-list-text">&nbsp;<!--addcontent here--></span>
+												<a href="<?=base_url()?>index.php/home/features">
+													<span class="elementor-icon-list-text">&nbsp;Monitor worksites</span>
 												</a>
 											</li>
 											<li class="elementor-icon-list-item">
-												<a href="#">
-													<span class="elementor-icon-list-text">&nbsp;<!--addcontent here--></span>
+												<a href="<?=base_url()?>index.php/home/features">
+													<span class="elementor-icon-list-text">&nbsp;Digital Work Completion Reports</span>
 												</a>
 											</li>
 											<li class="elementor-icon-list-item">
-												<a href="#">
-													<span class="elementor-icon-list-text">&nbsp;<!--addcontent here--></span>
+												<a href="<?=base_url()?>index.php/home/features">
+													<span class="elementor-icon-list-text">&nbsp;Custom scalable</span>
 												</a>
 											</li>
 

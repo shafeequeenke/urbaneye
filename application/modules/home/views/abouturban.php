@@ -629,9 +629,15 @@
 												<div class="elementor-widget-container">                                                    
 													<link rel="stylesheet" href="<?=base_url()?>assets/css/widget-nav-menu.min.css">
 													<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
-														<ul id="menu-1-308e04f" class="elementor-nav-menu" data-smartmenus-id="16778124470928018">
-															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-7"><a href="#" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
-															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="" class="elementor-item">About us</a></li>
+                            <ul id="menu-1-308e04f" class="elementor-nav-menu" data-smartmenus-id="16778124470928018">
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="<?=base_url();?>" class="elementor-item">Home</a></li>
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10">
+																<a href="#" class="elementor-item has-submenu" id="sm-16778124470928018-1" aria-haspopup="true" aria-controls="sm-16778124470928018-2" aria-expanded="false">About<span class="sub-arrow"></span></a>
+																<ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-2" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-1" aria-expanded="false">
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="#" class="elementor-sub-item">About Urban Eye</a></li>
+                                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="#" class="elementor-sub-item">About Us</a></li>
+																</ul>
+															</li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10">
 																<a href="#" class="elementor-item has-submenu" id="sm-16778124470928018-1" aria-haspopup="true" aria-controls="sm-16778124470928018-2" aria-expanded="false">Services<span class="sub-arrow"></span></a>
 																<ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-2" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-1" aria-expanded="false">

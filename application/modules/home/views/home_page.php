@@ -350,7 +350,13 @@
 													<nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
 														<ul id="menu-1-308e04f" class="elementor-nav-menu" data-smartmenus-id="16778124470928018">
 															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-7"><a href="#" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
-															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="" class="elementor-item">About us</a></li>
+															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10">
+																<a href="#" class="elementor-item has-submenu" id="sm-16778124470928018-1" aria-haspopup="true" aria-controls="sm-16778124470928018-2" aria-expanded="false">About<span class="sub-arrow"></span></a>
+																<ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-2" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-1" aria-expanded="false">
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="<?=base_url()?>index.php/home/about" class="elementor-sub-item">About UrbanEye</a></li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="<?=base_url()?>index.php/home/abouturbaneye" class="elementor-sub-item">About Us</a></li>
+																</ul>
+															</li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10">
 																<a href="#" class="elementor-item has-submenu" id="sm-16778124470928018-1" aria-haspopup="true" aria-controls="sm-16778124470928018-2" aria-expanded="false">Services<span class="sub-arrow"></span></a>
 																<ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-2" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-1" aria-expanded="false">
@@ -381,10 +387,10 @@
 													</div>
 													<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true" style="width: 1704px; left: 0px; top: 35px;">
 														<ul id="menu-2-308e04f" class="elementor-nav-menu" data-smartmenus-id="16778124470973984">
-															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-7"><a href="<?=base_url()?>" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
-															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="#" class="elementor-item" tabindex="-1">About us</a></li>
+															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="<?=base_url();?>" class="elementor-item">Home</a></li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10">
-																<a href="" class="elementor-item has-submenu" tabindex="-1" id="sm-16778124470973984-1" aria-haspopup="true" aria-controls="sm-16778124470973984-2" aria-expanded="false">Services<span class="sub-arrow"><i class="mdi mdi-chevron-down"></i></span></a>
+																<a href="" class="elementor-item has-submenu" tabindex="-1" id="sm-16778124470973984-1" aria-haspopup="true" aria-controls="sm-16778124470973984-2" aria-expanded="false">Services<span class="sub-arrow">
+																	<i class="mdi mdi-chevron-down"></i></span></a>
 																<ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470973984-2" role="group" aria-hidden="true" aria-labelledby="sm-16778124470973984-1" aria-expanded="false">
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="#" class="elementor-sub-item" tabindex="-1">Pricing plan</a></li>
 																</ul>
@@ -451,7 +457,7 @@
 						<div class="carousel-item active" style="background-image: url(https://urbaneye.enke.in/assets/images/stake_holder_benefit.png)">
 							<div class="caption" style="padding-bottom:20px;">
 								<h1 style="color:#116ad20 ;">urbanEye AI</h1>
-								<h3 style="color:#116ad20 ;">Experience a Smarter Way to Manage Your Landscape</h3>
+								<h3 style="color:#116ad20 ;"><span>Experience a Smarter</span> Way to Manage Your Landscape</h3>
 								<a href="<?=base_url()?>index.php/home/contact" class="big-button" href="" title="" style="border-radius:15px;background: #193c16;color:#fff;margin-bottom: 60px;">Get Started</a>
 							</div>
 						</div>
@@ -622,7 +628,7 @@
 							<div class="elementor-element elementor-element-aec9fad elementor-widget elementor-widget-button" data-id="aec9fad" data-element_type="widget" data-widget_type="button.default">
 								<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-										<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+										<a href="<?=base_url()?>index.php/home/abouturbaneye" class="elementor-button-link elementor-button elementor-size-sm" role="button">
 										<span class="elementor-button-content-wrapper">
 										<span class="elementor-button-text">Discover more</span>
 										</span>
@@ -695,7 +701,7 @@
 											<div class="elementor-element elementor-element-df78dde element-readmore-container elementor-widget__width-auto elementor-absolute e-transform elementor-view-default elementor-widget elementor-widget-icon" data-id="df78dde" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-45,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="icon.default">
 												<div class="elementor-widget-container">
 													<div class="element-icon-wrapper">
-														<a class="elementor-icon" href="#">
+														<a class="elementor-icon" href="<?=base_url()?>index.php/home/features">
 														<i aria-hidden="true" class="mdi mdi-arrow-right"></i>			</a>
 													</div>
 												</div>
@@ -730,7 +736,7 @@
 											<div class="elementor-element elementor-element-0538679 elementor-widget__width-auto elementor-absolute e-transform elementor-view-default elementor-widget elementor-widget-icon" data-id="0538679" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-45,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="icon.default">
 												<div class="elementor-widget-container">
 													<div class="element-icon-wrapper">
-														<a class="elementor-icon" href="#">
+														<a class="elementor-icon" href="<?=base_url()?>index.php/home/features">
 														<i aria-hidden="true" class="mdi mdi-arrow-right"></i>			</a>
 													</div>
 												</div>
@@ -765,7 +771,7 @@
 											<div class="elementor-element elementor-element-1934f9b elementor-widget__width-auto elementor-absolute e-transform elementor-view-default elementor-widget elementor-widget-icon" data-id="1934f9b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-45,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="icon.default">
 												<div class="elementor-widget-container">
 													<div class="element-icon-wrapper">
-														<a class="elementor-icon" href="#">
+														<a class="elementor-icon" href="<?=base_url()?>index.php/home/features">
 														<i aria-hidden="true" class="mdi mdi-arrow-right"></i>			</a>
 													</div>
 												</div>
@@ -834,12 +840,15 @@
 													<div class="elementor-cta">
 														<div class="elementor-cta__content">
 															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">
-															UrbanEye AI provides supervisors the freedom from complex monitoring of day-to-day
-												activities &amp; reporting process, which is achieved from granular detail derived from worksites
-												with ease of access that you never experienced from your traditional software.
+															With our AI platform, you can easily capture and benchmark crew production rates in real time, 
+															enabling you with insights to optimize crew productivity and efficiency. No more guesswork or 
+															relying on industry benchmarks – our geospatial technology automatically captures crew data, 
+															allowing you to see precisely how your crews perform and where you can improve.
+															 With this information at your fingertips, you can make informed decisions that drive productivity and profitability for your business.
+
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
-																<a class="elementor-cta__button elementor-button elementor-size-xs" href="#">
+																<a class="elementor-cta__button elementor-button elementor-size-xs" href="<?=base_url()?>index.php/home/features">
 																Learn more					</a>
 															</div>
 														</div>
@@ -871,13 +880,14 @@
 													<div class="elementor-cta">
 														<div class="elementor-cta__content">
 															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">															
-															Account managers who manage multiple supervisors or multiple crews need to take a well
-															informed decisions and not mis-guided by what others say, you need a fool=proof systems
-															to calculate productivity levels and here comes urbanEye AI the highly intuitive device and
-															platform handy
+															Geospatial Work Pattern Analysis with urbanEye AI includes clustering data such as crew member transit, idling, and production using different equipment. 
+															This powerful feature allows you to analyze and understand work patterns in real time, 
+															helping you identify inefficiencies and opportunities for improvement. 
+															With our advanced machine learning models, you can easily visualize and quantify crew performance metrics, 
+															such as time spent on different activities, distances travelled, and areas covered. This information is critical for optimizing productivity, reducing costs, and improving service quality for your customers.
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
-																<a class="elementor-cta__button elementor-button elementor-size-xs" href="#">
+																<a class="elementor-cta__button elementor-button elementor-size-xs" href="<?=base_url()?>index.php/home/features">
 																Learn more					</a>
 															</div>
 														</div>
@@ -909,13 +919,14 @@
 													<div class="elementor-cta">
 														<div class="elementor-cta__content">
 															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">
-															Witness the true meaning of productivity in real time with urbanEye AI &amp; steer ahead the
-														organization to profitability of upto 40%. As a lawn management professional, you have to
-														multitask and manage manpower, inventory, billing &amp; payments with urbanEye AI you are a
-														clear winner.
+															It is a powerful feature of urbanEye AI that enables you to monitor the productivity of your crew members week on week. Our AI platform uses a unique algorithm that evaluates multiple factors, including total work hours and production rates. 
+															By tracking these metrics, urbanEye AI calculates a "productive pulse" for each crew member, 
+															allowing you to identify high-performing individuals and areas for improvement. With this feature, 
+															you can optimize crew productivity and drive efficiency, leading to increased profitability for your
+															 business.
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
-																<a class="elementor-cta__button elementor-button elementor-size-xs" href="#">
+																<a class="elementor-cta__button elementor-button elementor-size-xs" href="<?=base_url()?>index.php/home/features">
 																Learn more					</a>
 															</div>
 														</div>
@@ -956,7 +967,7 @@
 												with ease of access that you never experienced from your traditional software.
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
-																<a class="elementor-cta__button elementor-button elementor-size-xs" href="#">
+																<a class="elementor-cta__button elementor-button elementor-size-xs" href="<?=base_url()?>index.php/home/features">
 																Learn more					</a>
 															</div>
 														</div>
@@ -977,7 +988,7 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																Exception Report</span>
+																Actionable Insights from Exception Reporting</span>
 															</div>
 														</div>
 													</div>
@@ -988,13 +999,11 @@
 													<div class="elementor-cta">
 														<div class="elementor-cta__content">
 															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">															
-															Account managers who manage multiple supervisors or multiple crews need to take a well
-															informed decisions and not mis-guided by what others say, you need a fool=proof systems
-															to calculate productivity levels and here comes urbanEye AI the highly intuitive device and
-															platform handy
+															Exception reporting is a valuable feature of urbanEye AI platform that enables you to easily identify and quantify inefficiencies in your worksite operations. With real-time data from our IoT-enabled wearable trackers, 
+															our software automatically generates exception reports that identify crew non-productive works, low production rates, overlapped works, and compare actual vs budgeted hours per worksite
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
-																<a class="elementor-cta__button elementor-button elementor-size-xs" href="#">
+																<a class="elementor-cta__button elementor-button elementor-size-xs" href="<?=base_url()?>index.php/home/features">
 																Learn more					</a>
 															</div>
 														</div>
@@ -1032,7 +1041,7 @@
 														clear winner.
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
-																<a class="elementor-cta__button elementor-button elementor-size-xs" href="#">
+																<a class="elementor-cta__button elementor-button elementor-size-xs" href="<?=base_url()?>index.php/home/features">
 																Learn more					</a>
 															</div>
 														</div>
@@ -1047,7 +1056,7 @@
 					</div>
 				</div>
 			</section>
-			
+			<!-- stake holder benefits start -->
 			<section class="elementor-section elementor-top-section elementor-element elementor-element-fb76bcf elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fb76bcf" data-element_type="section">
 				<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e77b7e6 animated fadeInLeft" data-id="e77b7e6" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInLeft&quot;}">
@@ -1185,7 +1194,9 @@
 					</div>
 				</div>
 			</section>
-			<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-d6a806a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d6a806a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<!-- stake holder benefits end -->
+			<!-- pricing starts -->
+			<section class="elementor-section elementor-top-section elementor-element elementor-element-d6a806a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d6a806a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e4c0bff" data-id="e4c0bff" data-element_type="column">
 						<div class="elementor-widget-wrap elementor-element-populated">
@@ -1195,7 +1206,7 @@
 										<div class="elementor-widget-wrap elementor-element-populated">
 											<div class="elementor-element elementor-element-cd68d4c elementor-widget elementor-widget-heading" data-id="cd68d4c" data-element_type="widget" data-widget_type="heading.default">
 												<div class="elementor-widget-container">
-													<h2 class="elementor-heading-title elementor-size-default">Latest News &amp; Article</h2>
+													<h2 class="elementor-heading-title elementor-size-default">Pricing</h2>
 												</div>
 											</div>
 											<div class="elementor-element elementor-element-3b097aa elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="3b097aa" data-element_type="widget" data-widget_type="divider.default">
@@ -1204,8 +1215,20 @@
 														.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#2c2c2c;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width);--flex-grow:var(--container-widget-flex-grow)}
 													</style>
 													<div class="elementor-divider">
-														<span class="elementor-divider-separator">
-														</span>
+															<p style="text-align: justify;color: #2b7139;font-weight: bold">
+															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The pricing plays a vital role, deciding factor for lawn management companies like you and as we
+														understand your world of operations better, we have unique pricing that provides access to new
+														possibilities that you have never imagined off. urbanEye AI believes in building relations for a better
+														tomorrow that paves way for sustainable future, for more information on our packages <br><a href="<?=base_url()?>index.php/home/pricing" title="Click here Read More" style="">read more</a></p>
+													</div>
+													<div class="elementor-divider">
+														<p style="text-align: justify;color: #2b7139;font-weight: bold">Explore Package : This package is ideal for businesses looking to try out urbanEye AI and experience its benefits on a
+														smaller scale. <br><a href="<?=base_url()?>index.php/home/pricing" title="Click here Read More" style="">read more</a></p>
+													</div>
+													<div class="elementor-divider">
+														<p style="text-align: justify;color: #2b7139;font-weight: bold">Prodigy Package : This package is perfect for businesses looking to fully integrate urbanEye AI into their operations
+														and take advantage of its full range of features to increase productivity upto40%. <br><a href="<?=base_url()?>index.php/home/pricing" title="Click here Read More" style="">read more</a>
+														</p>
 													</div>
 												</div>
 											</div>
@@ -1213,109 +1236,11 @@
 									</div>
 								</div>
 							</section>
-							<div class="elementor-element elementor-element-b78363d elementor-grid-4 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-widget elementor-widget-posts" data-id="b78363d" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;4&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:14,&quot;sizes&quot;:[]},&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:21,&quot;sizes&quot;:[]},&quot;classic_columns_tablet&quot;:&quot;2&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
-								<div class="elementor-widget-container">
-									<link rel="stylesheet" href="assets/css/widget-posts.min.css">
-									<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid elementor-has-item-ratio">
-										<article class="elementor-post elementor-grid-item post-80 post type-post status-publish format-standard has-post-thumbnail hentry category-technical-horticulturist">
-											<a class="elementor-post__thumbnail__link" href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/handheld-backpack-and-air-assisted-sprayers/">
-												<div class="elementor-post__thumbnail"><img decoding="async" src="assets/css/two-young-asian-couple-farmers-working-in-vegetables-hydropo.jpg" class="attachment-full size-full wp-image-95" alt="Two young Asian couple farmers working in vegetables hydroponic farm with happiness." loading="lazy" srcset="assets/images/two-young-asian-couple-farmers-working-in-vegetables-hydropo.jpg 1280w, assets/images/two-young-asian-couple-farmers-working-in-vegetables-hyd_005.jpg 300w, assets/images/two-young-asian-couple-farmers-working-in-vegetables-hyd_006.jpg 1024w, assets/images/two-young-asian-couple-farmers-working-in-vegetables-hyd_004.jpg 768w, assets/images/two-young-asian-couple-farmers-working-in-vegetables-hyd_003.jpg 1536w, assets/images/two-young-asian-couple-farmers-working-in-vegetables-hyd_002.jpg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="853"></div>
-											</a>
-											<div class="elementor-post__text">
-												<div class="elementor-post__title">
-													<a href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/handheld-backpack-and-air-assisted-sprayers/">
-													Handheld, Backpack and Air-assisted Sprayers			</a>
-												</div>
-												<div class="elementor-post__meta-data">
-													<span class="elementor-post-date">
-													November 20, 2022		</span>
-													<span class="elementor-post-avatar">
-													No Comments		</span>
-												</div>
-												<div class="elementor-post__excerpt">
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
-														commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-														magnis dis parturient montes, nascetur
-													</p>
-												</div>
-											</div>
-										</article>
-										<article class="elementor-post elementor-grid-item post-85 post type-post status-publish format-standard has-post-thumbnail hentry category-technical-horticulturist">
-											<a class="elementor-post__thumbnail__link" href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/recirculating-vs-drain-to-waste-hydroponic-systems/">
-												<div class="elementor-post__thumbnail"><img decoding="async" src="assets/images/modern-hydroponic-greenhouse.jpg" class="attachment-full size-full wp-image-93" alt="Modern hydroponic greenhouse" loading="lazy" srcset="assets/images/modern-hydroponic-greenhouse.jpg 1280w, assets/images/modern-hydroponic-greenhouse-300x200.jpg 300w, assets/images/modern-hydroponic-greenhouse-1024x682.jpg 1024w, assets/images/modern-hydroponic-greenhouse-768x512.jpg 768w, assets/images/modern-hydroponic-greenhouse-1536x1024.jpg 1536w, assets/images/modern-hydroponic-greenhouse-800x533.jpg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="853"></div>
-											</a>
-											<div class="elementor-post__text">
-												<div class="elementor-post__title">
-													<a href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/recirculating-vs-drain-to-waste-hydroponic-systems/">
-													Recirculating vs. Drain-to-Waste Hydroponic Systems			</a>
-												</div>
-												<div class="elementor-post__meta-data">
-													<span class="elementor-post-date">
-													November 20, 2022		</span>
-													<span class="elementor-post-avatar">
-													No Comments		</span>
-												</div>
-												<div class="elementor-post__excerpt">
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
-														commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-														magnis dis parturient montes, nascetur
-													</p>
-												</div>
-											</div>
-										</article>
-										<article class="elementor-post elementor-grid-item post-84 post type-post status-publish format-standard has-post-thumbnail hentry category-insight">
-											<a class="elementor-post__thumbnail__link" href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/understanding-hydroponic-leachate/">
-												<div class="elementor-post__thumbnail"><img decoding="async" src="assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydroponic-.jpg" class="attachment-full size-full wp-image-91" alt="close up view hands of farmer picking lettuce in hydroponic greenhouse." loading="lazy" srcset="assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydroponic-.jpg 1280w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_003.jpg 300w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_005.jpg 1024w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_004.jpg 768w, assets/images/close-up-view-hands-of-farmer-picking-lettuce-in-hydropo_002.jpg 1536w, assets/images/stake_holder_benefit.jpeg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="853"></div>
-											</a>
-											<div class="elementor-post__text">
-												<div class="elementor-post__title">
-													<a href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/understanding-hydroponic-leachate/">
-													Understanding Hydroponic Leachate			</a>
-												</div>
-												<div class="elementor-post__meta-data">
-													<span class="elementor-post-date">
-													November 20, 2022		</span>
-													<span class="elementor-post-avatar">
-													No Comments		</span>
-												</div>
-												<div class="elementor-post__excerpt">
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
-														commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-														magnis dis parturient montes, nascetur
-													</p>
-												</div>
-											</div>
-										</article>
-										<article class="elementor-post elementor-grid-item post-83 post type-post status-publish format-standard has-post-thumbnail hentry category-agronomic">
-											<a class="elementor-post__thumbnail__link" href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/how-to-maximize-produce-profits-at-farmers-markets-and-retail/">
-												<div class="elementor-post__thumbnail"><img decoding="async" src="assets/images/fresh-vegetable-sell-in-wet-market.jpg" class="attachment-full size-full wp-image-89" alt="Fresh vegetable sell in wet market" loading="lazy" srcset="assets/images/fresh-vegetable-sell-in-wet-market.jpg 1280w, assets/images/fresh-vegetable-sell-in-wet-market-300x158.jpg 300w, assets/images/fresh-vegetable-sell-in-wet-market-1024x540.jpg 1024w, assets/images/fresh-vegetable-sell-in-wet-market-768x405.jpg 768w, assets/images/fresh-vegetable-sell-in-wet-market-1536x810.jpg 1536w, assets/images/fresh-vegetable-sell-in-wet-market-800x422.jpg 800w" sizes="(max-width: 1280px) 100vw, 1280px" width="1280" height="675"></div>
-											</a>
-											<div class="elementor-post__text">
-												<div class="elementor-post__title">
-													<a href="https://kitnew.moxcreative.com/hydropokit/2022/11/20/how-to-maximize-produce-profits-at-farmers-markets-and-retail/">
-													How To Maximize Produce Profits at Farmer’s Markets and Retail			</a>
-												</div>
-												<div class="elementor-post__meta-data">
-													<span class="elementor-post-date">
-													November 20, 2022		</span>
-													<span class="elementor-post-avatar">
-													No Comments		</span>
-												</div>
-												<div class="elementor-post__excerpt">
-													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
-														commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
-														magnis dis parturient montes, nascetur
-													</p>
-												</div>
-											</div>
-										</article>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</section>
+			<!-- pricing ends -->
 			<!-- testimonial section start -->
 			<section class="testimonial text-center">
 				<div class="container">
