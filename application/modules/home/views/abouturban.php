@@ -1076,31 +1076,18 @@
             data-settings='{"animation":"fadeInDown"}'
           >
             <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-3de71e8 elementor-widget elementor-widget-heading"
-                data-id="3de71e8"
-                data-element_type="widget"
-                data-widget_type="heading.default"
-              >
+              <div class="elementor-element elementor-element-3de71e8 elementor-widget elementor-widget-heading" data-id="3de71e8" data-element_type="widget" data-widget_type="heading.default" >
                 <div class="elementor-widget-container">
                   <h3 class="elementor-heading-title elementor-size-default">
                     Follow our social network
                   </h3>
                 </div>
               </div>
-              <div
-                class="elementor-element elementor-element-53a6115 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
-                data-id="53a6115"
-                data-element_type="widget"
-                data-widget_type="social-icons.default"
-              >
+              <div class="elementor-element elementor-element-53a6115 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="53a6115" data-element_type="widget" data-widget_type="social-icons.default">
                 <div class="elementor-widget-container">
                   <div class="elementor-social-icons-wrapper elementor-grid">
                     <span class="elementor-grid-item">
-                      <a
-                        class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-pop elementor-repeater-item-8d8270d"
-                        target="_blank"
-                      >
+                      <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-pop elementor-repeater-item-8d8270d" target="_blank">
                         <span class="elementor-screen-only">Facebook-f</span>
                         <i class="mdi mdi-facebook"></i>
                       </a>

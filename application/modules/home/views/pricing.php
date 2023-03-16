@@ -20,6 +20,7 @@
       title="hydropokit » Comments Feed"
       href="https://kitnew.moxcreative.com/hydropokit/comments/feed/"
     />
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
     <script>
       window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/kitnew.moxcreative.com\/hydropokit\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
       /*! This file is auto-generated */
@@ -799,7 +800,7 @@
                           <h1
                             class="elementor-heading-title elementor-size-default"
                           >
-                            Contact us
+                            Pricing
                           </h1>
                         </div>
                       </div>
@@ -814,7 +815,7 @@
                           <h4
                             class="elementor-heading-title elementor-size-default"
                           >
-                            We would love to hear from you.
+                          Our pricing packages are designed to suit your needs and budget:
                           </h4>
                         </div>
                       </div>
@@ -829,491 +830,149 @@
       <section
         class="elementor-section elementor-top-section elementor-element elementor-element-f59a777 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
         data-id="f59a777"
-        data-element_type="section"
-      >
+        data-element_type="section">
         <div class="elementor-container elementor-column-gap-default">
-          <div
-            class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9079588 animated fadeInLeft"
+          <div class="elementor-column elementor-col-100 elementor-top-column elementor-element  animated fadeInLeft"
             data-id="9079588"
             data-element_type="column"
-            data-settings='{"background_background":"classic","animation":"fadeInLeft"}'
-          >
+            data-settings='{"background_background":"classic","animation":"fadeInLeft"}' >
             <div class="elementor-widget-wrap elementor-element-populated">
               <div class="elementor-background-overlay"></div>
-              <div
-                class="elementor-element elementor-element-78d244c elementor-widget elementor-widget-heading"
-                data-id="78d244c"
-                data-element_type="widget"
-                data-widget_type="heading.default"
-              >
-                <div class="elementor-widget-container">
-                  <h6 class="elementor-heading-title elementor-size-default">
-                    Get in touch
-                  </h6>
+                <div
+                  class="elementor-element elementor-element-78d244c elementor-widget elementor-widget-heading"
+                  data-id="78d244c"
+                  data-element_type="widget"
+                  data-widget_type="heading.default"
+                  >
                 </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-13dd1d0 elementor-widget elementor-widget-heading"
-                data-id="13dd1d0"
-                data-element_type="widget"
-                data-widget_type="heading.default"
-              >
-                <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">
-                    Let's start talk
-                  </h2>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-78e7cd7 elementor-widget elementor-widget-text-editor"
-                data-id="78e7cd7"
-                data-element_type="widget"
-                data-widget_type="text-editor.default"
-              >
-                <div class="elementor-widget-container">
-                  <style>
-                    /*! elementor - v3.10.0 - 09-01-2023 */
-                    .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}
-                  </style>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-22c9b70 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-                data-id="22c9b70"
-                data-element_type="widget"
-                data-widget_type="divider.default"
-              >
-                <div class="elementor-widget-container">
-                  <style>
-                    /*! elementor - v3.10.0 - 09-01-2023 */
-                    .elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#2c2c2c;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width);--flex-grow:var(--container-widget-flex-grow)}
-                  </style>
-                  <div class="elementor-divider">
-                    <span class="elementor-divider-separator"> </span>
+                <div
+                  class="elementor-element elementor-element-13dd1d0 elementor-widget elementor-widget-heading"
+                  data-id="13dd1d0"
+                  data-element_type="widget"
+                  data-widget_type="heading.default"
+                  >
+                  <div class="elementor-widget-container">
+                    <h2 class="elementor-heading-title elementor-size-default">
+                      Let's start talk
+                    </h2>
                   </div>
                 </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-e47d497 elementor-view-stacked elementor-position-left elementor-mobile-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
-                data-id="e47d497"
-                data-element_type="widget"
-                data-widget_type="icon-box.default"
-              >
-                <div class="elementor-widget-container">
-                  <link
-                    rel="stylesheet"
-                    href="<?=base_url()?>assets/css/widget-icon-box.min.css"
-                  />
-                  <div class="elementor-icon-box-wrapper">
-                    <div class="elementor-icon-box-icon">
-                      <span class="elementor-icon elementor-animation-">
-                        <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
-                      </span>
-                    </div>
-                    <div class="elementor-icon-box-content">
-                      <div class="elementor-icon-box-title">
-                        <span> Location </span>
-                      </div>
-                      <p class="elementor-icon-box-description">
-                        Jalan Cempaka Wangi No 22<br />
-                        Jakarta - Indonesia
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-aeac5f7 elementor-view-stacked elementor-position-left elementor-mobile-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
-                data-id="aeac5f7"
-                data-element_type="widget"
-                data-widget_type="icon-box.default"
-              >
-                <div class="elementor-widget-container">
-                  <div class="elementor-icon-box-wrapper">
-                    <div class="elementor-icon-box-icon">
-                      <span class="elementor-icon elementor-animation-">
-                        <i aria-hidden="true" class="mdi mdi-email-check"></i>
-                      </span>
-                    </div>
-                    <div class="elementor-icon-box-content">
-                      <div class="elementor-icon-box-title">
-                        <span> Email us </span>
-                      </div>
-                      <p class="elementor-icon-box-description">
-                        support@yourdomain.tld<br />
-                        hello@yourdomain.tld
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-b0d49b9 elementor-view-stacked elementor-position-left elementor-mobile-position-left elementor-shape-circle elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
-                data-id="b0d49b9"
-                data-element_type="widget"
-                data-widget_type="icon-box.default"
-              >
-                <div class="elementor-widget-container">
-                  <div class="elementor-icon-box-wrapper">
-                    <div class="elementor-icon-box-icon">
-                      <span class="elementor-icon elementor-animation-">
-                        <i aria-hidden="true" class="mdi mdi-phone"></i>
-                      </span>
-                    </div>
-                    <div class="elementor-icon-box-content">
-                      <div class="elementor-icon-box-title">
-                        <span> Call us </span>
-                      </div>
-                      <p class="elementor-icon-box-description">
-                        +6221.2002.2012 <br />
-                        +6221.2002.2013 (Fax)
-                      </p>
+                <div
+                  class="elementor-element elementor-element-78e7cd7 elementor-widget elementor-widget-text-editor"
+                  data-id="78e7cd7"
+                  data-element_type="widget"
+                  data-widget_type="text-editor.default"
+                  >
+                  <div class="elementor-widget-container">
+                    <p>
+                        The pricing plays a vital role, deciding factor for lawn management companies like you and as we
+                      understand your world of operations better, we have unique pricing that provides access to new
+                      possibilities that you have never imagined off. urbanEye AI believes in building relations for a better
+                      tomorrow that paves way for sustainable future, for more information on our packages
+                    </p>
+                    <p>
+                    Welcome to urbanEye AI, the powerful and intuitive platform that streamlines worksite
+                management and drives productivity for landscape management businesses. Our platform includes a
+                range of advanced features that provide real-time data insights and analytics, allowing you to
+                optimize crew performance and achieve better business outcomes.
+                Our pricing packages are designed to suit your needs and budget, with two options to choose from:
+                    </p>
+                    <div class="table-responsive">
+                      <table class="table table-striped text-successtable-border border-light">
+                        <thead class="border-light">
+                          <tr>
+                            <th scope="col"><strong>Package Type</strong></th>
+                            <th scope="col"><strong>Explore Pacakage</strong></th>
+                            <th scope="col"><strong>Prodigy Package</strong></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Best Suits For</th>
+                            <td>This package is ideal for businesses looking to try out
+                          urbanEye AI and experience its benefits on a smaller
+                          scale.
+                            </td>
+                            <td>This package is perfect for businesses looking to
+                              fully integrate urbanEye AI into their operations
+                              and take advantage of its full range of features
+                              to increase productivity upto40%.</td>
+                          </tr>
+                          <tr>
+                            <th colspan="3">PART OF THE PACK</th>
+                          </tr>
+                          <tr>
+                            <th scope="row">Trackers</th>
+                            <td>4 wearable trackers</td>
+                            <td>10 wearable trackers</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Period</th>
+                            <td>3 months with FREE wireless charging pods.</td>
+                            <td>1 year with FREE wireless charging pods.</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Hours of operation</th>
+                            <td>Software access for up to 2000 hours</td>
+                            <td>Software access for up to 20,000 hours</td>
+                          </tr>
+                          <tr>
+                            <th colspan="3">FEATURES</th>
+                          </tr>
+                          <tr>
+                            <th scope="row">Connected Crews</th>
+                            <td><i class="mdi mdi-check"></i></td>
+                            <td><i class="mdi mdi-check"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Centralized management</th>
+                            <td><i class="mdi mdi-check"></i></td>
+                            <td><i class="mdi mdi-check"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Monitor worksites</th>
+                            <td><i class="mdi mdi-check"></i></td>
+                            <td><i class="mdi mdi-check"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Digital Work Completion Reports</th>
+                            <td><i class="mdi mdi-check"></i></td>
+                            <td><i class="mdi mdi-check"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Real-Time Production Benchmarking</th>
+                            <td><i class="mdi mdi-check"></i></td>
+                            <td><i class="mdi mdi-check"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Geospatial Work Pattern Analysis.</th>
+                            <td><i class="mdi mdi-check"></i></td>
+                            <td><i class="mdi mdi-check"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Crew Productive Pulse Monitoring</th>
+                            <td><i class="mdi mdi-check"></i></td>
+                            <td><i class="mdi mdi-check"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Exception Reports</th>
+                            <td><i class="mdi mdi-check"></i></td>
+                            <td><i class="mdi mdi-check"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Custom scalable - More devices</th>
+                            <td><i class="mdi mdi-check"></i></td>
+                            <td><i class="mdi mdi-check"></i></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-71e518e animated fadeInRight"
-            data-id="71e518e"
-            data-element_type="column"
-            data-settings='{"animation":"fadeInRight"}'
-          >
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-2f31947 elementor-widget elementor-widget-google_maps"
-                data-id="2f31947"
-                data-element_type="widget"
-                data-widget_type="google_maps.default"
-              >
-                <div class="elementor-widget-container">
-                  <style>
-                    /*! elementor - v3.10.0 - 09-01-2023 */
-                    .elementor-widget-google_maps .elementor-widget-container{overflow:hidden}.elementor-widget-google_maps iframe{height:300px}
-                  </style>
-                  <div class="elementor-custom-embed">
-                    <iframe
-                      loading="lazy"
-                      src="assets/maps.html"
-                      title="London Eye, London, United Kingdom"
-                      aria-label="London Eye, London, United Kingdom"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
-      <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-06aa7d5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-id="06aa7d5"
-        data-element_type="section"
-        data-settings='{"background_background":"classic"}'
-      >
-        <div class="elementor-background-overlay"></div>
-        <div class="elementor-container elementor-column-gap-default">
-          <div
-            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6ed6403 animated fadeInDown"
-            data-id="6ed6403"
-            data-element_type="column"
-            data-settings='{"animation":"fadeInDown"}'
-          >
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-20d01f3 elementor-widget elementor-widget-heading"
-                data-id="20d01f3"
-                data-element_type="widget"
-                data-widget_type="heading.default"
-              >
-                <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">
-                    Send us a message
-                  </h2>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-e4a4356 elementor-widget elementor-widget-text-editor"
-                data-id="e4a4356"
-                data-element_type="widget"
-                data-widget_type="text-editor.default"
-              >
-                <div class="elementor-widget-container">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-648f07b elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-id="648f07b"
-        data-element_type="section"
-        data-settings='{"background_background":"classic"}'
-      >
-        <div class="elementor-container elementor-column-gap-default">
-          <div
-            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f9fb16f animated fadeInUp"
-            data-id="f9fb16f"
-            data-element_type="column"
-            data-settings='{"background_background":"classic","animation":"fadeInUp"}'
-          >
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-0174536 elementor-mobile-button-align-stretch elementor-widget elementor-widget-form"
-                data-id="0174536"
-                data-element_type="widget"
-                data-settings='{"step_next_label":"Next","step_previous_label":"Previous","button_width":"100","step_type":"number_text","step_icon_shape":"circle"}'
-                data-widget_type="form.default"
-              >
-                <div class="elementor-widget-container">
-                  <style>
-                    /*! elementor-pro - v3.7.7 - 20-09-2022 */
-                    .elementor-button.elementor-hidden,.elementor-hidden{display:none}.e-form__step{width:100%}.e-form__step:not(.elementor-hidden){display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.e-form__buttons{-ms-flex-wrap:wrap;flex-wrap:wrap}.e-form__buttons,.e-form__buttons__wrapper{display:-webkit-box;display:-ms-flexbox;display:flex}.e-form__indicators{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:nowrap;flex-wrap:nowrap;font-size:13px;margin-bottom:var(--e-form-steps-indicators-spacing)}.e-form__indicators,.e-form__indicators__indicator{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.e-form__indicators__indicator{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-preferred-size:0;flex-basis:0;padding:0 var(--e-form-steps-divider-gap)}.e-form__indicators__indicator__progress{width:100%;position:relative;background-color:var(--e-form-steps-indicator-progress-background-color);border-radius:var(--e-form-steps-indicator-progress-border-radius);overflow:hidden}.e-form__indicators__indicator__progress__meter{width:var(--e-form-steps-indicator-progress-meter-width,0);height:var(--e-form-steps-indicator-progress-height);line-height:var(--e-form-steps-indicator-progress-height);padding-right:15px;border-radius:var(--e-form-steps-indicator-progress-border-radius);background-color:var(--e-form-steps-indicator-progress-color);color:var(--e-form-steps-indicator-progress-meter-color);text-align:right;-webkit-transition:width .1s linear;-o-transition:width .1s linear;transition:width .1s linear}.e-form__indicators__indicator:first-child{padding-left:0}.e-form__indicators__indicator:last-child{padding-right:0}.e-form__indicators__indicator--state-inactive{color:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-inactive [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-inactive-secondary-color,#fff)}.e-form__indicators__indicator--state-inactive object,.e-form__indicators__indicator--state-inactive svg{fill:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-active{color:var(--e-form-steps-indicator-active-primary-color,#39b54a);border-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active object,.e-form__indicators__indicator--state-active svg{fill:var(--e-form-steps-indicator-active-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed{color:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator--state-completed [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator__label{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator--shape-none{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a);background-color:initial}.e-form__indicators__indicator--state-completed object,.e-form__indicators__indicator--state-completed svg{fill:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator__icon{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);font-size:var(--e-form-steps-indicator-icon-size);border-width:1px;border-style:solid;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;overflow:hidden;margin-bottom:10px}.e-form__indicators__indicator__icon img,.e-form__indicators__indicator__icon object,.e-form__indicators__indicator__icon svg{width:var(--e-form-steps-indicator-icon-size);height:auto}.e-form__indicators__indicator__icon .e-font-icon-svg{height:1em}.e-form__indicators__indicator__number{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);border-width:1px;border-style:solid;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px}.e-form__indicators__indicator--shape-circle{border-radius:50%}.e-form__indicators__indicator--shape-square{border-radius:0}.e-form__indicators__indicator--shape-rounded{border-radius:5px}.e-form__indicators__indicator--shape-none{border:0}.e-form__indicators__indicator__label{text-align:center}.e-form__indicators__indicator__separator{width:100%;height:var(--e-form-steps-divider-width);background-color:#c2cbd2}.e-form__indicators--type-icon,.e-form__indicators--type-icon_text,.e-form__indicators--type-number,.e-form__indicators--type-number_text{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.e-form__indicators--type-icon .e-form__indicators__indicator__separator,.e-form__indicators--type-icon_text .e-form__indicators__indicator__separator,.e-form__indicators--type-number .e-form__indicators__indicator__separator,.e-form__indicators--type-number_text .e-form__indicators__indicator__separator{margin-top:calc(var(--e-form-steps-indicator-padding, 30px) / 2 - var(--e-form-steps-divider-width, 1px) / 2)}.elementor-field-type-hidden{display:none}.elementor-field-type-html{display:inline-block}.elementor-login .elementor-lost-password,.elementor-login .elementor-remember-me{font-size:.85em}.elementor-field-type-recaptcha_v3 .elementor-field-label{display:none}.elementor-field-type-recaptcha_v3 .grecaptcha-badge{z-index:1}.elementor-button .elementor-form-spinner{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.elementor-form .elementor-button>span{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-form .elementor-button .elementor-button-text{white-space:normal;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}.elementor-form .elementor-button svg{height:auto}.elementor-form .elementor-button .e-font-icon-svg{height:1em}.elementor-select-wrapper .select-caret-down-wrapper{position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);inset-inline-end:10px;pointer-events:none;font-size:11px}.elementor-select-wrapper .select-caret-down-wrapper svg{display:unset;width:1em;aspect-ratio:unset;fill:currentColor}.elementor-select-wrapper .select-caret-down-wrapper i{font-size:19px;line-height:2}.elementor-select-wrapper.remove-before:before{content:""!important}
-                  </style>
-                  <form class="elementor-form" method="post" name="New Form">
-                    <input type="hidden" name="post_id" value="127" />
-                    <input type="hidden" name="form_id" value="0174536" />
-                    <input
-                      type="hidden"
-                      name="referer_title"
-                      value="Contact us"
-                    />
-
-                    <input type="hidden" name="queried_id" value="127" />
-
-                    <div
-                      class="elementor-form-fields-wrapper elementor-labels-above"
-                    >
-                      <div
-                        class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50"
-                      >
-                        <label
-                          for="form-field-name"
-                          class="elementor-field-label"
-                        >
-                          Name
-                        </label>
-                        <input
-                          size="1"
-                          type="text"
-                          name="form_fields[name]"
-                          id="form-field-name"
-                          class="elementor-field elementor-size-md elementor-field-textual"
-                          placeholder="Name"
-                        />
-                      </div>
-                      <div
-                        class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_e4a02a1 elementor-col-50"
-                      >
-                        <label
-                          for="form-field-field_e4a02a1"
-                          class="elementor-field-label"
-                        >
-                          Company
-                        </label>
-                        <input
-                          size="1"
-                          type="text"
-                          name="form_fields[field_e4a02a1]"
-                          id="form-field-field_e4a02a1"
-                          class="elementor-field elementor-size-md elementor-field-textual"
-                          placeholder="Company"
-                        />
-                      </div>
-                      <div
-                        class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_fe19163 elementor-col-50"
-                      >
-                        <label
-                          for="form-field-field_fe19163"
-                          class="elementor-field-label"
-                        >
-                          Phone
-                        </label>
-                        <input
-                          size="1"
-                          type="tel"
-                          name="form_fields[field_fe19163]"
-                          id="form-field-field_fe19163"
-                          class="elementor-field elementor-size-md elementor-field-textual"
-                          placeholder="Phone"
-                          pattern="[0-9()#&amp;+*-=.]+"
-                          title="Only numbers and phone characters (#, -, *, etc) are accepted."
-                        />
-                      </div>
-                      <div
-                        class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-50 elementor-field-required"
-                      >
-                        <label
-                          for="form-field-email"
-                          class="elementor-field-label"
-                        >
-                          Email
-                        </label>
-                        <input
-                          size="1"
-                          type="email"
-                          name="form_fields[email]"
-                          id="form-field-email"
-                          class="elementor-field elementor-size-md elementor-field-textual"
-                          placeholder="Email"
-                          required="required"
-                          aria-required="true"
-                        />
-                      </div>
-                      <div
-                        class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_4b8e06a elementor-col-100 elementor-field-required"
-                      >
-                        <label
-                          for="form-field-field_4b8e06a"
-                          class="elementor-field-label"
-                        >
-                          Subject
-                        </label>
-                        <input
-                          size="1"
-                          type="text"
-                          name="form_fields[field_4b8e06a]"
-                          id="form-field-field_4b8e06a"
-                          class="elementor-field elementor-size-md elementor-field-textual"
-                          placeholder="Subject"
-                          required="required"
-                          aria-required="true"
-                        />
-                      </div>
-                      <div
-                        class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100"
-                      >
-                        <label
-                          for="form-field-message"
-                          class="elementor-field-label"
-                        >
-                          Message
-                        </label>
-                        <textarea
-                          class="elementor-field-textual elementor-field elementor-size-md"
-                          name="form_fields[message]"
-                          id="form-field-message"
-                          rows="4"
-                          placeholder="Message"
-                        ></textarea>
-                      </div>
-                      <div
-                        class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons"
-                      >
-                        <button
-                          type="submit"
-                          class="elementor-button elementor-size-md"
-                        >
-                          <span>
-                            <span
-                              class="elementor-align-icon-left elementor-button-icon"
-                            >
-                              <i
-                                aria-hidden="true"
-                                class="mdi mdi-email-multiple"
-                              ></i>
-                            </span>
-                            <span class="elementor-button-text"
-                              >Send Message</span
-                            >
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-2aca28d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-id="2aca28d"
-        data-element_type="section"
-      >
-        <div class="elementor-container elementor-column-gap-default">
-          <div
-            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f3a62d4 animated fadeInDown"
-            data-id="f3a62d4"
-            data-element_type="column"
-            data-settings='{"animation":"fadeInDown"}'
-          >
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-3de71e8 elementor-widget elementor-widget-heading"
-                data-id="3de71e8"
-                data-element_type="widget"
-                data-widget_type="heading.default"
-              >
-                <div class="elementor-widget-container">
-                  <h3 class="elementor-heading-title elementor-size-default">
-                    Follow our social network
-                  </h3>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-53a6115 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons"
-                data-id="53a6115"
-                data-element_type="widget"
-                data-widget_type="social-icons.default"
-              >
-                <div class="elementor-widget-container">
-                  <div class="elementor-social-icons-wrapper elementor-grid">
-                    <span class="elementor-grid-item">
-                      <a
-                        class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-pop elementor-repeater-item-8d8270d"
-                        target="_blank"
-                      >
-                        <span class="elementor-screen-only">Facebook-f</span>
-                        <i class="fab fa-facebook-f"></i>
-                      </a>
-                    </span>
-                    <span class="elementor-grid-item">
-                      <a
-                        class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-pop elementor-repeater-item-4016a69"
-                        target="_blank"
-                      >
-                        <span class="elementor-screen-only">Instagram</span>
-                        <i class="fab fa-instagram"></i>
-                      </a>
-                    </span>
-                    <span class="elementor-grid-item">
-                      <a
-                        class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-pop elementor-repeater-item-b533e4d"
-                        target="_blank"
-                      >
-                        <span class="elementor-screen-only">Twitter</span>
-                        <i class="fab fa-twitter"></i>
-                      </a>
-                    </span>
-                    <span class="elementor-grid-item">
-                      <a
-                        class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-pop elementor-repeater-item-c409fff"
-                        target="_blank"
-                      >
-                        <span class="elementor-screen-only">Youtube</span>
-                        <i class="fab fa-youtube"></i>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </div>
     <div data-elementor-type="footer" data-elementor-id="56" class="elementor elementor-56 elementor-location-footer" >
