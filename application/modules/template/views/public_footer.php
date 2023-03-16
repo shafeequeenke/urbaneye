@@ -1,6 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.js'></script>
 <section class="elementor-section elementor-top-section elementor-element elementor-element-92da611 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="92da611" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 	<div class="elementor-container elementor-column-gap-default">
 		<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7628376" data-id="7628376" data-element_type="column">
@@ -261,14 +264,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script src="assets/js/swiper.min.js" id="swiper-js"></script>
 <script src="assets/js/swiper.min_002.js"></script>
 <script type="text/javascript">
-$(document).ready(function() {
+$(document).ready(function() { 
 	var base_url 			= $("#base_url").val();			
-	$(document).on("click",".schedule_calendar", function(event) { alert("here");
+	$(document).on("click",".schedule_calendar", function(event) { 
 		$("#calendar_modal").modal("show");
 	});
 });
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.js'></script>
 </body></html>
