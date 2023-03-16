@@ -41,16 +41,23 @@ class Home extends MY_Controller {
     }
 
     public function abouturbaneye() {
-        $this->data_arr['_load_page']           =   array('abouturban');
+        $this->data_arr['_load_page']           =   array('sub_header','abouturban');
         $this->page_header                      =   'page_header';
         $this->data_arr['page_name']            =   'About UrbanEye AI';
         $this->prepareResult();
     }
 
-    public function features() {
-        $this->data_arr['_load_page']           =   array('features');
+    public function setup() {
+        $this->data_arr['_load_page']           =   array('sub_header','setup');
         $this->page_header                      =   'page_header';
-        $this->data_arr['page_name']            =   'About';
+        $this->data_arr['page_name']            =   'Features';
+        $this->prepareResult();
+    }
+
+    public function features() {
+        $this->data_arr['_load_page']           =   array('sub_header','features');
+        $this->page_header                      =   'page_header';
+        $this->data_arr['page_name']            =   'Features';
         $this->prepareResult();
     }
 
@@ -62,7 +69,7 @@ class Home extends MY_Controller {
     }
 
     public function pricing() {
-        $this->data_arr['_load_page']           =   array('pricing');
+        $this->data_arr['_load_page']           =   array('sub_header','pricing');
         $this->page_header                      =   'page_header';
         $this->data_arr['page_name']            =   'Pricing';
         $this->prepareResult();
