@@ -1102,7 +1102,7 @@
                         target="_blank"
                       >
                         <span class="elementor-screen-only">Facebook-f</span>
-                        <i class="fab fa-facebook-f"></i>
+                        <i class="mdi mdi-facebook"></i>
                       </a>
                     </span>
                     <span class="elementor-grid-item">
@@ -1110,8 +1110,8 @@
                         class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-pop elementor-repeater-item-4016a69"
                         target="_blank"
                       >
-                        <span class="elementor-screen-only">Instagram</span>
-                        <i class="fab fa-instagram"></i>
+                        <span class="elementor-screen-only">LinkedIn</span>
+                        <i class="mdi mdi-linkedin"></i>
                       </a>
                     </span>
                     <span class="elementor-grid-item">
@@ -1120,7 +1120,7 @@
                         target="_blank"
                       >
                         <span class="elementor-screen-only">Twitter</span>
-                        <i class="fab fa-twitter"></i>
+                        <i class="mdi mdi-twitter"></i>
                       </a>
                     </span>
                     <span class="elementor-grid-item">
@@ -1129,7 +1129,7 @@
                         target="_blank"
                       >
                         <span class="elementor-screen-only">Youtube</span>
-                        <i class="fab fa-youtube"></i>
+                        <i class="mdi mdi-youtube"></i>
                       </a>
                     </span>
                   </div>

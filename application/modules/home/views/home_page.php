@@ -43,7 +43,7 @@
 				position: relative;
 			}
 			.carousel-inner {
-				padding-top: 30%;
+				padding-top: 33%;
 				display: block;
 				content: "";
 			}
@@ -427,9 +427,10 @@
 							<div class="elementor-element elementor-element-1157b6c elementor-align-right elementor-widget elementor-widget-button" data-id="1157b6c" data-element_type="widget" data-widget_type="button.default">
 								<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-										<a href="<?=base_url()?>index.php/home/contact" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+										<!-- <?=base_url()?>index.php/home/contact -->
+										<a href="javascript:void(0);" class="elementor-button-link elementor-button elementor-size-sm" role="button">
 										<span class="elementor-button-content-wrapper">
-										<span class="elementor-button-text">Get Started</span>
+										<span class="elementor-button-text schedule_calendar">Get Started</span>
 										</span>
 										</a>
 									</div>

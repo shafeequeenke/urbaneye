@@ -187,6 +187,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 </section>
 </div>
+<!-- modal for schedule calendar start here calendly-->
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="calendar_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="min-width: 65%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Schedule Your Meeting.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="calendar_body" style="min-height:450px;">
+        <!-- CALENDAR STARTS -->
+		<iframe id="" src="https://calendly.com/ysashikumar/30min" style="width: 100%;height: 500px;">
+		</iframe>
+		<!-- CALENDAR ENDS -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- mdoal for schedule calendar end here calendly -->
 <link rel="stylesheet" id="e-animations-css" href="assets/css/animations.min.css" media="all">
 <script src="assets/js/hello-frontend.min.js" id="hello-theme-frontend-js"></script>
 <script src="assets/js/frontend-script.js" id="elementskit-framework-js-frontend-js"></script>
@@ -229,4 +259,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </script>
 <script src="assets/js/elementor.js" id="elementskit-elementor-js"></script>
 <script src="assets/js/swiper.min.js" id="swiper-js"></script>
-<script src="assets/js/swiper.min_002.js"></script></body></html>
+<script src="assets/js/swiper.min_002.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var base_url 			= $("#base_url").val();			
+	$(document).on("click",".schedule_calendar", function(event) { 
+		$("#calendar_modal").modal("show");
+	});
+});
+</script>
+</body></html>
