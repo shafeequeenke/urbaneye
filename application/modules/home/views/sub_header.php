@@ -667,48 +667,51 @@
                                                 <link rel="stylesheet" href="<?=base_url()?>assets/css/widget-nav-menu.min.css">
                                                 <nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
                                                     <ul id="menu-1-308e04f" class="elementor-nav-menu" data-smartmenus-id="16778124470928018">
-                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-7"><a href="#" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
-                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="" class="elementor-item">About us</a></li>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-7">
+                                                            <a href="<?=base_url()?>" aria-current="page" class="elementor-item <?=isset($page_name) && $page_name == 'Home'?'elementor-item-active':''?>">Home</a></li>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="<?=base_url()?>index.php/home/abouturbaneye" class="elementor-item <?=isset($page_name) && $page_name == 'About'?'elementor-item-active':''?>">About</a></li>
                                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10">
-                                                            <a href="#" class="elementor-item has-submenu" id="sm-16778124470928018-1" aria-haspopup="true" aria-controls="sm-16778124470928018-2" aria-expanded="false">Services<span class="sub-arrow"></span></a>
+                                                            <a href="<?=base_url()?>index.php/home/abouturbaneye" class="elementor-item has-submenu" id="sm-16778124470928018-1" aria-haspopup="true" aria-controls="sm-16778124470928018-2" aria-expanded="false">
+                                                            Features<span class="sub-arrow"></span></a>
                                                             <ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-2" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-1" aria-expanded="false">
-                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="#" class="elementor-sub-item">Pricing plan</a></li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="<?=base_url()?>index.php/home/features" class="elementor-sub-item <?=isset($page_name) && $page_name == 'Features'?'elementor-item-active':''?>">Features</a></li>
                                                             </ul>
                                                         </li>
                                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
-                                                            <a href="#" class="elementor-item has-submenu" id="sm-16778124470928018-3" aria-haspopup="true" aria-controls="sm-16778124470928018-4" aria-expanded="false">Project<span class="sub-arrow"></span></a>
-                                                            <ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-4" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-3" aria-expanded="false">
-                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="#" class="elementor-sub-item">Single Project</a></li>
-                                                            </ul>
+                                                            <a href="<?=base_url()?>index.php/home/pricing" class="elementor-item has-submenu <?=isset($page_name) && $page_name == 'Pricing'?'elementor-item-active':''?>" id="sm-16778124470928018-3" aria-haspopup="true" aria-controls="sm-16778124470928018-4" aria-expanded="false">
+                                                            Pricing
+                                                            <span class="sub-arrow"></span></a>
                                                         </li>
-                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="#" class="elementor-item">Contact us</a></li>
-                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18">
-                                                            <a href="#" class="elementor-item elementor-item-anchor has-submenu" id="sm-16778124470928018-5" aria-haspopup="true" aria-controls="sm-16778124470928018-6" aria-expanded="false">Pages<span class="sub-arrow"></span></a>
-                                                            <ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-6" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-5" aria-expanded="false">
-                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="#" class="elementor-sub-item">Team</a></li>
-                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="#" class="elementor-sub-item">FAQ</a></li>
-                                                                <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a href="#" class="elementor-sub-item">Blog</a></li>
-                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="#" class="elementor-sub-item">Single post</a></li>
-                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="#" class="elementor-sub-item">Error 404</a></li> -->
-                                                            </ul>
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
+                                                            <a href="<?=base_url()?>index.php/home/setup" class="elementor-item has-submenu <?=isset($page_name) && $page_name == 'Setup'?'elementor-item-active':''?>" id="sm-16778124470928018-3" aria-haspopup="true" aria-controls="sm-16778124470928018-4" aria-expanded="false">
+                                                            Setup
+                                                            <span class="sub-arrow"></span></a>
                                                         </li>
                                                     </ul>
                                                 </nav>
                                                 <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false" style="">
-                                                    <i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open  ti-menu"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close icofont icofont-close"></i>			<span class="elementor-screen-only">Menu</span>
+                                                    <i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open  ti-menu"></i><i aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close icofont icofont-close">
+                                                    </i>			<span class="elementor-screen-only">Menu</span>
                                                 </div>
                                                 <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true" style="width: 1704px; left: 0px; top: 35px;">
                                                     <ul id="menu-2-308e04f" class="elementor-nav-menu" data-smartmenus-id="16778124470973984">
                                                         <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-7"><a href="<?=base_url()?>" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
                                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="#" class="elementor-item" tabindex="-1">About us</a></li>
                                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10">
-                                                            <a href="" class="elementor-item has-submenu" tabindex="-1" id="sm-16778124470973984-1" aria-haspopup="true" aria-controls="sm-16778124470973984-2" aria-expanded="false">Services<span class="sub-arrow"><i class="mdi mdi-chevron-down"></i></span></a>
+                                                            <a href="<?=base_url()?>index.php/home/abouturbaneye" class="elementor-item has-submenu" tabindex="-1" id="sm-16778124470973984-1" aria-haspopup="true" aria-controls="sm-16778124470973984-2" aria-expanded="false">
+                                                            About us<span class="sub-arrow">
+                                                                <i class="mdi mdi-chevron-down"></i>
+                                                            </span></a>
                                                             <ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470973984-2" role="group" aria-hidden="true" aria-labelledby="sm-16778124470973984-1" aria-expanded="false">
-                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="#" class="elementor-sub-item" tabindex="-1">Pricing plan</a></li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11">
+                                                                    <a href="<?=base_url()?>index.php/home/pricing" class="elementor-sub-item" tabindex="-1">Pricing </a>
+                                                                </li>
                                                             </ul>
                                                         </li>
                                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
-                                                            <a href="" class="elementor-item has-submenu" tabindex="-1" id="sm-16778124470973984-3" aria-haspopup="true" aria-controls="sm-16778124470973984-4" aria-expanded="false">Project<span class="sub-arrow"><i class="mdi mdi-chevron-down"></i></span></a>
+                                                            <a href="" class="elementor-item has-submenu" tabindex="-1" id="sm-16778124470973984-3" aria-haspopup="true" aria-controls="sm-16778124470973984-4" aria-expanded="false">Project<span class="sub-arrow">
+                                                                <i class="mdi mdi-chevron-down"></i>
+                                                            </span></a>
                                                             <ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470973984-4" role="group" aria-hidden="true" aria-labelledby="sm-16778124470973984-3" aria-expanded="false">
                                                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="#" class="elementor-sub-item" tabindex="-1">Single Project</a></li>
                                                             </ul>
@@ -739,9 +742,9 @@
                         <div class="elementor-element elementor-element-1157b6c elementor-align-right elementor-widget elementor-widget-button" data-id="1157b6c" data-element_type="widget" data-widget_type="button.default">
                             <div class="elementor-widget-container">
                                 <div class="elementor-button-wrapper">
-                                    <a href="<?=base_url()?>index.php/home/contact" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                                    <a href="javascript:void(0)" class="elementor-button-link elementor-button elementor-size-sm" role="button">
                                     <span class="elementor-button-content-wrapper">
-                                    <span class="elementor-button-text">Get Started</span>
+                                    <span class="elementor-button-text schedule_calendar">Get Started</span>
                                     </span>
                                     </a>
                                 </div>

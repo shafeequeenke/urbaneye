@@ -263,7 +263,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script type="text/javascript">
 $(document).ready(function() {
 	var base_url 			= $("#base_url").val();			
-	$(document).on("click",".schedule_calendar", function(event) { 
+	$(document).on("click",".schedule_calendar", function(event) { alert("here");
 		$("#calendar_modal").modal("show");
 	});
 });

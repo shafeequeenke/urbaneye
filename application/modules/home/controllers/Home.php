@@ -34,7 +34,7 @@ class Home extends MY_Controller {
     }
 
     public function about() {
-        $this->data_arr['_load_page']           =   array('about');
+        $this->data_arr['_load_page']           =   array('sub_header','abouturban');
         $this->page_header                      =   'page_header';
         $this->data_arr['page_name']            =   'About';
         $this->prepareResult();
@@ -50,7 +50,7 @@ class Home extends MY_Controller {
     public function setup() {
         $this->data_arr['_load_page']           =   array('sub_header','setup');
         $this->page_header                      =   'page_header';
-        $this->data_arr['page_name']            =   'Features';
+        $this->data_arr['page_name']            =   'Setup';
         $this->prepareResult();
     }
 
@@ -61,17 +61,17 @@ class Home extends MY_Controller {
         $this->prepareResult();
     }
 
-    public function careers() {
-        $this->data_arr['_load_page']           =   array('careers');
-        $this->page_header                      =   'page_header';
-        $this->data_arr['page_name']            =   'Careers';
-        $this->prepareResult();
-    }
-
     public function pricing() {
         $this->data_arr['_load_page']           =   array('sub_header','pricing');
         $this->page_header                      =   'page_header';
         $this->data_arr['page_name']            =   'Pricing';
+        $this->prepareResult();
+    }
+
+    public function careers() {
+        $this->data_arr['_load_page']           =   array('sub_header','features');
+        $this->page_header                      =   'page_header';
+        $this->data_arr['page_name']            =   'Careers';
         $this->prepareResult();
     }
 

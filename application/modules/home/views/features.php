@@ -123,28 +123,25 @@ class="elementor elementor-127"
                         <div class="row gx-lg-5">
                             <!--Grid column-->
                             <div class="col-lg-12 col-md-12 mb-12">
-                                <h3>urbanEYE AI in 3 easy simple steps</h3>
+                                <h3>Key Features Serve in urban Eye AI</h3>
                                 <!-- Card -->
                                 <div class="card border border-primary">
 
                                     <div class="card-header bg-white py-3">                                
-                                        <h5 class="mb-0">1.Create Geo fence boundaries.</h5>
+                                        <h5 class="mb-0">Keep Your Crew Connected </h5>
                                     </div>
 
                                     <div class="card-body">
                                         <p>
-                                        Geo fence are very essential to be pre-defined in the software since this the location where we want
-                                            to monitor the jobs that have been performed and there are multiple ways to perform it..
-                                            Determine the perimeter of the location: Before creating a Geo fence, it&#39;s important to determine
-                                            the perimeter of the location that needs to be monitored. You can use a map or a GPS-enabled
-                                            device to mark the boundaries,
+                                        Our IoT-enabled wearable tracker keeps your crew connected and on track, providing real- time data on their location, productivity, and progress. With this tool,
+                                         you can ensure that your team is working efficiently and effectively, even in remote or challenging locations. 
                                         </p>
-                                        <ul class="list-group list-group-flush">
+                                        <!-- <ul class="list-group list-group-flush">
                                             <li class="list-group-item">Use the device and move around the perimeter of the location:</li>
                                             <li class="list-group-item">Alternatively, physically draw the Geo fence and upload:</li>
                                             <li class="list-group-item">upload the land authority Geo fence details:</li>
                                             <li class="list-group-item">Or upload the polygons to urbanEYE AI software:</li>
-                                        </ul>
+                                        </ul> -->
                                     </div>
                                 </div>
                                 <!-- Card -->
@@ -156,22 +153,13 @@ class="elementor elementor-127"
                                 <div class="card border border-primary">
 
                                     <div class="card-header bg-white py-3">                                
-                                        <h5 class="mb-0">2.Setup</h5>
+                                        <h5 class="mb-0">Centralized worksite management</h5>
                                     </div>
 
                                     <div class="card-body">
                                         <p>
-                                        The second step is to setup typically redefine the work schedules. If you already have other software
-                                        with defined work schedules, urbanEYE AI is interoperable to connect with them back to our
-                                        software or we are open to share our APIs to easily integrate.
-                                        Allocate &amp; tag the devices to respective location and workforce to get the data flowing
-                                        This step gives more insights on Cycle to cycle and instantaneously performances can be compared,
-                                        you can setup as many as locations and the work schedule will have all the locations associated to it.
-                                        Also, that the location job sites will have all the associated devices and the metadata associated with
-                                        it.
-                                        By following these steps, you can ensure that all devices are allocated and tagged correctly to their
-                                        respective locations and workforces, and that data is captured and analyzed effectively in urbanEYE
-                                        AI.
+                                        Keep all your worksite data in one place, including budgeted hours, turf difficulty, crew sizing, and equipment types. With our easy-to-use platform, you can track progress and performance, 
+                                        identify areas for improvement, and ensure that your worksite operations run smoothly. 
                                         </p>
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">Define work schedules:</li>
@@ -191,16 +179,13 @@ class="elementor elementor-127"
                                 <div class="card border border-primary">
 
                                     <div class="card-header bg-white py-3">                                
-                                        <h5 class="mb-0">3.Capture</h5>
+                                        <h5 class="mb-0">Visualize your worksites like never before</h5>
                                     </div>
 
                                     <div class="card-body">
                                         <p>
-                                        The third one is captured. Onboard the device and capture real time data high accuracy data from
-                                        Ground operations. The urbanEye AI powerful and high precision technology measures the grass
-                                        height (optional).
-                                        Once the crew gets into a Polygon or a jobsite urbanEye AI starts capturing this data in real time and
-                                        the insights changes the way you did lawn mowing all these days.
+                                        No more check-in/out, photos & manual reports! Track worksite progress effortlessly with smart dashboard by advanced geospatial technology to get real-time visualizations of activities & performance metrics. 
+                                        Our intuitive platform automates complex worksite management tasks, saves time and increasing transparency. Make informed decisions quickly. 
                                         </p>
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">You can Install devices on equipment:</li>
@@ -208,6 +193,34 @@ class="elementor elementor-127"
                                             <li class="list-group-item">Capture real-time data:</li>
                                             <li class="list-group-item">Data captured every second:</li>
                                             <li class="list-group-item">Productivity is at core:</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                            </div>
+                            <!--Grid column end-->
+                            <!--Grid column-->
+                            <div class="col-lg-12 col-md-12 mb-12">
+
+                                <!-- Card -->
+                                <div class="card border border-primary">
+
+                                    <div class="card-header bg-white py-3">                                
+                                        <h5 class="mb-0">AI/ ML Insights & Reports</h5>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <p>
+                                        Captures and analyze geospatial data from crew-connected sensors in real-time & get quantifiable work reports to ensure accuracy & reliability, eliminating the tedious manual entries and reduced discrepancies. 
+                                        With our automated system, payment claiming and clearing are made simple and confusion-free without any manual intervention. Click through Content for AI/ ML Insights & Reports, it should land in the separate page that we create for the features 
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Real-Time Production Benchmarking</li>
+                                            <li class="list-group-item">Geospatial Work Pattern Analysis</li>
+                                            <li class="list-group-item">Crew Productive Pulse Monitoring</li>
+                                            <li class="list-group-item">Work Completion Reports</li>
+                                            <li class="list-group-item">Actionable Insights from Exception Reporting</li>
+                                            <li class="list-group-item">Profit Impact Report</li>
                                         </ul>
                                     </div>
                                 </div>
