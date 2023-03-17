@@ -697,7 +697,7 @@
                                                         </li>
                                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
                                                             <a href="<?=base_url()?>index.php/home/setup" class="elementor-item has-submenu <?=isset($page_name) && $page_name == 'Setup'?'elementor-item-active':''?>" id="sm-16778124470928018-3" aria-haspopup="true" aria-controls="sm-16778124470928018-4" aria-expanded="false">
-                                                            Setup
+                                                            Benefits
                                                             <span class="sub-arrow"></span></a>
                                                         </li>
                                                     </ul>
@@ -729,7 +729,8 @@
                                                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="#" class="elementor-sub-item" tabindex="-1">Single Project</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="#" class="elementor-item" tabindex="-1">Contact us</a></li>
+                                                        <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="#" class="elementor-item" tabindex="-1">Contact us</a></li> -->
+                                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="<?=base_url()?>index.php/home/setup" class="elementor-item" tabindex="-1">Benefits</a></li>
                                                         <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18">
                                                             <a href="#" class="elementor-item elementor-item-anchor has-submenu" tabindex="-1" id="sm-16778124470973984-5" aria-haspopup="true" aria-controls="sm-16778124470973984-6" aria-expanded="false">Pages<span class="sub-arrow"><i class="mdi mdi-chevron-down"></i></span></a> -->
                                                             <!-- <ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470973984-6" role="group" aria-hidden="true" aria-labelledby="sm-16778124470973984-5" aria-expanded="false">

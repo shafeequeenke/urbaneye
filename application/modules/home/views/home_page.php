@@ -376,7 +376,7 @@
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
 																<a href="<?=base_url()?>index.php/home/features" class="elementor-item has-submenu" id="sm-16778124470928018-3" aria-haspopup="true" aria-controls="sm-16778124470928018-4" aria-expanded="false">Features<span class="sub-arrow"></span></a>
 															</li>
-															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="#" class="elementor-item">Contact us</a></li>
+															<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="#" class="elementor-item">Contact us</a></li> -->
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18">
 																<a href="<?=base_url()?>index.php/home/setup" class="elementor-item elementor-item-anchor has-submenu" id="sm-16778124470928018-5" aria-haspopup="true" aria-controls="sm-16778124470928018-6" aria-expanded="false">Benefits<span class="sub-arrow"></span></a>
 																<!-- <ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-6" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-5" aria-expanded="false">
