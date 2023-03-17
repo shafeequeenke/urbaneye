@@ -119,6 +119,14 @@
 			border-top: 20px solid;
 			z-index: 15;
 			}
+			.f-nav {  /* To fix main menu container */
+				z-index: 9999;
+				position: fixed !important;
+				left: 0;
+				top: 0;
+				width: 100%;
+				background: #fff;
+			}
 		</style>
 		<link rel="stylesheet" id="wp-block-library-css" href="<?=base_url()?>assets/css/style.min_002.css" media="all">
 		<link rel="stylesheet" href="<?=base_url()?>assets/css/custom_style.css" media="all">
@@ -324,7 +332,7 @@
 				</div>
 			</section>
 			<section class="elementor-section elementor-top-section elementor-element elementor-element-6bbe98f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6bbe98f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-container elementor-column-gap-default" id="top_menu">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-69bc452" data-id="69bc452" data-element_type="column">
 						<div class="elementor-widget-wrap elementor-element-populated">
 							<section class="elementor-section elementor-inner-section elementor-element elementor-element-e89469c elementor-section-content-middle elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e89469c" data-element_type="section">
@@ -352,31 +360,31 @@
 															<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-7">
 																<a href="<?=base_url()?>" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10">
-																<a href="<?=base_url()?>index.php/home/abouturbaneye" class="elementor-item has-submenu" id="sm-16778124470928018-1" aria-haspopup="true" aria-controls="sm-16778124470928018-2" aria-expanded="false">About<span class="sub-arrow"></span></a>
-																<ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-2" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-1" aria-expanded="false">
+																<a href="<?=base_url()?>index.php/home/abouturbaneye" class="elementor-item has-submenu" id="sm-16778124470928018-1" aria-haspopup="true" aria-controls="sm-16778124470928018-2" aria-expanded="false">urbanEye AI<span class="sub-arrow"></span></a>
+																<!-- <ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-2" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-1" aria-expanded="false">
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="<?=base_url()?>index.php/home/about" class="elementor-sub-item">About UrbanEye</a></li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="<?=base_url()?>index.php/home/abouturbaneye" class="elementor-sub-item">About Us</a></li>
-																</ul>
+																</ul> -->
 															</li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10">
-																<a href="#" class="elementor-item has-submenu" id="sm-16778124470928018-1" aria-haspopup="true" aria-controls="sm-16778124470928018-2" aria-expanded="false">Services<span class="sub-arrow"></span></a>
-																<ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-2" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-1" aria-expanded="false">
+																<a href="<?=base_url()?>index.php/home/pricing" class="elementor-item has-submenu" id="sm-16778124470928018-1" aria-haspopup="true" aria-controls="sm-16778124470928018-2" aria-expanded="false">Pricing<span class="sub-arrow"></span></a>
+																<!-- <ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-2" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-1" aria-expanded="false">
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="<?=base_url()?>index.php/home/pricing" class="elementor-sub-item">Pricing</a></li>
-																</ul>
+																</ul> -->
 															</li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
 																<a href="<?=base_url()?>index.php/home/features" class="elementor-item has-submenu" id="sm-16778124470928018-3" aria-haspopup="true" aria-controls="sm-16778124470928018-4" aria-expanded="false">Features<span class="sub-arrow"></span></a>
 															</li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="#" class="elementor-item">Contact us</a></li>
 															<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18">
-																<a href="<?=base_url()?>index.php/home/setup" class="elementor-item elementor-item-anchor has-submenu" id="sm-16778124470928018-5" aria-haspopup="true" aria-controls="sm-16778124470928018-6" aria-expanded="false">Setup<span class="sub-arrow"></span></a>
-																<ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-6" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-5" aria-expanded="false">
+																<a href="<?=base_url()?>index.php/home/setup" class="elementor-item elementor-item-anchor has-submenu" id="sm-16778124470928018-5" aria-haspopup="true" aria-controls="sm-16778124470928018-6" aria-expanded="false">Benefits<span class="sub-arrow"></span></a>
+																<!-- <ul class="sub-menu elementor-nav-menu--dropdown" id="sm-16778124470928018-6" role="group" aria-hidden="true" aria-labelledby="sm-16778124470928018-5" aria-expanded="false">
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="#" class="elementor-sub-item">Team</a></li>
-																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="#" class="elementor-sub-item">FAQ</a></li>
+																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="#" class="elementor-sub-item">FAQ</a></li> -->
 																	<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a href="#" class="elementor-sub-item">Blog</a></li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="#" class="elementor-sub-item">Single post</a></li>
 																	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="#" class="elementor-sub-item">Error 404</a></li> -->
-																</ul>
+																<!-- </ul> -->
 															</li>
 														</ul>
 													</nav>
@@ -457,7 +465,7 @@
 							<div class="caption" style="padding-bottom:20px;">
 								<h1 style="color:#116ad20 ;">urbanEye AI</h1>
 								<h3 style="color:#116ad20 ;"><span>Experience a Smarter</span> Way to Manage Your Landscape</h3>
-								<a href="<?=base_url()?>index.php/home/contact" class="big-button" href="" title="" style="border-radius:15px;background: #193c16;color:#fff;margin-bottom: 60px;">Get Started</a>
+								<a href="javascript:void(0)" class="big-button schedule_calendar" href="" title="" style="border-radius:15px;background: #193c16;color:#fff;margin-bottom: 60px;">Get Started</a>
 							</div>
 						</div>
 						<div class="carousel-item" style="background-image: url(https://urbaneye.enke.in/assets/images/stake_holder_benefit.png)">
@@ -627,7 +635,7 @@
 							<div class="elementor-element elementor-element-aec9fad elementor-widget elementor-widget-button" data-id="aec9fad" data-element_type="widget" data-widget_type="button.default">
 								<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-										<a href="<?=base_url()?>index.php/home/abouturbaneye" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+										<a href="<?=base_url()?>index.php/home/setup" class="elementor-button-link elementor-button elementor-size-sm" role="button">
 										<span class="elementor-button-content-wrapper">
 										<span class="elementor-button-text">Discover more</span>
 										</span>
@@ -679,7 +687,7 @@
 													<div class="elementor-icon-box-wrapper">
 														<div class="elementor-icon-box-icon">
 															<span class="elementor-icon element-icon-wrap">
-															<i aria-hidden="true" class="mdi mdi-lan-connect"></i>				
+															<i aria-hidden="true" class="mdi mdi-cast-connected"></i>				
 															</span>
 														</div>
 														<div class="elementor-icon-box-content">
@@ -714,7 +722,7 @@
 													<div class="elementor-icon-box-wrapper">
 														<div class="elementor-icon-box-icon">
 															<span class="elementor-icon elementor-animation-">
-															<i aria-hidden="true" class="mdi mdi-camera-front-variant"></i>				</span>
+															<i aria-hidden="true" class="mdi mdi-chip"></i>				</span>
 														</div>
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
@@ -749,7 +757,7 @@
 													<div class="elementor-icon-box-wrapper">
 														<div class="elementor-icon-box-icon">
 															<span class="elementor-icon element-icon-wrap">
-															<i aria-hidden="true" class="mdi mdi-vector-intersection"></i>				</span>
+															<i aria-hidden="true" class="mdi mdi mdi-monitor"></i>				</span>
 														</div>
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
@@ -1093,12 +1101,13 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																For Crew Members:					</span>
+																 Crew :					</span>
 															</div>
-															<li>Keep connected with real-time updates on job sites.</li>
-															<li>No more check-in, check-out and photo evidence of work completion.</li>
-															<li>Track productivity of Crew Members with “Productive Pulse Monitoring feature”</li>
-															<li>Receive feedback to improve performance.</li>
+															<ul>
+																<li>No more check-ins and photo evidence.</li>
+																<li>Track productivity with “Productive Pulse Monitoring feature”</li>
+																<li>Receive feedback to improve performance.</li>
+															</u>
 														</div>
 													</div>
 												</div>
@@ -1117,13 +1126,14 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																For Account Managers:
+																Client Relations:
 																</span>
 															</div>
-															<li>Centralize worksite management in a single platform,</li>
-															<li>Reduced manual processes and improved efficiency.</li>
-															<li>Real-time data paves improved communication and accountability.</li>
-															<li>Fool proof &amp; systematic billing &amp; payment process</li>
+															<ul>
+																<li>Reduced manual processes and improved efficiency.</li>
+																<li>Real-time data paves improved communication and accountability.</li>
+																<li>Access to automated work completions reports to support progress billing</li>
+															</ul>
 														</div>
 													</div>
 												</div>
@@ -1146,14 +1156,16 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																For Operations Managers:
+																Operations:
 																</span>
 															</div>
-															<li>Improved work force management &amp; sustained productivity</li>
-															<li>Highly productive process owners.</li>
-															<li>Improved inventory management</li>
-															<li>Streamlined payment process for the work force</li>
-															<li>Profitable contracts &amp; new benchmarks</li>
+															<ul>
+																<li>Access to crew production rates for better decision making</li>
+																<li>Focused training for crew members</li>
+																<li>Gain insights on labour and equipment usage.</li>
+																<li>Streamlined payment process for the work force</li>
+																<li>Gain insights on labour and equipment usage.</li>
+															</ul>
 														</div>
 													</div>
 												</div>
@@ -1172,15 +1184,14 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 															<span>
-															For Sales:	
+															Sales:	
 															</span>
 															</div>
-															<li>With new benchmarks achieved in successful implementation of urbanEye AI</li>
-															<li>Your accuracy to calculate the production rates of crew members are higher</li>
-															<li>You will have a reduced and efficient crew numbers</li>
-															<li>You experience a streamlined inventory</li>
-															<li>With the new benchmarks are set and insights in your hand the bidding for future
-																projects is highly accurate.</li>
+															<ul>
+																<li>Ability to estimate future bids accurately.</li>
+																<li>Comprehensive suite of tools to stay ahead of the competition.</li>
+																<li>Optimizes customer satisfaction and maximizes profits.</li>
+															</ul>
 														</div>
 													</div>
 												</div>
@@ -1220,21 +1231,14 @@
 																&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The pricing plays a vital role, deciding factor for lawn management companies like you and as we
 															understand your world of operations better, we have unique pricing that provides access to new
 															possibilities that you have never imagined off. urbanEye AI believes in building relations for a better
-															tomorrow that paves way for sustainable future, for more information on our packages <br><a href="<?=base_url()?>index.php/home/pricing" title="Click here Read More" style="">read more</a></p>
+															tomorrow that paves way for sustainable future, for more information on our packages <br>
+															<!-- <a href="<?=base_url()?>index.php/home/pricing" title="Click here Read More" style="">read more</a> -->
+														</p>
 															<!-- </div> -->
 															<!-- <div class="col-md-6" style='background-image:url("https://urbaneye.enke.in/assets/images/banner_moving_bg.jpg");'>
 																
 															</div> -->
 															
-													</div>
-													<div class="elementor-divider">
-														<p style="text-align: justify;color: #2b7139;font-weight: bold">Explore Package : This package is ideal for businesses looking to try out urbanEye AI and experience its benefits on a
-														smaller scale. <br><a href="<?=base_url()?>index.php/home/pricing" title="Click here Read More" style="">read more</a></p>
-													</div>
-													<div class="elementor-divider">
-														<p style="text-align: justify;color: #2b7139;font-weight: bold">Prodigy Package : This package is perfect for businesses looking to fully integrate urbanEye AI into their operations
-														and take advantage of its full range of features to increase productivity upto40%. <br><a href="<?=base_url()?>index.php/home/pricing" title="Click here Read More" style="">read more</a>
-														</p>
 													</div>
 												</div>
 											</div>
@@ -1244,6 +1248,187 @@
 							</section>
 						</div>
 					</div>
+				</div>
+			</section>
+			<section class="elementor-section elementor-top-section elementor-element elementor-element-e1eaeee elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e1eaeee" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-background-overlay"></div>
+				<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-516adce" data-id="516adce" data-element_type="column">
+						<div class="elementor-widget-wrap element-box-shadow">
+							<section class="elementor-section elementor-inner-section elementor-element elementor-element-fc80c89 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fc80c89" data-element_type="section">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d1d6d0f animated fadeInUp" data-id="d1d6d0f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:200}"  style="  height: 200px;">
+										<div class="elementor-widget-wrap element-box-shadow">
+											<div class="elementor-element elementor-element-fbbe9ba elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="fbbe9ba" data-element_type="widget" data-widget_type="icon-box.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-icon-box-wrapper">
+														<!-- <div class="elementor-icon-box-icon">
+															<span class="elementor-icon element-icon-wrap">
+															<i aria-hidden="true" class="mdi mdi-cast-connected"></i>				
+															</span>
+														</div> -->
+														<div class="elementor-icon-box-content">
+															<div class="elementor-icon-box-title">
+																<span>
+																Explore Package			
+																</span>
+															</div>
+															<p class="elementor-icon-box-description">
+															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This package is ideal for businesses looking to try out urbanEye AI and experience its benefits on a smaller scale. 
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- <div class="elementor-element elementor-element-df78dde element-readmore-container elementor-widget__width-auto elementor-absolute e-transform elementor-view-default elementor-widget elementor-widget-icon" data-id="df78dde" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-45,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="icon.default">
+												<div class="elementor-widget-container">
+													<div class="element-icon-wrapper">
+														<a class="elementor-icon" href="<?=base_url()?>index.php/home/features">
+														<i aria-hidden="true" class="mdi mdi-arrow-right"></i>			</a>
+													</div>
+												</div>
+											</div> -->
+										</div>
+									</div>
+									<div class="elementor-column  elementor-col-50 elementor-inner-column elementor-element elementor-element-e0ad1d8 animated fadeInUp" data-id="e0ad1d8" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}"  style="height: 200px;">
+										<div class="elementor-widget-wrap element-box-shadow">
+											<div class="elementor-element elementor-element-2e6dda2 elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="2e6dda2" data-element_type="widget" data-widget_type="icon-box.default">
+												<div class="elementor-widget-container">
+													<div class="elementor-icon-box-wrapper">
+														<!-- <div class="elementor-icon-box-icon">
+															<span class="elementor-icon elementor-animation-">
+															<i aria-hidden="true" class="mdi mdi-chip"></i>				</span>
+														</div> -->
+														<div class="elementor-icon-box-content">
+															<div class="elementor-icon-box-title">
+																<span>
+																Prodigy Package :				</span>
+															</div>
+															<p class="elementor-icon-box-description">
+															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+															This package is perfect for businesses looking to fully integrate urbanEye AI into their operations and take advantage of its full range of features to increase productivity upto40%.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- <div class="elementor-element elementor-element-0538679 elementor-widget__width-auto elementor-absolute e-transform elementor-view-default elementor-widget elementor-widget-icon" data-id="0538679" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_transform_rotateZ_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-45,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_rotateZ_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;deg&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="icon.default">
+												<div class="elementor-widget-container">
+													<div class="element-icon-wrapper">
+														<a class="elementor-icon" href="<?=base_url()?>index.php/home/features">
+														<i aria-hidden="true" class="mdi mdi-arrow-right"></i>			</a>
+													</div>
+												</div>
+											</div> -->
+										</div>
+									</div>																	
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="table-responsive">
+					<table class="table table-striped text-successtable-border border-light" style="width:80%; margin:0 auto; color: #53a17b;">
+						<thead class="border-light">
+							<tr>
+							<th scope="col"><strong>Package Type</strong></th>
+							<th scope="col"><strong>Explore Pacakage</strong></th>
+							<th scope="col"><strong>Prodigy Package</strong></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+							<th scope="row">Best Suits For</th>
+							<td>This package is ideal for businesses looking to try out
+							urbanEye AI and experience its benefits on a smaller
+							scale.
+							</td>
+							<td>This package is perfect for businesses looking to
+								fully integrate urbanEye AI into their operations
+								and take advantage of its full range of features
+								to increase productivity upto40%.</td>
+							</tr>
+							<tr>
+							<th colspan="3">PART OF THE PACK</th>
+							</tr>
+							<tr>
+							<th scope="row">Trackers</th>
+							<td>4 wearable trackers</td>
+							<td>10 wearable trackers</td>
+							</tr>
+							<tr>
+							<th scope="row">Period</th>
+							<td>3 months with FREE wireless charging pods.</td>
+							<td>1 year with FREE wireless charging pods.</td>
+							</tr>
+							<tr>
+							<th scope="row">Hours of operation</th>
+							<td>Software access for up to 2000 hours</td>
+							<td>Software access for up to 20,000 hours</td>
+							</tr>
+						</tbody>
+					</table><br><br>
+					<table class="table table-striped text-successtable-border border-light" style="width:40%; margin:0 auto; color: #53a17b;">
+						<thead class="border-light">
+							<tr>
+							<th scope="col"><strong>Package Type</strong></th>
+							<th scope="col"><strong>Explore Pacakage</strong></th>
+							<th scope="col"><strong>Prodigy Package</strong></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+							<th colspan="3">FEATURES</th>
+							</tr>
+							<tr>
+							<th scope="row">Connected Crews</th>
+							<td><i class="mdi mdi-check"></i></td>
+							<td><i class="mdi mdi-check"></i></td>
+							</tr>
+							<tr>
+							<th scope="row">Centralized management</th>
+							<td><i class="mdi mdi-check"></i></td>
+							<td><i class="mdi mdi-check"></i></td>
+							</tr>
+							<tr>
+							<th scope="row">Monitor worksites</th>
+							<td><i class="mdi mdi-check"></i></td>
+							<td><i class="mdi mdi-check"></i></td>
+							</tr>
+							<tr>
+							<th scope="row">Digital Work Completion Reports</th>
+							<td><i class="mdi mdi-check"></i></td>
+							<td><i class="mdi mdi-check"></i></td>
+							</tr>
+							<tr>
+							<th scope="row">Real-Time Production Benchmarking</th>
+							<td><i class="mdi mdi-check"></i></td>
+							<td><i class="mdi mdi-check"></i></td>
+							</tr>
+							<tr>
+							<th scope="row">Geospatial Work Pattern Analysis.</th>
+							<td><i class="mdi mdi-check"></i></td>
+							<td><i class="mdi mdi-check"></i></td>
+							</tr>
+							<tr>
+							<th scope="row">Crew Productive Pulse Monitoring</th>
+							<td><i class="mdi mdi-check"></i></td>
+							<td><i class="mdi mdi-check"></i></td>
+							</tr>
+							<tr>
+							<th scope="row">Exception Reports</th>
+							<td><i class="mdi mdi-check"></i></td>
+							<td><i class="mdi mdi-check"></i></td>
+							</tr>
+							<tr>
+							<th scope="row">Custom scalable - More devices</th>
+							<td><i class="mdi mdi-check"></i></td>
+							<td><i class="mdi mdi-check"></i></td>
+							</tr>
+						</tbody>
+					</table><br><br>
 				</div>
 			</section>
 			<!-- pricing ends -->

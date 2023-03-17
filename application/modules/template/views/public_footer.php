@@ -270,5 +270,17 @@ $(document).ready(function() {
 		$("#calendar_modal").modal("show");
 	});
 });
+
+$("document").ready(function($){
+    var nav = $('#top_menu');
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 125) {
+            nav.addClass("f-nav");
+        } else {
+            nav.removeClass("f-nav");
+        }
+    });
+});
 </script>
 </body></html>

@@ -113,16 +113,73 @@
                   >
                   <div class="elementor-widget-container">
                     <p>
-                    The IoT device/hardware boarded onto the crew members on the ground, or any equipment used for cutting grass. With no manual interventions involved, 
-                    and no cheque in cheque outs from any software the device uses the geospatial data to capture submitter level high precision tracking capable to capture real time activities on the ground works autonomously. And this data is pushed to the urbanEYE cloud using 
-                    cellular technologies and the software crunches all the spatial data collected to provide meaningful Insights, automated reports and helped Singapore National Parks lawn management to sustainably manage & increase efficiency of upto 20%. 
-                    </p>
-                    <p>
-                    Welcome to urbanEye AI, the powerful and intuitive platform that streamlines worksite
-                management and drives productivity for landscape management businesses. Our platform includes a
-                range of advanced features that provide real-time data insights and analytics, allowing you to
-                optimize crew performance and achieve better business outcomes.
-                Our pricing packages are designed to suit your needs and budget, with two options to choose from:
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The urbanEye AI system uses IoT-enabled high-precision trackers, which can be worn by crew
+                  members to capture real-time activities on the ground without any manual interventions or check-
+                  ins. The geospatial data captured by the trackers is then crunched by the urbanEye software to
+                  provide meaningful insights and automated reports. This technology has helped Singapore National
+                  Parks sustainably manage and increase the efficiency of up to 20% in managing municipal grasslands
+                  and streetscapes.</p>
+                  <h4>About the device</h4>
+                  <h6>High level feature of high precision tracker,</h6>
+                  <ul>
+                    <li>The hardware is built for outdoor works.</li>
+                    <li>Built for rain and shine with IP67 rating</li>
+                    <li>Wirelessly charged Li-Ion batteries.</li>
+                    <li>Can operate one full day operation when fully charged</li>
+                    <li>Capable to exchange high precision location long data in real-time. (&lt;3feets accuracy)</li>
+                  </ul>
+                  <h4>urbanEYE AI in 3 easy simple steps</h4>
+                  <ul class="about-urban">
+                    <li>Create Geo fence boundaries.</li>
+                    <p>Creating geofence boundaries is an essential step in monitoring job performance at specific
+                    locations. Before creating a geofence, it&#39;s important to determine the perimeter of the location that
+                    needs to be monitored. This can be done using a map or GPS-enabled device.</p>
+                    <p>There are multiple ways to create geofence boundaries, such as using the urbanEYE AI GPS-enabled
+                    device to move around the perimeter of the location, physically drawing the boundaries on a map,
+                    or uploading polygons in KML format to the urbanEYE AI software.</p>
+                    <p>Using the device to mark the boundaries ensures an accurate location, while physically drawing the
+                    boundaries on a map provides a tangible method. Uploading polygons in KML format to the software
+                    is a quick and convenient method if you already have the polygon data.</p>
+
+                      <p>Once the geo ence boundaries have been established, they can be pre-defined in the software to
+                    effectively monitor job performance at the designated location.</p>
+
+                    <li>Setup</li>
+                    <p>The second step is to setup. The setup involves allocating and tagging devices to respective
+                    locations and workforces, without requiring input on actual work schedules, ensuring effective data
+                    capture and analysis in urbanEYE AI.</p>
+
+                    <p>Work schedules - urbanEye AI automates the scheduling process by monitoring all worksites week-
+                    on-week without requiring any input or setup from customers. This eliminates the need for
+                    customers to manually input their work schedules.
+                    Allocate and tag devices - Assign devices to crew members and tag their names to the device. This
+                    allows for tracking of individual crew member performance and efficiency.</p>
+
+                    <li>Capture : The third one is captured.</li>
+                    <p>Capturing real-time data from ground operations is crucial for optimizing operations and increasing
+                    efficiency in any landscaping works. With urbanEye AI, this process is made easier and more
+                    accurate with the help of high precision trackers that crew members wear while performing their
+                    tasks.</p>
+
+                    <li>High Precision Tracker Onboarding:</li>
+                    <p>The trackers are provided with clip-ons that crew members wear or can be attached with side straps.
+                    Once onboarded, the trackers capture crew performance and production work from the time they
+                    leave the shop and return back.</p>
+                    <li>Capturing Real-Time Data (literally Every Second):</li>
+                    <p>The trackers capture real-time data from ground operations, providing a granular view of the work
+                    being done. This data is used to generate meaningful insights that can help optimize operations and
+                    increase efficiency. UrbanEye AI captures data every second, allowing identification of trends and
+                    patterns that can be used for further analysis.</p>
+
+                    <li>No Check-ins and Photo Evidence Required:</li>
+                    <p>With urbanEye AI, there is no need for check-ins or photo evidence to be provided. The production
+                    data is captured automatically in real-time, allowing seamless monitoring of operations.</p>
+
+                    <li>Productivity is at Core:</li>
+                    <p>UrbanEye AI is designed with productivity as a core focus. It allows you to measure various
+                    parameters such as the speed at which the workforce moves on the ground, the direction taken, and
+                    pre-defined non-productivity actions. This data can be used to optimize work schedules and identify
+                    areas for improvement.
                     </p>
                     <div class="table-responsive">
                       <!-- <div class="list-group">
