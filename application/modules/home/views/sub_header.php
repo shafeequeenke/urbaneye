@@ -594,7 +594,7 @@
                         <i aria-hidden="true" class="mdi mdi-email-check"></i>
                       </span>
                       <span class="elementor-icon-list-text"
-                        >support@yourdomain.tld</span
+                        >info@spaceagelabs.com.sg</span
                       >
                     </li>
                     <li class="elementor-icon-list-item elementor-inline-item">
@@ -602,7 +602,7 @@
                         <i aria-hidden="true" class="mdi mdi-deskphone"></i>
                       </span>
                       <span class="elementor-icon-list-text"
-                        >+6221.2002.2012</span
+                        >+65 85034824</span
                       >
                     </li>
                   </ul>
