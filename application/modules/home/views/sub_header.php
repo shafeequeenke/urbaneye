@@ -6,7 +6,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
-    <title>Contact us – hydropokit</title>
+    <title>Urban Eye AI - Experience a Smarter Way to Manage Your Landscape</title>
+		<link rel="icon" type="image/x-icon" href="<?=base_url()?>assets/images/favicon.ico">
     <meta name="robots" content="max-image-preview:large" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
@@ -46,6 +47,18 @@
       	background: none !important;
       	padding: 0 !important;
       }
+      .f-nav {  /* To fix main menu container */
+            z-index: 9999;
+            position: fixed !important;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background: #fff;
+        }
+        .about-urban li {
+            font-weight:bold;
+            font-size:20px;
+        }
     </style>
     <link
       rel="stylesheet"
@@ -642,11 +655,11 @@
         </div>
       </section>
       <section class="elementor-section elementor-top-section elementor-element elementor-element-6bbe98f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6bbe98f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-            <div class="elementor-container elementor-column-gap-default">
+            <div class="elementor-container elementor-column-gap-default" id="top_menu">
                 <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-69bc452" data-id="69bc452" data-element_type="column">
                     <div class="elementor-widget-wrap elementor-element-populated">
                         <section class="elementor-section elementor-inner-section elementor-element elementor-element-e89469c elementor-section-content-middle elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e89469c" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-container elementor-column-gap-default" >
                                 <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-57c5d69" data-id="57c5d69" data-element_type="column">
                                     <div class="elementor-widget-wrap elementor-element-populated">
                                         <div class="elementor-element elementor-element-18afc3b elementor-widget elementor-widget-image" data-id="18afc3b" data-element_type="widget" data-widget_type="image.default">

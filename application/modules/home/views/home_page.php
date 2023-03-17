@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 		<title>Urban Eye AI - Experience a Smarter Way to Manage Your Landscape</title>
+		<link rel="icon" type="image/x-icon" href="<?=base_url()?>assets/images/favicon.ico">
 		<meta name="robots" content="max-image-preview:large">
 		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 		<link rel="stylesheet" id="google-fonts-1-css" href="assets/css/css.css" media="all">
@@ -680,7 +681,7 @@
 						<div class="elementor-widget-wrap element-box-shadow">
 							<section class="elementor-section elementor-inner-section elementor-element elementor-element-fc80c89 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fc80c89" data-element_type="section">
 								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d1d6d0f animated fadeInUp" data-id="d1d6d0f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:200}"  style="  height: 450px;">
+									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d1d6d0f animated fadeInUp" data-id="d1d6d0f" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:200}"  style="  height: 350px;">
 										<div class="elementor-widget-wrap element-box-shadow">
 											<div class="elementor-element elementor-element-fbbe9ba elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="fbbe9ba" data-element_type="widget" data-widget_type="icon-box.default">
 												<div class="elementor-widget-container">
@@ -693,13 +694,12 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																Keep Your Crew Connected					
+																Connected Crew					
 																</span>
 															</div>
 															<p class="elementor-icon-box-description">
-															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our IoT-enabled wearable tracker keeps your crew connected and on track, providing real-
-													time data on their location, productivity, and progress. With this tool, you can ensure that
-													your team is working efficiently and effectively, even in remote or challenging locations.					
+															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our IoT wearable tracker enables real-time monitoring of crew location, productivity, and progress,
+ensuring efficient and effective teamwork even in remote or challenging locations.				
 															</p>
 														</div>
 													</div>
@@ -715,7 +715,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="elementor-column  elementor-col-33 elementor-inner-column elementor-element elementor-element-e0ad1d8 animated fadeInUp" data-id="e0ad1d8" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}"  style="height: 450px;">
+									<div class="elementor-column  elementor-col-33 elementor-inner-column elementor-element elementor-element-e0ad1d8 animated fadeInUp" data-id="e0ad1d8" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}"  style="height: 350px;">
 										<div class="elementor-widget-wrap element-box-shadow">
 											<div class="elementor-element elementor-element-2e6dda2 elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="2e6dda2" data-element_type="widget" data-widget_type="icon-box.default">
 												<div class="elementor-widget-container">
@@ -730,10 +730,9 @@
 																Centralized worksite management				</span>
 															</div>
 															<p class="elementor-icon-box-description">
-															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keep all your worksite data in one place, including budgeted hours, turf difficulty, crew
-													sizing, and equipment types. With our easy-to-use platform, you can track progress and
-													performance, identify areas for improvement, and ensure that your worksite operations run
-													smoothly.
+															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;streamlines worksite information data, such as property boundaries, square footage, operational
+procedures, estimated budgets, and more. Single source of data for all stakeholders, and ensure
+seamless operations at your worksite.
 				
 															</p>
 														</div>
@@ -750,7 +749,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-dcbaa1e animated fadeInUp" data-id="dcbaa1e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:300}" style="height: 450px;">
+									<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-dcbaa1e animated fadeInUp" data-id="dcbaa1e" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:300}" style="height: 350px;">
 										<div class="elementor-widget-wrap element-box-shadow">
 											<div class="elementor-element elementor-element-1977d38 elementor-view-stacked elementor-shape-circle elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="1977d38" data-element_type="widget" data-widget_type="icon-box.default">
 												<div class="elementor-widget-container">
@@ -762,14 +761,12 @@
 														<div class="elementor-icon-box-content">
 															<div class="elementor-icon-box-title">
 																<span>
-																Visualize your worksites like never before</span>
+																Real-time Visualization</span>
 															</div>
 															<p class="elementor-icon-box-description">
-															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No more check-in/out, photos &amp; manual reports! Track worksite progress effortlessly with
-													smart dashboard by advanced geospatial technology to get real-time visualizations of
-													activities &amp; performance metrics. Our intuitive platform automates complex worksite
-													management tasks, saves time and increasing transparency. Make informed decisions
-													quickly.				
+															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No more check-ins, photos &amp; manual reports! Track worksite progress with our smart dashboard by
+advanced geospatial technology to get real-time visualizations of activities &amp; performance metrics
+with increased transparency			
 															</p>
 														</div>
 													</div>
@@ -808,12 +805,10 @@
 											<div class="elementor-element elementor-element-43e53aa elementor-widget elementor-widget-text-editor" data-id="43e53aa" data-element_type="widget" data-widget_type="text-editor.default">
 												<div class="elementor-widget-container">
 												<p class="elementor-icon-box-description">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Captures and analyze geospatial data from crew-connected sensors in real-time &amp; get
-                                    quantifiable work reports to ensure accuracy &amp; reliability, eliminating the tedious manual
-                                    entries and reduced discrepancies. With our automated system, payment claiming and
-                                    clearing are made simple and confusion-free without any manual intervention.
-                                    Click through Content for AI/ ML Insights &amp; Reports, it should land in the separate page that
-                                    we create for the features
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Say goodbye to guesswork and hello to data-driven decisions that boost
+productivity and profits. Automated weekly reports quantifying inefficiencies in
+crew performance and production works, providing valuable insights for better
+decision making.
 
                                     </p>
 												</div>
@@ -847,11 +842,8 @@
 													<div class="elementor-cta">
 														<div class="elementor-cta__content">
 															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">
-															With our AI platform, you can easily capture and benchmark crew production rates in real time, 
-															enabling you with insights to optimize crew productivity and efficiency. No more guesswork or 
-															relying on industry benchmarks – our geospatial technology automatically captures crew data, 
-															allowing you to see precisely how your crews perform and where you can improve.
-															 With this information at your fingertips, you can make informed decisions that drive productivity and profitability for your business.
+															Real-time capture of crew production rates per equipment usage for informed
+decision-making
 
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
@@ -887,11 +879,9 @@
 													<div class="elementor-cta">
 														<div class="elementor-cta__content">
 															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">															
-															Geospatial Work Pattern Analysis with urbanEye AI includes clustering data such as crew member transit, idling, and production using different equipment. 
-															This powerful feature allows you to analyze and understand work patterns in real time, 
-															helping you identify inefficiencies and opportunities for improvement. 
-															With our advanced machine learning models, you can easily visualize and quantify crew performance metrics, 
-															such as time spent on different activities, distances travelled, and areas covered. This information is critical for optimizing productivity, reducing costs, and improving service quality for your customers.
+															Unlock the power of advanced geospatial machine learning to analyze daily crew
+work patterns and improve efficiency. Evaluate crew productivity pulse and
+optimize operations with precision.
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
 																<a class="elementor-cta__button elementor-button elementor-size-xs" href="<?=base_url()?>index.php/home/features">
@@ -926,11 +916,9 @@
 													<div class="elementor-cta">
 														<div class="elementor-cta__content">
 															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">
-															It is a powerful feature of urbanEye AI that enables you to monitor the productivity of your crew members week on week. Our AI platform uses a unique algorithm that evaluates multiple factors, including total work hours and production rates. 
-															By tracking these metrics, urbanEye AI calculates a "productive pulse" for each crew member, 
-															allowing you to identify high-performing individuals and areas for improvement. With this feature, 
-															you can optimize crew productivity and drive efficiency, leading to increased profitability for your
-															 business.
+															Boost your crew productivity, Our unique algorithm evaluates weekly work hours
+and production rates to identify high-performing individuals and areas for
+improvement. Optimize your crew&#39;s performance and achieve maximum efficiency.
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
 																<a class="elementor-cta__button elementor-button elementor-size-xs" href="<?=base_url()?>index.php/home/features">
@@ -969,9 +957,9 @@
 													<div class="elementor-cta">
 														<div class="elementor-cta__content">
 															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">
-															UrbanEye AI provides supervisors the freedom from complex monitoring of day-to-day
-												activities &amp; reporting process, which is achieved from granular detail derived from worksites
-												with ease of access that you never experienced from your traditional software.
+															Automated work completion reports, 100% auditable, eliminating manual work
+processes for supervisors which they may not have experienced with traditional
+software.
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
 																<a class="elementor-cta__button elementor-button elementor-size-xs" href="<?=base_url()?>index.php/home/features">
@@ -1006,8 +994,8 @@
 													<div class="elementor-cta">
 														<div class="elementor-cta__content">
 															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">															
-															Exception reporting is a valuable feature of urbanEye AI platform that enables you to easily identify and quantify inefficiencies in your worksite operations. With real-time data from our IoT-enabled wearable trackers, 
-															our software automatically generates exception reports that identify crew non-productive works, low production rates, overlapped works, and compare actual vs budgeted hours per worksite
+															Don&#39;t Let Inefficiencies Go Unnoticed: Get Automated Exception Reporting for Your
+Worksites. Exception Reporting That Identifies Non-Productive Work and More.
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
 																<a class="elementor-cta__button elementor-button elementor-size-xs" href="<?=base_url()?>index.php/home/features">
@@ -1042,10 +1030,8 @@
 													<div class="elementor-cta">
 														<div class="elementor-cta__content">
 															<div class="elementor-cta__description elementor-cta__content-item elementor-content-item">
-															Witness the true meaning of productivity in real time with urbanEye AI &amp; steer ahead the
-														organization to profitability of upto 40%. As a lawn management professional, you have to
-														multitask and manage manpower, inventory, billing &amp; payments with urbanEye AI you are a
-														clear winner.
+															Uncover Lost Hours, Unleash Your Profitability up to 20% - Get Actionable Insights
+with urbanEye AI&#39;s Profit Impact Report
 															</div>
 															<div class="elementor-cta__button-wrapper elementor-cta__content-item elementor-content-item ">
 																<a class="elementor-cta__button elementor-button elementor-size-xs" href="<?=base_url()?>index.php/home/features">
