@@ -11,7 +11,7 @@
 		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 		<link rel="stylesheet" id="google-fonts-1-css" href="assets/css/css.css" media="all">
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script> -->
+			<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script> -->
 		<link rel="alternate" type="application/rss+xml" title="hydropokit » Feed" href="https://kitnew.moxcreative.com/hydropokit/feed/">
 		<link rel="alternate" type="application/rss+xml" title="hydropokit » Comments Feed" href="https://kitnew.moxcreative.com/hydropokit/comments/feed/">
 		<script type="text/javascript" id="www-widgetapi-script" src="assets/js/www-widgetapi.js" async=""></script><script src="assets/iframe_api"></script><script>
@@ -25,6 +25,12 @@
 		
 
 		<style>
+			@font-face {
+				font-family: '';
+				src:url('<?=base_url()?>assets/fonts/TTInterfaces-DemiBold.ttf');
+				font-weight: normal;
+				font-style: normal;
+			}
 			img.wp-smiley,
 			img.emoji {
 			display: inline !important;

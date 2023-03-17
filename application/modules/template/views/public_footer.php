@@ -208,7 +208,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
       <div class="modal-body" id="calendar_body" style="min-height:450px;">
         <!-- CALENDAR STARTS -->
-		<iframe id="" src="https://calendly.com/ysashikumar/30min" style="width: 100%;height: 500px;">
+		<iframe id="" src="https://calendly.com/urbaneyeai/30min" style="width: 100%;height: 500px;">
 		</iframe>
 		<!-- CALENDAR ENDS -->
       </div>
